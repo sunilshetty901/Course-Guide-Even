@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semester Courses</title>
+  <style>
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-header {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      animation: slideDown 0.7s ease-out;
+    }
+
+    h1 {
+      margin: 30px 0 10px;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .semester-block {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    .semester-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #003366;
+      text-align: center;
+    }
+
+    .course-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .course-button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+      min-width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .course-button:hover {
+      background-color: #002244;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-header">
+    Course Guide
+  </div>
+
+  <h1>Mechanical Engineering(Mechanical System Design)</h1>
+
+  <!-- Semester I -->
+  <div class="semester-block">
+    <div class="semester-title">Semester I</div>
+    <div class="course-buttons">
+      <a class="course-button" href="Advanced Mechanics of Solids.html" target="_blank">Advanced Mechanics of Solids</a>
+      <a class="course-button" href="Dynamics and Vibrations.html" target="_blank">Dynamics and Vibrations</a>
+      <a class="course-button" href="Modelling and Simulations.html" target="_blank">Modelling and Simulations</a>
+      <a class="course-button" href="Finite Element Methods.html" target="_blank">Finite Element Methods</a>
+      <a class="course-button" href="Composite Materials and Design.html" target="_blank">Composite Materials and Design</a>
+    </div>
+  </div>
+
+  <h1>Mechanical Engineering(Thermal and Energy system)</h1>
+
+  <!-- Semester I -->
+  <div class="semester-block">
+    <div class="semester-title">Semester I</div>
+    <div class="course-buttons">
+       <a class="course-button" href="ADVANCED HEAT & MASS TRANSFER.html" target="_blank">Advanced Heat & Mass Transfer</a>
+       <a class="course-button" href="Advanced Mechanics of Solids.html" target="_blank">Advanced Energy & Momentum Transfer</a>
+        <a class="course-button" href="Advanced Mechanics of Solids.html" target="_blank">Physics of Nuclear Reactors</a>
+       <a class="course-button" href="Numerical Methods CSE UG.html" target="_blank">Numerical Methods in Engineers</a>
+       <a class="course-button" href="Experimental Methods in Thermal and Fluid Sciences.html" target="_blank">Experimental Methods for Thermal & Fluid Sciences</a>
+       <a class="course-button" href="Compressible Fluid Flow.html" target="_blank">Compressible Fluid Flow</a>	
+    </div>
+  </div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semester Courses</title>
+  <style>
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-header {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      animation: slideDown 0.7s ease-out;
+    }
+
+    h1 {
+      margin: 30px 0 10px;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .semester-block {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    .semester-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #003366;
+      text-align: center;
+    }
+
+    .course-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .course-button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+      min-width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .course-button:hover {
+      background-color: #002244;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-header">
+    Course Guide
+  </div>
+
+  <h1>Computer Science Engineering</h1>
+
+  <!-- Semester I -->
+  <div class="semester-block">
+    <div class="semester-title">Semester I</div>
+    <div class="course-buttons">
+      <button class="course-button">CSC006P1M - Design and Analysis of Algorithms</button>
+      <button class="course-button">CSL003P1M - Probability and Statistics</button>
+      <button class="course-button">CSC004P1M - Data Organization and Retrieval</button>
+      <button class="course-button">CSC005P1M - Introduction to Computer Systems</button>
+      <button class="course-button">CSD001P5M - Linear Algebra</button>
+      <button class="course-button">CSD002P5M - Abstract Algebra</button>
+    </div>
+  </div>
+
+  <!-- Semester III -->
+  <div class="semester-block">
+    <div class="semester-title">Semester III</div>
+    <div class="course-buttons">
+      <button class="course-button">Course 1</button>
+      <button class="course-button">Course 2</button>
+      <button class="course-button">Course 3</button>
+      <button class="course-button">Course 4</button>
+      <button class="course-button">Course 5</button>
+      <button class="course-button">Course 6</button>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semester Courses</title>
+  <style>
+    /* Animation for title */
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Top title bar */
+    .top-header {
+      background-color: #003366; /* dark blue */
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      animation: slideDown 0.7s ease-out;
+    }
+
+    h1 {
+      margin: 30px 0 20px;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .semester-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding-bottom: 40px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      background-color: #003366; /* dark blue */
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .dropbtn:hover {
+      background-color: #002244; /* darker shade */
+      transform: translateY(-2px);
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #2c3e50;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      transition: background-color 0.2s;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ecf0f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-header">
+    Course Guide
+  </div>
+
+  <h1>Semester Course Selection</h1>
+
+  <div class="semester-container">
+    <div class="dropdown">
+      <button class="dropbtn">Semester I</button>
+      <div class="dropdown-content">
+        <a href="#">Course 1</a>
+        <a href="#">Course 2</a>
+        <a href="#">Course 3</a>
+        <a href="#">Course 4</a>
+        <a href="#">Course 5</a>
+        <a href="#">Course 6</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Semester III</button>
+      <div class="dropdown-content">
+        <a href="#">Course 1</a>
+        <a href="#">Course 2</a>
+        <a href="#">Course 3</a>
+        <a href="#">Course 4</a>
+        <a href="#">Course 5</a>
+        <a href="#">Course 6</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Semester V</button>
+      <div class="dropdown-content">
+        <a href="#">Course 1</a>
+        <a href="#">Course 2</a>
+        <a href="#">Course 3</a>
+        <a href="#">Course 4</a>
+        <a href="#">Course 5</a>
+        <a href="#">Course 6</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Semester VII</button>
+      <div class="dropdown-content">
+        <a href="#">Course 1</a>
+        <a href="#">Course 2</a>
+        <a href="#">Course 3</a>
+        <a href="#">Course 4</a>
+        <a href="#">Course 5</a>
+        <a href="#">Course 6</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

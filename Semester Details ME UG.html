@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semester Courses</title>
+  <style>
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-header {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      animation: slideDown 0.7s ease-out;
+    }
+
+    h1 {
+      margin: 30px 0 10px;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .grid-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-bottom: 30px;
+    }
+
+    .semester-block {
+      background-color: white;
+      padding: 20px;
+      border-radius: 15px;
+      width: 400px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    .semester-title {
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: #003366;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .course-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .course-button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+      width: 90%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-decoration: none;
+      text-align: center;
+      display: inline-block;
+    }
+
+    .course-button:hover {
+      background-color: #002244;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 900px) {
+      .semester-block {
+        width: 100%;
+        max-width: 400px;
+      }
+
+      .grid-row {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-header">
+    Course Guide
+  </div>
+
+  <h1>B Tech - Mechanical Engineering</h1>
+
+  <!-- First Row: Semester I and III -->
+  <div class="grid-row">
+    <div class="semester-block">
+      <div class="semester-title">Semester I</div>
+      <div class="course-buttons">
+        <button class="course-button">Quantum Mechanics & Waves and
+Oscillations </button>
+        <a class="course-button" href="Calculus CSE UG.html" target="_blank">Calculus</a>
+        <button class="course-button">Engineering Mechanics</button>
+       <a class="course-button" href="Computer Systems and programming CSE UG.html" target="_blank">Computer System and
+Programming</a>
+        <button class="course-button">Environment and Ecology</button>
+        <a class="course-button" href="Entrepreneurship 101 CIV UG.html" target="_blank">Entrepreneurship 101</a>
+      </div>
+    </div>
+
+    <div class="semester-block">
+      <div class="semester-title">Semester III</div>
+      <div class="course-buttons">
+        <a class="course-button" href="Fluid Dynamics CIV UG.html" target="_blank">Introduction to Economics</a>
+        <a class="course-button" href="Manufacturing Process 1.html" target="_blank">Manufacturing Process -I</a>
+        <a class="course-button" href="Fluid Dynamics CIV UG.html" target="_blank">Fluid Dynamics </a>
+        <button class="course-button">Basic Electrical and Electronics
+Engineering</button>
+        <button class="course-button">Fundamentals of Engineering
+Materials</button>
+        <a class="course-button" href="Numerical Methods CSE UG.html" target="_blank">Numerical Methods</a>
+	<button class="course-button">Electrical and Electronics Design</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Second Row: Semester V and VII -->
+  <div class="grid-row">
+    <div class="semester-block">
+      <div class="semester-title">Semester V</div>
+      <div class="course-buttons">
+        <button class="course-button">Energy Systems and Technologies</button>
+         <a class="course-button" href="Machine design.html" target="_blank">Machine Design</a>
+        <a class="course-button" href="Manufacturing System Design.html" target="_blank">Manufacturing System Design</a>
+        <button class="course-button">Mechanical Vibration</button>
+      </div>
+    </div>
+
+    <div class="semester-block">
+      <div class="semester-title">Semester VII</div>
+      <div class="course-buttons">
+        <button class="course-button">Physics of Nuclear Reactors</button>
+        <button class="course-button">Additive Manufacturing</button>
+        <button class="course-button">Composite Materials and Design</button>
+        <button class="course-button">Experimental Methods in Thermal and Fluid Sciences</button>
+        <button class="course-button">Compressible Fluid Flow</button>
+        <button class="course-button">Finite Element Methods</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+

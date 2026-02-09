@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semester Courses</title>
+  <style>
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-header {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      animation: slideDown 0.7s ease-out;
+    }
+
+    h1 {
+      margin: 30px 0 10px;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .semester-block {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    .semester-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #003366;
+      text-align: center;
+    }
+
+    .course-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .course-button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+      min-width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .course-button:hover {
+      background-color: #002244;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-header">
+    Course Guide
+  </div>
+
+  <h1>Electrical Engineering (CSP)</h1>
+
+  <!-- Semester I -->
+  <div class="semester-block">
+    <div class="semester-title">Semester I</div>
+    <div class="course-buttons">
+      <a class="course-button" href="Signal Theory.html" target="_blank">Signal Theory</a>
+      <a class="course-button" href="Advanced Digital Signal Processing.html" target="_blank">Advanced Digital Signal Processing</a>
+      <a class="course-button" href="Digital Communication EE UG.html" target="_blank">Digital Communications</a>
+      <a class="course-button" href="RF System.html" target="_blank">RF Systems</a>
+      <a class="course-button" href="Adaptive Signal Processing.html" target="_blank">Adaptive Signal Processing</a>
+    </div>
+  </div>
+
+  <!-- Semester III -->
+  <div class="semester-block">
+    <div class="semester-title">Semester III</div>
+    <div class="course-buttons">
+      <button class="course-button">Speech and Audio Processing</button>
+      <button class="course-button">Detection & Estimation Theory</button>
+      <a class="course-button" href="Adaptive Signal Processing.html" target="_blank">Adaptive Signal Processing</a>
+      <button class="course-button">Introduction to Internet of Things</button>
+      <a class="course-button" href="Satellite Communication.html" target="_blank">Satellite Communication</a>
+      <a class="course-button" href="Nonlinear Dynamics and Intelligent Control.html" target="_blank">Nonlinear Dynamics and Intelligent Control</a>
+    </div>
+  </div>
+   <h1>Electrical Engineering (VLSI)</h1>
+
+  <!-- Semester I -->
+  <div class="semester-block">
+    <div class="semester-title">Semester I</div>
+    <div class="course-buttons">
+      <a class="course-button" href="Advanced Digital Signal Processing.html" target="_blank">Advanced Digital Signal Processing</a>
+      <a class="course-button" href="Microwave Measurements.html" target="_blank">Microwave Measurements</a>
+      <a class="course-button" href="RF System.html" target="_blank">RF System</button>
+      <a class="course-button" href="Advanced Digital System Design.html" target="_blank">Advanced Digital System Design</a>
+      <button class="course-button">Solid State Devices</button>
+      <a class="course-button" href="Digital VLSI Design.html" target="_blank">Digital VLSI Design</a>
+      <a class="course-button" href="Adaptive Signal Processing.html" target="_blank">Adaptive Signal Processing</a>
+      
+    </div>
+  </div>
+
+  <!-- Semester III -->
+  <div class="semester-block">
+    <div class="semester-title">Semester III</div>
+    <div class="course-buttons">
+      <a class="course-button" href="RF Integrated Circuits.html" target="_blank">RF Integrated Circuits</a>
+      <button class="course-button">Detection & Estimation Theory</button>
+      <a class="course-button" href="Adaptive Signal Processing.html" target="_blank">Adaptive Signal Processing</a>
+      <button class="course-button">Introduction to Internet of Things</button>
+      <a class="course-button" href="Nonlinear Dynamics and Intelligent Control.html" target="_blank">Nonlinear Dynamics and Intelligent Control</a>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
