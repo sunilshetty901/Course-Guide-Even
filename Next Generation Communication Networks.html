@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Materials</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 40px 20px;
+      color: #1f2937;
+    }
+
+    h1 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 40px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .block {
+      background: #ffffff url('https://www.transparenttextures.com/patterns/cubes.png');
+      border-radius: 15px;
+      padding: 30px 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 24px;
+      color: #003366;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .book-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .book-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #003366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      flex-wrap: wrap;
+    }
+
+    .book-title {
+      flex: 1 1 60%;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .book-icon {
+      width: 120px;
+      height: 150px;
+    }
+
+    .action-button {
+      background-color: #ffffff;
+      color: #003366;
+      border: none;
+      border-radius: 5px;
+      padding: 6px 12px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, transform 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .action-button:hover {
+      background-color: #e0e0e0;
+      transform: translateY(-2px);
+    }
+
+    .eresource-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .eresource-card {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      width: 220px;
+      height: 220px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      transition: transform 0.3s;
+      text-decoration: none;
+    }
+
+    .eresource-card span {
+      font-size: 18px;
+      font-weight: bold;
+      z-index: 2;
+      position: relative;
+    }
+
+    .eresource-card .overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 51, 102, 0.5);
+      transition: background-color 0.3s;
+      border-radius: 20px;
+      z-index: 1;
+    }
+
+    .eresource-card:hover .overlay {
+      background-color: rgba(0, 51, 102, 0.8);
+    }
+
+    .eresource-card:hover {
+      transform: translateY(-5px);
+    }
+    .journals-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .journals-card {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      width: 220px;
+      height: 220px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      transition: transform 0.3s;
+      text-decoration: none;
+    }
+
+    .journals-grid span {
+      font-size: 18px;
+      font-weight: bold;
+      z-index: 2;
+      position: relative;
+    }
+
+    .journals-card .overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 51, 102, 0.5);
+      transition: background-color 0.3s;
+      border-radius: 20px;
+      z-index: 1;
+    }
+
+    .journals-card:hover .overlay {
+      background-color: rgba(0, 51, 102, 0.8);
+    }
+
+    .journals-card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Course Materials</h1>
+
+  <div class="section block">
+    <div class="section-title">Textbooks</div>
+    <ul class="book-list">
+      <li class="book-item">
+        <div class="book-title"><img class="book-icon" src="Organic Chemistry.jpg" alt="Book Icon">Wireless Communications: Principles and Practice by T. S. Rappaport</div>
+        <div class="action-buttons">
+          <a class="action-button" href="http://10.10.10.45:8000/cgi-bin/koha/catalogue/detail.pl?biblionumber=35&searchid=scs_1753183574512" target="_blank">Check Availability</a>
+          <button class="action-button">Reserve</button>
+        </div>
+      </li>
+<li class="book-item">
+        <div class="book-title"><img class="book-icon" src="Organic Chemistry.jpg" alt="Book Icon">Fundamentals of Wireless Communication by D. Tse and P. Viswanath</div>
+        <div class="action-buttons">
+          <a class="action-button" href="http://10.10.10.45:8000/cgi-bin/koha/catalogue/detail.pl?biblionumber=35&searchid=scs_1753183574512" target="_blank">Check Availability</a>
+          <button class="action-button">Reserve</button>
+        </div>
+      </li>
+<li class="book-item">
+        <div class="book-title"><img class="book-icon" src="Organic Chemistry.jpg" alt="Book Icon">Data Communications and Networking by B. A. Forouzan</div>
+        <div class="action-buttons">
+          <a class="action-button" href="http://10.10.10.45:8000/cgi-bin/koha/catalogue/detail.pl?biblionumber=35&searchid=scs_1753183574512" target="_blank">Check Availability</a>
+          <button class="action-button">Reserve</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section block">
+    <div class="section-title">Reference Books</div>
+    <ul class="book-list">
+      <li class="book-item">
+        <div class="book-title"><img class="book-icon" src="Organic Chemistry.jpg" alt="Book Icon">Wireless Communications by A. Goldsmith</div>
+        <div class="action-buttons">
+          <a class="action-button" href="http://10.10.10.45:8000/cgi-bin/koha/catalogue/detail.pl?biblionumber=35&searchid=scs_1753183574512" target="_blank">Check Availability</a>
+          <button class="action-button">Reserve</button>
+        </div>
+      </li>
+li class="book-item">
+        <div class="book-title"><img class="book-icon" src="Organic Chemistry.jpg" alt="Book Icon">Communication Networks: Fundamental Concepts and Key Architectures by A. Leon-Garcia and I. Widjaja</div>
+        <div class="action-buttons">
+          <a class="action-button" href="http://10.10.10.45:8000/cgi-bin/koha/catalogue/detail.pl?biblionumber=35&searchid=scs_1753183574512" target="_blank">Check Availability</a>
+          <button class="action-button">Reserve</button>
+        </div>
+      </li>
+li class="book-item">
+        <div class="book-title"><img class="book-icon" src="Organic Chemistry.jpg" alt="Book Icon">Computer Networks by A. S. Tanenbaum and D. Wetherall</div>
+        <div class="action-buttons">
+          <a class="action-button" href="http://10.10.10.45:8000/cgi-bin/koha/catalogue/detail.pl?biblionumber=35&searchid=scs_1753183574512" target="_blank">Check Availability</a>
+          <button class="action-button">Reserve</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Access to E-Resources</div>
+    <div class="section-title">Full Text Databases</div>
+    <div class="eresource-grid">
+      <a class="eresource-card" href="https://dl.acm.org/" target="_blank"
+         style="background-image: url('https://res.cloudinary.com/drqmgoe6a/image/upload/v1753265885/ACM_grjzsc.jpg');">
+        <div class="overlay"></div>
+        <span>ACM Digital Library</span>
+      </a>
+      <a class="eresource-card" href="https://www.sciencedirect.com/" target="_blank"
+         style="background-image: url('https://res.cloudinary.com/drqmgoe6a/image/upload/v1753265486/science-direct-logo_mqp9ce.png');">
+        <div class="overlay"></div>
+        <span>Science Direct</span>
+      </a>
+      <a class="eresource-card" href="https://pubs.acs.org/" target="_blank"
+         style="background-image: url('https://res.cloudinary.com/drqmgoe6a/image/upload/v1753266412/ACSpublications_haekbm.png');">
+        <div class="overlay"></div>
+        <span>ACS Publications</span>
+      </a>
+      <a class="eresource-card" href="https://www.annualreviews.org/" target="_blank"
+         style="background-image: url('https://res.cloudinary.com/drqmgoe6a/image/upload/v1753266613/1895901161-a09e575bc61f57e5f2fb101db55f7be576f8a585e2a3b388618a958041871bc4-d_plmvpm.webp');">
+        <div class="overlay"></div>
+        <span>Annual Reviews</span>
+      </a>
+    </div>
+  </div>
+  <div class="section">
+    <div class="section-title">Individual Journals</div>
+    <div class="journals-grid">
+      <a class="journals-card" href="https://www.nature.com/natrevchem/" target="_blank"
+         style="background-image: url('https://res.cloudinary.com/drqmgoe6a/image/upload/v1753267749/Nature_Reviews_Chemistry_journal_cover_volume_1_issue_1_rg0egl.png');">
+        <div class="overlay"></div>
+        <span>Nature Reviews Chemistry</span>
+      </a>
+       <a class="journals-card" href="https://www.nature.com/nchem/" target="_blank"
+         style="background-image: url('https://res.cloudinary.com/drqmgoe6a/image/upload/v1753267748/12_pdxs7o.png');">
+        <div class="overlay"></div>
+        <span>Nature Chemistry</span>
+      </a>
+
+</body>
+</html>
