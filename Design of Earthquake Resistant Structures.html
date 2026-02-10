@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Materials</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 40px 20px;
+      color: #1f2937;
+    }
+
+    h1 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 40px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .block {
+      background: #ffffff url('https://www.transparenttextures.com/patterns/cubes.png');
+      border-radius: 15px;
+      padding: 30px 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 24px;
+      color: #003366;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .book-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .book-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #003366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      flex-wrap: wrap;
+    }
+
+    .book-title {
+      flex: 1 1 60%;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .book-icon {
+      width: 120px;
+      height: 150px;
+    }
+
+    .action-button {
+      background-color: #ffffff;
+      color: #003366;
+      border: none;
+      border-radius: 5px;
+      padding: 6px 12px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, transform 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .action-button:hover {
+      background-color: #e0e0e0;
+      transform: translateY(-2px);
+    }
+
+    .eresource-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .eresource-card {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      width: 220px;
+      height: 220px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      transition: transform 0.3s;
+      text-decoration: none;
+    }
+
+    .eresource-card span {
+      font-size: 18px;
+      font-weight: bold;
+      z-index: 2;
+      position: relative;
+    }
+
+    .eresource-card .overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 51, 102, 0.5);
+      transition: background-color 0.3s;
+      border-radius: 20px;
+      z-index: 1;
+    }
+
+    .eresource-card:hover .overlay {
+      background-color: rgba(0, 51, 102, 0.8);
+    }
+
+    .eresource-card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Course Materials</h1>
+
+  <!-- Textbooks Section -->
+  <div class="section block">
+    <div class="section-title">Textbooks</div>
+    <ul class="book-list">
+		<li class="book-item">
+        <div class="book-title"><img class="book-icon" src="Earthquake Resistant Design of Structures by  S.K Duggal.jpg" alt="Book Icon">Earthquake Resistant Design of Structures by  S.K Duggal</div>
+        <div class="action-buttons">
+          <a class="action-button" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=134" target="_blank">Check Availability</a>
+          <a class="action-button" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-reserve.pl?biblionumber=134" target="_blank">Reserve</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Reference Books Section -->
+  <div class="section block">
+    <div class="section-title">Reference Books</div>
+    <ul class="book-list">
+      <li class="book-item">
+        <div class="book-title"><img class="book-icon" src="Earthquake-Resistant Structures Design, Build, and Retrofit by M.A Khan.jpg" alt="Book Icon">Earthquake-Resistant Structures: Design, Build, and Retrofit by M.A Khan</div>
+        <div class="action-buttons">
+          <button class="action-button">Check Availability</button>
+          <button class="action-button">Reserve</button>
+        </div>
+      </li>
+<li class="book-item">
+        <div class="book-title"><img class="book-icon" src="Earthquake Resistant Design of Buildings by Muhammad Hadi, Mehmet Eren Uz.jpg" alt="Book Icon">Earthquake Resistant Design of Buildings by Muhammad Hadi, Mehmet Eren Uz</div>
+        <div class="action-buttons">
+          <button class="action-button">Check Availability</button>
+          <button class="action-button">Reserve</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+	
+
+  <!-- E-Resources Section -->
+ <div class="section">
+    <div class="section-title">Access to E-Resources</div>
+    <div class="eresource-grid">
+      <a class="eresource-card" href="https://mathscinet.ams.org/mathscinet/publications-search" target="_blank"
+         style="background-image: url('https://res.cloudinary.com/drqmgoe6a/image/upload/v1753269328/ams-logo_xwrges.png');">
+        <div class="overlay"></div>
+        <span>MathsciNet</span>
+      </a>
+      <a class="eresource-card" href="https://arxiv.org/" target="_blank"
+         style="background-image: url('https://res.cloudinary.com/drqmgoe6a/image/upload/v1753269432/IzvjKckL_400x400_bs0cxo.jpg');">
+        <div class="overlay"></div>
+        <span>Arxiv</span>
+      </a>
+      <a class="eresource-card" href="https://projecteuclid.org/" target="_blank"
+         style="background-image: url('https://res.cloudinary.com/drqmgoe6a/image/upload/v1753269536/projecteuclid_znps8k.png');">
+        <div class="overlay"></div>
+        <span>Project Euclid</span>
+      </a>
+      <a class="eresource-card" href="https://www.sciencedirect.com/" target="_blank"
+         style="background-image: url('https://res.cloudinary.com/drqmgoe6a/image/upload/v1753265486/science-direct-logo_mqp9ce.png');">
+        <div class="overlay"></div>
+        <span>Science Direct</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
+
