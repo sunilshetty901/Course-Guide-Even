@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Semester Courses</title>
+  <style>
+    @keyframes slideDown {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    .top-header {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-size: 28px;
+      font-weight: bold;
+      animation: slideDown 0.7s ease-out;
+    }
+
+    h1 {
+      margin: 30px 0 10px;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    .semester-block {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    }
+
+    .semester-title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #003366;
+      text-align: center;
+    }
+
+    .course-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .course-button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+      min-width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .course-button:hover {
+      background-color: #002244;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-header">
+    Course Guide
+  </div>
+
+  <h1>Electrical Engineering (CSP)</h1>
+
+  <!-- Semester I -->
+  <div class="semester-block">
+    <div class="semester-title">Semester II</div>
+    <div class="course-buttons">
+      <a class="course-button" href="Signal Theory.html" target="_blank">Electrodynamics and Quantum Mechanics</a>
+      <a class="course-button" href="Data Structures and Algorithms.html" target="_blank">Data Structures and Algorithms</a>
+      <a class="course-button" href="Linear Algebra and Differential Equations - Copy.html" target="_blank">Linear Algebra and Differential Equations</a>
+      <a class="course-button" href="Electronics Systems.html" target="_blank">Electronic Systems</a>
+      <a class="course-button" href="Environment and Ecology.html" target="_blank">Environment and Ecology</a>
+      <a class="course-button" href="Entrepreneurship 101 CIV UG.html" target="_blank">Entrepreneurship</a>
+      <a class="course-button" href="Adaptive Signal Processing.html" target="_blank">Network Analysis and Synthesis</a>
+    </div>
+  </div>
+
+  <!-- Semester III -->
+  <div class="semester-block">
+    <div class="semester-title">Semester IV</div>
+    <div class="course-buttons">
+      <a class="course-button" href="Introduction to Economics.html" target="_blank">Introduction to Economics</a>
+      <button class="course-button">Engineering Thermodynamics </button>
+      <a class="course-button" href="Solid Mechanics.html" target="_blank">Solid Mechanics</a>
+      <button class="course-button">Engineering Standards</button>
+      <a class="course-button" href="Satellite Communication.html" target="_blank">Communication Systems</a>
+      <a class="course-button" href="Nonlinear Dynamics and Intelligent Control.html" target="_blank">RF Circuits and Antennas</a>
+    </div>
+  </div>
+   <h1>Electrical Engineering (VLSI)</h1>
+
+  <!-- Semester I -->
+  <div class="semester-block">
+    <div class="semester-title">Semester VI</div>
+    <div class="course-buttons">
+      <a class="course-button" href="Advanced Digital Signal Processing.html" target="_blank">Analog Electronics</a>
+      <a class="course-button" href="Power Engineering.html" target="_blank">Power Engineering</a>
+      <a class="course-button" href="Digital Signal Processing.html" target="_blank">Digital Signal Processing</a>
+      <a class="course-button" href="Deep Learning.html" target="_blank">Deep Learning</a>
+      <a class="course-button" href="Robotics and Autonomous Systems.html" target="_blank">Robotics and Autonomous Systems</a>
+      <a class="course-button" href="Applied Numerical Techniques in Electrical Engineering.html" target="_blank">Applied Numerical Techniques in Electrical Engineering</a>
+      <a class="course-button" href="Next Generation Communication Networks.html" target="_blank">Next Generation Communication Networks</a>
+      <a class="course-button" href="Statistical Foundations for Machine Learning.html" target="_blank">Statistical Foundation for Machine Learning</a>
+        <a class="course-button" href="Microwave and Millimeter Wave Integrated Circuits.html" target="_blank">Microwave and Millimeter Wave Integrated Circuits</a>
+        <a class="course-button" href="Adaptive Signal Processing.html" target="_blank">Wireless Communications</a>
+    </div>
+  </div>
+
+  <!-- Semester III -->
+  <div class="semester-block">
+    <div class="semester-title">Semester VIII</div>
+    <div class="course-buttons">
+      <a class="course-button" href="Introduction to Machine Learning.html" target="_blank">Introduction to Machine Learning</a>
+      <a class="course-button" href="Analog Integrated Circuit Design.html" target="_blank">Analog Integrated Circuit Design</a>
+      <a class="course-button" href="VLSI Technology.html" target="_blank">VLSI Technology</a>
+      <a class="course-button" href="Computer Architecture CSE UG.html" target="_blank">Computer Architecture</a>
+      <a class="course-button" href="ASIC Design Flow.html" target="_blank">ASIC Design Flow</a>
+      <a class="course-button" href="Detection and Estimation Theory.html" target="_blank">Detection and Estimation Theory</a>
+      <a class="course-button" href="Information and Coding Theory.html" target="_blank">Information and Coding Theory</a>
+      <a class="course-button" href="Nonlinear Dynamics and Intelligent Control.html" target="_blank">Wireless Communications</a>
+      <a class="course-button" href="Linear System Theory.html" target="_blank">Linear System Theory</a>
+       <a class="course-button" href="Deep Learning.html" target="_blank">Deep Learning</a>
+       <a class="course-button" href="Next Generation Communication Networks.html" target="_blank">Next Generation Communication Networks</a>
+       <a class="course-button" href="Microwave and Millimeter Wave Integrated Circuits.html" target="_blank">Microwave and Millimeter Wave Integrated Circuits</a>
+      <a class="course-button" href="Robotics and Autonomous Systems.html" target="_blank">Robotics and Autonomous Systems</a>
+      <a class="course-button" href="Statistical Foundations for Machine Learning.html" target="_blank">Statistical Foundation for Machine Learning </a>
+      <a class="course-button" href="Applied Numerical Techniques in Electrical Engineering.html" target="_blank">Applied Numerical Techniques in Electrical Engineering </a>
+      
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
