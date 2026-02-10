@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Materials</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 40px 20px;
+      color: #1f2937;
+    }
+
+    h1 {
+      text-align: center;
+      color: #003366;
+      margin-bottom: 40px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .block {
+      background: #ffffff url('https://www.transparenttextures.com/patterns/cubes.png');
+      border-radius: 15px;
+      padding: 30px 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 24px;
+      color: #003366;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    .book-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .book-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #003366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      flex-wrap: wrap;
+    }
+
+    .book-title {
+      flex: 1 1 60%;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .book-icon {
+      width: 120px;
+      height: 150px;
+    }
+
+    .action-button {
+      background-color: #ffffff;
+      color: #003366;
+      border: none;
+      border-radius: 5px;
+      padding: 6px 12px;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s, transform 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .action-button:hover {
+      background-color: #e0e0e0;
+      transform: translateY(-2px);
+    }
+
+    .eresource-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .eresource-card {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      width: 220px;
+      height: 220px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      transition: transform 0.3s;
+      text-decoration: none;
+    }
+
+    .eresource-card span {
+      font-size: 18px;
+      font-weight: bold;
+      z-index: 2;
+      position: relative;
+    }
+
+    .eresource-card .overlay {
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 51, 102, 0.5);
+      transition: background-color 0.3s;
+      border-radius: 20px;
+      z-index: 1;
+    }
+
+    .eresource-card:hover .overlay {
+      background-color: rgba(0, 51, 102, 0.8);
+    }
+
+    .eresource-card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Course Materials</h1>
+
+  <!-- Textbooks Section -->
+  <div class="section block">
+    <div class="section-title">Textbooks</div>
+    <ul class="book-list">
+      <li class="book-item">
+        <div class="book-title"><img class="book-icon" src="Computer Organization and Design.jpg" alt="Book Icon">Computer Organization and Design: The Hardware Software Interface, 5th Ed. by David A. Patterson, John L. Hennessy</div>
+        <div class="action-buttons">
+          <a class="action-button" href="http://10.10.10.45:8000/cgi-bin/koha/catalogue/detail.pl?biblionumber=344&searchid=scs_1753075981518" target="_blank">Check Availability</a>
+          <button class="action-button">Reserve</button>
+        </div>
+      </li>
+  </div>
+
+  <!-- Reference Books Section -->
+  <div class="section block">
+    <div class="section-title">Reference Books</div>
+    <ul class="book-list">
+      <li class="book-item">
+         <div class="book-title"><img class="book-icon" src="Digital Design and Computer Architecture.jpg" alt="Book Icon">Digital Design and Computer Architecture, 2nd Ed. by D. M. Harris and S. L. Harris</div>
+        <div class="action-buttons">
+          <button class="action-button">Check Availability</button>
+          <button class="action-button">Reserve</button>
+        </div>
+      </li>
+  </div>
+
+  <!-- E-Resources Section -->
+  <div class="section">
+    <div class="section-title">E-Resources</div>
+    <div class="eresource-grid">
+      <a class="eresource-card" href="https://ascelibrary.org/" target="_blank">
+        <img src="D:\ASCE Library.jpg" alt="ASCE Logo" />
+        <span>ASCE Library</span>
+      </a>
+      <a class="eresource-card" href="https://nptel.ac.in/" target="_blank">
+        <img src="https://nptel.ac.in/assets/images/nptel-logo.png" alt="NPTEL Logo" />
+        <span>NPTEL</span>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
+
