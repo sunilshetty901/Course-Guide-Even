@@ -322,45 +322,80 @@ footer {
 </footer>
 
 <script>
-const opacCatalog = [
-  { title: "CSE – UG", keywords: "computer science algorithms data structures ug", link: "Semester Details CSE UG.html" },
-  { title: "CSE – PG", keywords: "computer science ai machine learning pg", link: "Semester Details CSE PG.html" },
-  { title: "Civil – UG", keywords: "civil engineering structures geotechnical ug", link: "Semester Details CIV UG.html" },
-  { title: "Civil – PG", keywords: "civil engineering transportation pg", link: "Semester Details CIV PG.html" },
-  { title: "MSc Physics", keywords: "msc physics quantum mechanics", link: "Sem Details MSc Physics.html" },
-  { title: "MSc Chemistry", keywords: "msc chemistry organic inorganic", link: "Sem Details MSc Chemistry.html" }
-];
+let searchData = [];
 
-function opacSearch() {
-  const query = document.getElementById("opacSearch").value.toLowerCase();
-  const results = document.getElementById("opacResults");
-  results.innerHTML = "";
+// Load JSON
+async function loadSearchIndex() {
+  try {
+    const response = await fetch("search-index.json");
+    searchData = await response.json();
+  } catch (error) {
+    console.error("Search index failed:", error);
+  }
+}
+
+loadSearchIndex();
+
+const searchInput = document.getElementById("opacSearch");
+
+// Create dropdown
+const resultsBox = document.createElement("div");
+resultsBox.style.position = "absolute";
+resultsBox.style.top = "60px";
+resultsBox.style.width = "100%";
+resultsBox.style.background = "#ffffff";
+resultsBox.style.borderRadius = "10px";
+resultsBox.style.boxShadow = "0 10px 30px rgba(0,0,0,0.2)";
+resultsBox.style.display = "none";
+resultsBox.style.zIndex = "999";
+resultsBox.style.maxHeight = "300px";
+resultsBox.style.overflowY = "auto";
+
+document.querySelector(".opac-search").appendChild(resultsBox);
+
+// Search logic
+searchInput.addEventListener("input", function () {
+  const query = this.value.toLowerCase().trim();
+  resultsBox.innerHTML = "";
 
   if (query.length < 2) {
-    results.style.display = "none";
+    resultsBox.style.display = "none";
     return;
   }
 
-  const matches = opacCatalog.filter(item =>
-    item.title.toLowerCase().includes(query) || item.keywords.includes(query)
+  const matches = searchData.filter(item =>
+    item.title.toLowerCase().includes(query) ||
+    item.course.toLowerCase().includes(query) ||
+    item.department.toLowerCase().includes(query)
   );
 
   if (matches.length === 0) {
-    results.innerHTML = "<div class='opac-item'>No records found</div>";
+    resultsBox.innerHTML = "<div style='padding:12px;'>No records found</div>";
   } else {
     matches.forEach(item => {
       const div = document.createElement("div");
-      div.className = "opac-item";
-      div.innerHTML = `<div class="opac-title">${item.title}</div>
-                       <div class="opac-meta">Course / Subject</div>`;
-      div.onclick = () => window.open(item.link, "_blank");
-      results.appendChild(div);
+      div.style.padding = "12px";
+      div.style.cursor = "pointer";
+      div.style.borderBottom = "1px solid #eee";
+      div.innerHTML = `
+        <strong>${item.title}</strong><br>
+        <small>${item.course} – ${item.department}</small>
+      `;
+      div.onclick = () => window.open(item.url, "_blank");
+      resultsBox.appendChild(div);
     });
   }
-  results.style.display = "block";
-}
-</script>
 
+  resultsBox.style.display = "block";
+});
+
+// Close dropdown when clicking outside
+document.addEventListener("click", function(e) {
+  if (!document.querySelector(".opac-search").contains(e.target)) {
+    resultsBox.style.display = "none";
+  }
+});
+</script>
 </body>
 </div>
 
@@ -370,6 +405,7 @@ function opacSearch() {
 
 </body>
 </html>
+
 
 
 
