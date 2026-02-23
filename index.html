@@ -329,6 +329,7 @@ async function loadSearchIndex() {
   try {
     const response = await fetch("search-index.json");
     searchData = await response.json();
+    console.log("Loaded data:", searchData);
   } catch (error) {
     console.error("Search index failed:", error);
   }
@@ -405,6 +406,7 @@ document.addEventListener("click", function(e) {
 
 </body>
 </html>
+
 
 
 
