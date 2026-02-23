@@ -11,11 +11,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 
 <style>
+/* ================= ANIMATIONS ================= */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* ================= BASE ================= */
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -23,6 +25,7 @@ body {
   color: #1f2937;
 }
 
+/* ================= HEADER ================= */
 header {
   position: relative;
   background: radial-gradient(circle at top, #004080 0%, #001f4d 100%);
@@ -47,6 +50,7 @@ header p {
   animation: fadeInUp 1.2s ease-out;
 }
 
+/* ================= OPAC SEARCH ================= */
 .opac-search {
   position: absolute;
   top: 30px;
@@ -64,12 +68,14 @@ header p {
   box-shadow: 0 6px 18px rgba(0,0,0,0.35);
 }
 
+/* ================= LAYOUT ================= */
 .container {
   max-width: 1600px;
   margin: auto;
   padding: 50px 25px;
 }
 
+/* STRICT 2-COLUMN GRID */
 .row {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -77,6 +83,7 @@ header p {
   margin-bottom: 40px;
 }
 
+/* ================= DEPARTMENT CARD ================= */
 .section {
   background: linear-gradient(180deg, #ffffff, #f8fafc);
   border-radius: 28px;
@@ -101,6 +108,7 @@ header p {
   padding-left: 16px;
 }
 
+/* ================= UG / PG TOOLS ================= */
 .tools {
   display: flex;
   gap: 20px;
@@ -115,6 +123,7 @@ header p {
   text-align: center;
   box-shadow: 0 10px 22px rgba(0,63,127,0.35);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .tool:hover {
@@ -125,6 +134,7 @@ header p {
 .tool img {
   width: 54px;
   margin-bottom: 14px;
+  filter: drop-shadow(0 4px 6px rgba(0,0,0,0.3));
 }
 
 .tool a {
@@ -133,8 +143,10 @@ header p {
   font-weight: 600;
   font-size: 1.15rem;
   color: #ffffff;
+  letter-spacing: 0.3px;
 }
 
+/* ================= FOOTER ================= */
 footer {
   background: #e2e8f0;
   text-align: center;
@@ -143,6 +155,7 @@ footer {
   color: #475569;
 }
 
+/* ================= MOBILE ================= */
 @media (max-width: 900px) {
   .row {
     grid-template-columns: 1fr;
@@ -158,101 +171,206 @@ footer {
 
 <body>
 
-<header>
+  <header>
   <h1>COURSE GUIDE</h1>
   <p>Mini OPAC for Library Resources</p>
 
   <div class="opac-search">
-    <input type="text" id="opacSearch" placeholder="Search course, subject, book...">
+    <input type="text" placeholder="Search course, subject, book...">
   </div>
 </header>
 
-<div class="container">
+  <div class="container">
 
-<!-- Your department sections remain SAME -->
-<!-- (No change in your rows and sections content) -->
+  <!-- Row 1 -->
+  <div class="row">
+    <div class="section">
+      <h2>Computer Science & Engineering</h2>
+      <div class="tools">
+        <div class="tool">
+          <img src="UG.png">
+          <a href="Semester Details CIV UG.html" target="_blank">Under Graduate</a>
+        </div>
+        <div class="tool">
+          <img src="UG.png">
+          <a href="Semester Details CSE PG.html" target="_blank">Post Graduate</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Electrical Engineering</h2>
+      <div class="tools">
+        <div class="tool">
+          <img src="UG.png">
+          <a href="Semester Details EE UG.html" target="_blank">Under Graduate</a>
+        </div>
+        <div class="tool">
+          <img src="UG.png">
+          <a href="Semester Details EE PG.html" target="_blank">Post Graduate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 2 -->
+  <div class="row">
+    <div class="section">
+      <h2>Civil Engineering</h2>
+      <div class="tools">
+        <div class="tool">
+          <img src="UG.png">
+          <a href="Semester Details CIV UG.html" target="_blank">Under Graduate</a>
+        </div>
+        <div class="tool">
+          <img src="UG.png">
+          <a href="Semester Details CIV PG.html" target="_blank">Post Graduate</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Mechanical Engineering</h2>
+      <div class="tools">
+        <div class="tool">
+          <img src="UG.png">
+          <a href="Semester Details ME UG.html" target="_blank">Under Graduate</a>
+        </div>
+        <div class="tool">
+          <img src="UG.png">
+          <a href="Semester Details ME PG.html" target="_blank">Post Graduate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 3 -->
+  <div class="row">
+    <div class="section">
+      <h2>Materials Engineering</h2>
+      <div class="tools">
+        <div class="tool">
+          <img src="UG.png">
+          <a href="Semester Details MTE UG.html" target="_blank">Under Graduate</a>
+        </div>
+        <div class="tool">
+          <img src="UG.png">
+          <a href="Semester Details MAT PG.html" target="_blank">Post Graduate</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Chemical Engineering</h2>
+      <div class="tools">
+        <div class="tool">
+          <img src="UG.png">
+          <a href="Semester Details CE UG.html" target="_blank">Under Graduate</a>
+        </div>
+        <div class="tool">
+          <img src="UG.png">
+          <a href="Semester Details CE PG.html" target="_blank">Post Graduate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 4 -->
+  <div class="row center">
+    <div class="section">
+      <h2>Bio Sciences & Bio Engineering</h2>
+      <div class="tools">
+        <div class="tool">
+          <img src="UG.png">
+          <a href="Semester Details BSBE UG.html" target="_blank">Under Graduate</a>
+        </div>
+        <div class="tool">
+          <img src="UG.png">
+          <a href="Semester Details BSBE PG.html" target="_blank">Post Graduate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 5 -->
+  <div class="row center">
+    <div class="section">
+      <h2>MSc Physics</h2>
+      <div class="tools">
+        <div class="tool">
+          <img src="UG.png">
+          <a href="Sem Details MSc Physics.html" target="_blank">Course Content</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>MSc Chemistry</h2>
+      <div class="tools">
+        <div class="tool">
+          <img src="UG.png">
+          <a href="Sem Details MSc Chemistry.html" target="_blank">Course Content</a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
 
 <footer>
-  &copy; 2025 Course Guide · Library Portal
+  &copy; 2025 Course Guide. All rights reserved.
 </footer>
 
 <script>
-let searchData = [];
+const opacCatalog = [
+  { title: "CSE – UG", keywords: "computer science algorithms data structures ug", link: "Semester Details CSE UG.html" },
+  { title: "CSE – PG", keywords: "computer science ai machine learning pg", link: "Semester Details CSE PG.html" },
+  { title: "Civil – UG", keywords: "civil engineering structures geotechnical ug", link: "Semester Details CIV UG.html" },
+  { title: "Civil – PG", keywords: "civil engineering transportation pg", link: "Semester Details CIV PG.html" },
+  { title: "MSc Physics", keywords: "msc physics quantum mechanics", link: "Sem Details MSc Physics.html" },
+  { title: "MSc Chemistry", keywords: "msc chemistry organic inorganic", link: "Sem Details MSc Chemistry.html" }
+];
 
-// Load JSON
-async function loadSearchIndex() {
-  try {
-    const response = await fetch("search-index.json");
-    searchData = await response.json();
-  } catch (error) {
-    console.error("Search index failed:", error);
-  }
-}
-
-loadSearchIndex();
-
-const searchInput = document.getElementById("opacSearch");
-
-// Create dropdown
-const resultsBox = document.createElement("div");
-resultsBox.style.position = "absolute";
-resultsBox.style.top = "60px";
-resultsBox.style.width = "100%";
-resultsBox.style.background = "#ffffff";
-resultsBox.style.borderRadius = "10px";
-resultsBox.style.boxShadow = "0 10px 30px rgba(0,0,0,0.2)";
-resultsBox.style.display = "none";
-resultsBox.style.zIndex = "999";
-resultsBox.style.maxHeight = "300px";
-resultsBox.style.overflowY = "auto";
-
-document.querySelector(".opac-search").appendChild(resultsBox);
-
-// Search logic
-searchInput.addEventListener("input", function () {
-  const query = this.value.toLowerCase().trim();
-  resultsBox.innerHTML = "";
+function opacSearch() {
+  const query = document.getElementById("opacSearch").value.toLowerCase();
+  const results = document.getElementById("opacResults");
+  results.innerHTML = "";
 
   if (query.length < 2) {
-    resultsBox.style.display = "none";
+    results.style.display = "none";
     return;
   }
 
-  const matches = searchData.filter(item =>
-    item.title.toLowerCase().includes(query) ||
-    item.course.toLowerCase().includes(query) ||
-    item.department.toLowerCase().includes(query)
+  const matches = opacCatalog.filter(item =>
+    item.title.toLowerCase().includes(query) || item.keywords.includes(query)
   );
 
   if (matches.length === 0) {
-    resultsBox.innerHTML = "<div style='padding:12px;'>No records found</div>";
+    results.innerHTML = "<div class='opac-item'>No records found</div>";
   } else {
     matches.forEach(item => {
       const div = document.createElement("div");
-      div.style.padding = "12px";
-      div.style.cursor = "pointer";
-      div.style.borderBottom = "1px solid #eee";
-      div.innerHTML = `
-        <strong>${item.title}</strong><br>
-        <small>${item.course} – ${item.department}</small>
-      `;
-      div.onclick = () => window.open(item.url, "_blank");
-      resultsBox.appendChild(div);
+      div.className = "opac-item";
+      div.innerHTML = `<div class="opac-title">${item.title}</div>
+                       <div class="opac-meta">Course / Subject</div>`;
+      div.onclick = () => window.open(item.link, "_blank");
+      results.appendChild(div);
     });
   }
-
-  resultsBox.style.display = "block";
-});
-
-// Close dropdown when clicking outside
-document.addEventListener("click", function(e) {
-  if (!document.querySelector(".opac-search").contains(e.target)) {
-    resultsBox.style.display = "none";
-  }
-});
+  results.style.display = "block";
+}
 </script>
 
 </body>
+</div>
+
+<footer>
+  © 2025 Course Guide · Library Portal
+</footer>
+
+</body>
 </html>
+
+
+
+
