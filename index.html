@@ -406,8 +406,7 @@ searchInput.addEventListener("input", function () {
 
   const matches = searchData.filter(item =>
     item.title.toLowerCase().includes(query) ||
-    item.course.toLowerCase().includes(query) ||
-    item.department.toLowerCase().includes(query)
+    item.course.toLowerCase().includes(query)
   );
 
   if (matches.length === 0) {
@@ -420,7 +419,7 @@ searchInput.addEventListener("input", function () {
       div.style.borderBottom = "1px solid #eee";
       div.innerHTML = `
         <strong style="color:#111;">${item.title}</strong><br>
-        <small style="color:#555;">${item.course} – ${item.department}</small>
+        <small style="color:#555;">${item.course}</small>
       `;
       div.onclick = () => window.open(item.url, "_blank");
       resultsBox.appendChild(div);
@@ -444,6 +443,7 @@ document.addEventListener("click", function(e) {
   © 2025 Course Guide · Library Portal
 </footer>
 </html>
+
 
 
 
