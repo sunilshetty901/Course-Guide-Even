@@ -3,103 +3,156 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Semester Courses</title>
+  <title>Course Guide – Civil Engineering</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <style>
-    @keyframes slideDown {
-      0% {
-        transform: translateY(-100%);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0);
-        opacity: 1;
-      }
+    :root {
+      --primary: #003366;
+      --secondary: #0055aa;
+      --accent: #00b4d8;
+      --bg: #f1f5f9;
+      --card-bg: rgba(255, 255, 255, 0.85);
+    }
+
+    * {
+      box-sizing: border-box;
     }
 
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f6f8;
       margin: 0;
-      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #eef3f8, #ffffff);
+      color: #1f2933;
     }
 
+    /* HEADER */
     .top-header {
-      background-color: #003366;
+      position: relative;
+      background: linear-gradient(135deg, #003366, #0055aa);
       color: white;
+      padding: 28px 20px;
       text-align: center;
-      padding: 20px 0;
-      font-size: 28px;
-      font-weight: bold;
-      animation: slideDown 0.7s ease-out;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    /* LOGO */
+    .logo {
+      position: absolute;
+      top: 18px;
+      right: 25px;
+      height: 55px;
     }
 
     h1 {
-      margin: 30px 0 10px;
       text-align: center;
-      color: #2c3e50;
+      margin: 35px 0 25px;
+      font-weight: 600;
+      color: #003366;
     }
 
+    /* GRID */
     .grid-row {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 30px;
-      margin-bottom: 30px;
+      gap: 35px;
+      margin-bottom: 40px;
+      padding: 0 20px;
     }
 
+    /* SEMESTER CARD */
     .semester-block {
-      background-color: white;
-      padding: 20px;
-      border-radius: 15px;
-      width: 400px;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      background: var(--card-bg);
+      backdrop-filter: blur(10px);
+      padding: 25px;
+      border-radius: 20px;
+      width: 420px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .semester-block:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.18);
     }
 
     .semester-title {
-      font-size: 22px;
-      margin-bottom: 20px;
-      color: #003366;
       text-align: center;
-      font-weight: bold;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 22px;
+      position: relative;
     }
 
+    .semester-title::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--secondary), var(--accent));
+      margin: 10px auto 0;
+      border-radius: 5px;
+    }
+
+    /* BUTTONS */
     .course-buttons {
       display: flex;
       flex-direction: column;
-      gap: 12px;
-      align-items: center;
+      gap: 14px;
     }
 
     .course-button {
-      background-color: #003366;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 8px;
-      font-size: 14px;
-      cursor: pointer;
-      transition: background-color 0.3s, transform 0.3s;
-      width: 90%;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       text-decoration: none;
+      padding: 14px 18px;
+      font-size: 15px;
+      font-weight: 500;
+      color: white;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--secondary), var(--accent));
       text-align: center;
-      display: inline-block;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 18px rgba(0, 85, 170, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .course-button::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.25);
+      transition: left 0.4s ease;
+    }
+
+    .course-button:hover::before {
+      left: 0;
     }
 
     .course-button:hover {
-      background-color: #002244;
-      transform: translateY(-2px);
+      transform: translateY(-3px) scale(1.01);
+      box-shadow: 0 12px 25px rgba(0, 85, 170, 0.45);
     }
 
+    /* RESPONSIVE */
     @media (max-width: 900px) {
       .semester-block {
         width: 100%;
-        max-width: 400px;
+        max-width: 420px;
       }
 
-      .grid-row {
-        flex-direction: column;
-        align-items: center;
+      .logo {
+        height: 45px;
+        top: 15px;
+        right: 15px;
       }
     }
   </style>
@@ -130,6 +183,7 @@
 
 </body>
 </html>
+
 
 
 
