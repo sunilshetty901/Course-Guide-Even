@@ -58,7 +58,7 @@ header p {
 }
 
 .search-wrapper {
-  position: relative;
+  position: relative;   /* IMPORTANT */
   width: 600px;
   max-width: 90%;
 }
@@ -374,18 +374,21 @@ const searchBtn = document.getElementById("searchBtn"); // ✅ Added
 // Create dropdown
 const resultsBox = document.createElement("div");
 resultsBox.style.position = "absolute";
-resultsBox.style.top = "60px";
+resultsBox.style.top = "100%";
+resultsBox.style.left = "0";
 resultsBox.style.width = "100%";
+resultsBox.style.marginTop = "8px";
 resultsBox.style.background = "#ffffff";
 resultsBox.style.color = "#000000";
-resultsBox.style.borderRadius = "10px";
-resultsBox.style.boxShadow = "0 10px 30px rgba(0,0,0,0.2)";
+resultsBox.style.borderRadius = "12px";
+resultsBox.style.boxShadow = "0 15px 40px rgba(0,0,0,0.25)";
 resultsBox.style.display = "none";
-resultsBox.style.zIndex = "999";
-resultsBox.style.maxHeight = "300px";
+resultsBox.style.zIndex = "9999";
+resultsBox.style.maxHeight = "320px";
 resultsBox.style.overflowY = "auto";
 
 document.querySelector(".opac-search").appendChild(resultsBox);
+document.querySelector(".search-wrapper").appendChild(resultsBox);
 
 // ✅ Make Search Button Work
 if (searchBtn) {
@@ -443,6 +446,7 @@ document.addEventListener("click", function(e) {
   © 2025 Course Guide · Library Portal
 </footer>
 </html>
+
 
 
 
