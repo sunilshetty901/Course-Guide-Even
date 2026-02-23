@@ -345,6 +345,7 @@ resultsBox.style.position = "absolute";
 resultsBox.style.top = "60px";
 resultsBox.style.width = "100%";
 resultsBox.style.background = "#ffffff";
+resultsBox.style.color = "#000000";
 resultsBox.style.borderRadius = "10px";
 resultsBox.style.boxShadow = "0 10px 30px rgba(0,0,0,0.2)";
 resultsBox.style.display = "none";
@@ -379,8 +380,8 @@ searchInput.addEventListener("input", function () {
       div.style.cursor = "pointer";
       div.style.borderBottom = "1px solid #eee";
       div.innerHTML = `
-        <strong>${item.title}</strong><br>
-        <small>${item.course} – ${item.department}</small>
+        <strong style="color:#111;">${item.title}</strong><br>
+        <small style="color:#555;">${item.course} – ${item.department}</small>
       `;
       div.onclick = () => window.open(item.url, "_blank");
       resultsBox.appendChild(div);
@@ -404,6 +405,7 @@ document.addEventListener("click", function(e) {
   © 2025 Course Guide · Library Portal
 </footer>
 </html>
+
 
 
 
