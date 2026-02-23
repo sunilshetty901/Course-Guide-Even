@@ -1,119 +1,2876 @@
 [
   {
     "title": "Micro manufacturing processes by V K Jain",
-    "course": "Abrasive Machining and Finishing",
-    "department": "Mechanical Engineering",
-    "type": "Textbook",
+    "course": "Course Materials",
+    "department": "Unknown Department",
     "url": "Abrasive Machining and Finishing.html"
   },
   {
     "title": "Fundamentals of Microfabrication and Nanotechnology by Marc J. Madou",
-    "course": "Abrasive Machining and Finishing",
-    "department": "Mechanical Engineering",
-    "type": "Reference Book",
+    "course": "Course Materials",
+    "department": "Unknown Department",
     "url": "Abrasive Machining and Finishing.html"
   },
-  {"title": "Organic Chemistry, 7th Ed. by Morrison and Boyd",
-    "course": "Introduction to Fundamental and Applied Chemistry-II",
-    "department": "Computer Science & Engineering",
-    "type": "Textbook",
+  {
+    "title": "Micro manufacturing processes by V K Jain",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Abrasive Machining and Finishing.html"
+  },
+  {
+    "title": "Fundamentals of Microfabrication and Nanotechnology by Marc J. Madou",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Abrasive Machining and Finishing.html"
+  },
+  {
+    "title": "Design of Steel structures by N Subramanian",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Advanced Design of Steel Structures.html"
+  },
+  {
+    "title": "Limit State Design of Steel Structures by S K Duggal",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Advanced Design of Steel Structures.html"
+  },
+  {
+    "title": "Micro manufacturing processes by V K Jain",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Advanced Optical Microscopy for Bioimaging.html"
+  },
+  {
+    "title": "Fundamentals of Microfabrication and Nanotechnology by Marc J. Madou",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Advanced Optical Microscopy for Bioimaging.html"
+  },
+  {
+    "title": "Micro manufacturing processes by V K Jain",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Advanced Optical Microscopy for Bioimaging.html"
+  },
+  {
+    "title": "Fundamentals of Microfabrication and Nanotechnology by Marc J. Madou",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Advanced Optical Microscopy for Bioimaging.html"
+  },
+  {
+    "title": "Design of Analog CMOS Integrated Circuits, 1st Ed. by B. Razavi",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Analog Integrated Circuit Design.html"
+  },
+  {
+    "title": "Analysis and Design of Analog Integrated Circuits, 4th Ed. by Gray, P.R., Hurst, P. J., Lewis, S.H., Meyer, R.G.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Analog Integrated Circuit Design.html"
+  },
+  {
+    "title": "CMOS Mixed-Signal Circuit Design by R. Jacob Baker",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Analog Integrated Circuit Design.html"
+  },
+  {
+    "title": "Principles of CMOS VLSI Design by Neil H. E. Weste and K. Eshraghian",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Analog Integrated Circuit Design.html"
+  },
+  {
+    "title": "CMOS circuit design layout and simulation by Baker Jacob R.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Analog Integrated Circuit Design.html"
+  },
+  {
+    "title": "Numerical Methods for Engineers, 8th ed. by S. C. Chapra and R. P. Canale",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Applied Numerical Techniques in Electrical Engineering.html"
+  },
+  {
+    "title": "Applied Numerical Methods with MATLAB for Engineers and Scientists, 4th ed. by S. C. Chapra",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Applied Numerical Techniques in Electrical Engineering.html"
+  },
+  {
+    "title": "Numerical Methods for Engineers and Scientists, 3rd ed. by A. Gilat and V. Subramaniam",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Applied Numerical Techniques in Electrical Engineering.html"
+  },
+  {
+    "title": "Numerical Methods for Engineers, 2nd ed. by J. Kiusalaas",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Applied Numerical Techniques in Electrical Engineering.html"
+  },
+  {
+    "title": "Introduction to Numerical Methods in Engineering with MATLAB by Y. H. Ku",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Applied Numerical Techniques in Electrical Engineering.html"
+  },
+  {
+    "title": "Introduction to VLSI Design Flow by S. Saurabh",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "ASIC Design Flow.html"
+  },
+  {
+    "title": "Verilog HDL: a guide to digital design and synthesis by S. Palnitkar",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "ASIC Design Flow.html"
+  },
+  {
+    "title": "Cognition by Farmer, T. A., & Matlin, M. W.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Basic Cognitive Psychology.html"
+  },
+  {
+    "title": "Cognition by Farmer, T. A., & Matlin, M. W.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Basic Cognitive Psychology.html"
+  },
+  {
+    "title": "Biosensors: Fundamental and Applications",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Basics of Biosensors and Bioelectronics.html"
+  },
+  {
+    "title": "Biosensors: Theory and Applications by Buerk, Donald, G.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Basics of Biosensors and Bioelectronics.html"
+  },
+  {
+    "title": "Properties of Concrete by A. M. Neville",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Building Materials and Concrete Technology.html"
+  },
+  {
+    "title": "Concrete Technology by M. S. Shetty",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Building Materials and Concrete Technology.html"
+  },
+  {
+    "title": "Concrete by P.K. Mehta",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Building Materials and Concrete Technology.html"
+  },
+  {
+    "title": "Testing of concrete in structures by J. H. Bungey and S. G. Millard",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Building Materials and Concrete Technology.html"
+  },
+  {
+    "title": "Elements of X-ray Diffraction, 3rd Ed. by B.D. Cullity and S. R. Stock",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Characterization of Materials.html"
+  },
+  {
+    "title": "Scanning Electron Microscopy and X-Ray Microanalysis by Goldstein, J., Newbury, D.E., Joy, D.C., Lyman, C.E., Echlin, P., Lifshin, E., Sawyer, L., Michael, J.R.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Characterization of Materials.html"
+  },
+  {
+    "title": "Transmission Electron Microscopy by Carter and Williams",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Characterization of Materials.html"
+  },
+  {
+    "title": "Physical Metallurgy Principles, 4th Ed. by R.E. Reedhill",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Characterization of Materials.html"
+  },
+  {
+    "title": "Basic Principles and Calculations in Chemical Engineering by Himmelblau, D.M., Riggs, J.B.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Chemical and Process Engineering Calculations.html"
+  },
+  {
+    "title": "Elementary Principles of Chemical Processes by Felder R.M. and Rousseau, R.W.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Chemical and Process Engineering Calculations.html"
+  },
+  {
+    "title": "Stoichiometry by Bhatt, B.I. and Thakore, S.B.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Chemical and Process Engineering Calculations.html"
+  },
+  {
+    "title": "Chemical Process Principles by Hougen, O.A., Watson, K.M. and Ragatz, R.A.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Chemical and Process Engineering Calculations.html"
+  },
+  {
+    "title": "Handbook of Chemical Engineering Calculations by Chopey, N. and Hicks, T.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Chemical and Process Engineering Calculations.html"
+  },
+  {
+    "title": "Physical Chemistry by Atkins P and Paula J",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Chemical Kinetics and Thermodynamics.html"
+  },
+  {
+    "title": "Physical Chemistry by Castellan G W",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Chemical Kinetics and Thermodynamics.html"
+  },
+  {
+    "title": "Heterogeneous Catalysis: Fundamentals, Engineering and Characterizations by G. Palmisano, S. Al-Jitan, C. Garlisi",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Chemical Reaction Engineering - II.html"
+  },
+  {
+    "title": "Fundamental Concepts in Heterogeneous Catalysis by J.K. Nørskov, F. Studt, F. Abild-Pedersen, T. Bligaard",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Chemical Reaction Engineering - II.html"
+  },
+  {
+    "title": "Principles and Practice of Heterogeneous Catalysis by J.M. Thomas, W.J. Thomas",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Chemical Reaction Engineering - II.html"
+  },
+  {
+    "title": "Elements of Chemical Reaction Engineering, 3rd Ed. by H.S. Fogler",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Chemical Reaction Engineering - II.html"
+  },
+  {
+    "title": "Chemical Reaction Engineering, 3rd Ed. by O. Levinspile",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Chemical Reaction Engineering - II.html"
+  },
+  {
+    "title": "Elements of Chemical Reaction Engineering, 3rd Ed. by H.S. Fogler",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Chemical Reaction Engineering - II.html"
+  },
+  {
+    "title": "Chemical Reaction Engineering, 3rd Ed. by O. Levinspile",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Chemical Reaction Engineering - II.html"
+  },
+  {
+    "title": "Numerical Heat Transfer and Fluid Flow by S. V. Patankar",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Computational Fluid Dynamics and Heat Transfer.html"
+  },
+  {
+    "title": "Compututional Fluid Flow and Heat Transfer by K. Muralidhar and T. Sundararajan",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Computational Fluid Dynamics and Heat Transfer.html"
+  },
+  {
+    "title": "Introduction to Computer Fluid Dynamics by A. W. Date",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Computational Fluid Dynamics and Heat Transfer.html"
+  },
+  {
+    "title": "Computational Fluid Flow and Heat Transfer by  Tannehill, Anderson & Pletcher",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Computational Fluid Dynamics and Heat Transfer.html"
+  },
+  {
+    "title": "Computer Organization and Design: The Hardware Software Interface, 5th Ed. by David A. Patterson, John L. Hennessy",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Computer Architecture CSE UG.html"
+  },
+  {
+    "title": "Digital Design and Computer Architecture, 2nd Ed. by D. M. Harris and S. L. Harris",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Computer Architecture CSE UG.html"
+  },
+  {
+    "title": "Chemical Applications of Group Theory, 3rd Ed. by Cotton F A",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Contemporary Organic Synthesis.html"
+  },
+  {
+    "title": "Molecular Symmetry and Group Theory, 1st Ed. by Carter R L",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Contemporary Organic Synthesis.html"
+  },
+  {
+    "title": "Atomic & Molecular Symmetry Groups and Chemistry by Rakshit S C",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Contemporary Organic Synthesis.html"
+  },
+  {
+    "title": "Group Theory and Quantum Mechanics by Tinkham M",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Contemporary Organic Synthesis.html"
+  },
+  {
+    "title": "Molecular Quantum Mechanics, 2nd Ed. by Atkins W",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Contemporary Organic Synthesis.html"
+  },
+  {
+    "title": "Quantum Chemistry, 3rd Ed. by Levine N",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Contemporary Organic Synthesis.html"
+  },
+  {
+    "title": "Symmetry and Spectroscopy Of Molecules, 2nd Ed. by Reddy K V",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Contemporary Organic Synthesis.html"
+  },
+  {
+    "title": "Group Theory and Chemistry by Bishop D M",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Contemporary Organic Synthesis.html"
+  },
+  {
+    "title": "Symmetry and Spectroscopy: An Introduction to Vibrational and Electronic Spectroscopy by Harris D C and Bertolucci M D",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Contemporary Organic Synthesis.html"
+  },
+  {
+    "title": "Modern Control Engineering, 3rd Ed. by K. Ogata",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Control Engineering.html"
+  },
+  {
+    "title": "Automatic Control System, 7th Ed. by B. C. Kuo",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Control Engineering.html"
+  },
+  {
+    "title": "Control Systems Engineering by J. Nagrath M. Gopal",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Control Engineering.html"
+  },
+  {
+    "title": "Cryptography: Theory and Practice by Douglas Stinson",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Cryptography.html"
+  },
+  {
+    "title": "Introduction to Modern Cryptography by Jonathan Katz, Yehuda Lindell",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Cryptography.html"
+  },
+  {
+    "title": "A graduate Course in Applied Cryptography by Dan Boneh and Victor Shoup",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Cryptography.html"
+  },
+  {
+    "title": "Data Science for Engineers by Rengaswamy, Raghunathan, and Resmi Suresh",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Data Science for Chemical Engineers.html"
+  },
+  {
+    "title": "Pattern recognition and machine learning Vol.- 4 by Bishop, Christopher M., and Nasser M. Nasrabadi.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Data Science for Chemical Engineers.html"
+  },
+  {
+    "title": "Deep learning by Goodfellow, Ian, Yoshua Bengio, and Aaron Courville",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Data Science for Chemical Engineers.html"
+  },
+  {
+    "title": "Machine learning for engineers by Simeone, Osvaldo",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Data Science for Chemical Engineers.html"
+  },
+  {
+    "title": "Data Structures and Algorithms, 10th Ed. by AV Aho, J Hopcroft, JD Ullman",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Data Structures and Algorithms.html"
+  },
+  {
+    "title": "Fundamentals of Data Structures in C, 2nd ed. by Ellis Horowitz, Satraj Sahni and Susan Anderson-Freed",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Data Structures and Algorithms.html"
+  },
+  {
+    "title": "Data Structure- A Pseudo code approach with C by Richard F. Gilberg, Behrouz A. Forouzan",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Data Structures and Algorithms.html"
+  },
+  {
+    "title": "Data structure in C by Andrew S. Tanenbaum",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Data Structures and Algorithms.html"
+  },
+  {
+    "title": "Design and Analysis of Algorithms by AV Aho, J Hopcroft, JD Ullman",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Data Structures and Algorithms.html"
+  },
+  {
+    "title": "Data Structures and Algorithms - Concepts, Techniques and Algorithms, 1st Ed. by G. A. V. Pai",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Data Structures and Algorithms.html"
+  },
+  {
+    "title": "Engieering Optimization: Theory and Practice, 4th Ed. by Singiresu S. Rao",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Decision Theory and Design Optimization.html"
+  },
+  {
+    "title": "Optimization for engineering design - algorithms and examples by K.Deb",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Decision Theory and Design Optimization.html"
+  },
+  {
+    "title": "Engineering Design Optimization by Martins, J, Ning, A.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Decision Theory and Design Optimization.html"
+  },
+  {
+    "title": "Optimization Concepts and Applications in Engineering by Belegundu A. and T. Chandrupatla",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Decision Theory and Design Optimization.html"
+  },
+  {
+    "title": "Genetic Algorithms and Engineering Optimization by Gen, M. and R. Cheng",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Decision Theory and Design Optimization.html"
+  },
+  {
+    "title": "Introductory lectures on convex optimization: A basic course, Applied Optimization by Yurii Nesterov",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Decision Theory and Design Optimization.html"
+  },
+  {
+    "title": "Knowledge-based design systems by Coyne, R. D., M. A. Rosenman, A.D. Radford, M. Balachandran, J.S. Gero",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Decision Theory and Design Optimization.html"
+  },
+  {
+    "title": "Deep Learning by Ian Goodfellow and Yoshua Bengio and Aaron Courville",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Deep Learning.html"
+  },
+  {
+    "title": "Deep Learning with Python by François Chollet",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Deep Learning.html"
+  },
+  {
+    "title": "Foundations of Analog and Digital Electronics by Anant Agarwal and Jefferey Lang",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design and Analysis of Algorithms.html"
+  },
+  {
+    "title": "Signals and Systems by Oppenheim, Willsky, Nawab",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design and Analysis of Algorithms.html"
+  },
+  {
+    "title": "Foundations of Analog and Digital Electronics by Anant Agarwal and Jefferey Lang",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design and Analysis of Algorithms.html"
+  },
+  {
+    "title": "Design for Additive Manufacturing by Martin Leary",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design for Additive Manufacturing.html"
+  },
+  {
+    "title": "A Practical Guide to Design for Additive Manufacturing by  Olaf Diegel, Axel Nordin, Damien Motee",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design for Additive Manufacturing.html"
+  },
+  {
+    "title": "Additive Manufacturing Technologies: Rapid Prototyping to Direct Digital Manufacturing by Gibson, Rosen, Stucker",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design for Additive Manufacturing.html"
+  },
+  {
+    "title": "Rapid Manufacturing: An Industrial Revolution for the Digital Age by Hopkinson, Hague, Dickens",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design for Additive Manufacturing.html"
+  },
+  {
+    "title": "Advanced Manufacturing Technologies for Medical Applications by Gibson",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design for Additive Manufacturing.html"
+  },
+  {
+    "title": "Earthquake Resistant Design of Structures by  S.K Duggal",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design of Earthquake Resistant Structures.html"
+  },
+  {
+    "title": "Earthquake-Resistant Structures: Design, Build, and Retrofit by M.A Khan",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design of Earthquake Resistant Structures.html"
+  },
+  {
+    "title": "Earthquake Resistant Design of Buildings by Muhammad Hadi, Mehmet Eren Uz",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design of Earthquake Resistant Structures.html"
+  },
+  {
+    "title": "Water Resources Engineering: Principles and Practice by Satyanarayana Murthy Challa",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design of Hydraulic Structures.html"
+  },
+  {
+    "title": "Irrigation, Water Power and Water Resources Engineering by K R Arora",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design of Hydraulic Structures.html"
+  },
+  {
+    "title": "Irrigation Engineering and Hydraulic Structures by SK Garg",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design of Hydraulic Structures.html"
+  },
+  {
+    "title": "Design of Prestressed Concrete Structures by Lin, T.Y. and Burns, N.H.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design of Prestressed Structures.html"
+  },
+  {
+    "title": "Prestressed Concrete 6th Ed. by Krishna Raju, N.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design of Prestressed Structures.html"
+  },
+  {
+    "title": "Prestressed Concrete by Pandit, G.S. and Gupta, S.P.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design of Prestressed Structures.html"
+  },
+  {
+    "title": "Design of Prestressed Concrete Structures by Lin, T.Y. and Burns, N.H.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design of Prestressed Structures.html"
+  },
+  {
+    "title": "Prestressed Concrete 6th Ed. by Krishna Raju, N.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design of Prestressed Structures.html"
+  },
+  {
+    "title": "Prestressed Concrete by Pandit, G.S. and Gupta, S.P.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design of Prestressed Structures.html"
+  },
+  {
+    "title": "Design of Steel Structures - Limit State Method by Subramanian, N.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design of Steel Structures.html"
+  },
+  {
+    "title": "Design of steel structures by Duggal, S. K.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design of Steel Structures.html"
+  },
+  {
+    "title": "Design of Steel structures by N Subramanian",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design of Tall Buildings.html"
+  },
+  {
+    "title": "Limit State Design of Steel Structures by S K Duggal",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design of Tall Buildings.html"
+  },
+  {
+    "title": "The Design of Everyday Things by Don Norman",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design Thinking CSE UG.html"
+  },
+  {
+    "title": "Change by Design by Tim Brown",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design Thinking CSE UG.html"
+  },
+  {
+    "title": "Sprint by Jake Knapp",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design Thinking CSE UG.html"
+  },
+  {
+    "title": "Designing Your Life by Bill Burnett and Dave Evans",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design Thinking CSE UG.html"
+  },
+  {
+    "title": "Creative Confidence by David Kelley and Tom Kelley",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Design Thinking CSE UG.html"
+  },
+  {
+    "title": "Detection, Estimation, and Modulation Theory, Part I & II by H. L. Van Trees",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Detection and Estimation Theory.html"
+  },
+  {
+    "title": "Fundamentals of Statistical Signal Processing, Vol. I (Estimation) and Vol. II by S. Kay",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Detection and Estimation Theory.html"
+  },
+  {
+    "title": "Detection and Estimation Theory by D. Middleton & R. Esposito",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Detection and Estimation Theory.html"
+  },
+  {
+    "title": "An Introduction to Signal Detection and Estimation by H. Poor",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Detection and Estimation Theory.html"
+  },
+  {
+    "title": "Digital Signal Processing – Principles, Algorithms and Applications, 4th Ed. by John G. Proakis and Dimitris G.Manolakis",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Digital Signal Processing.html"
+  },
+  {
+    "title": "Digital Signal Processing, 1st Ed. by S. Essakirajan, T. Veerakumar, B. N. Subudhi",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Digital Signal Processing.html"
+  },
+  {
+    "title": "Discrete-Time Signal Processing, 8th Indian Reprint by A. V. Oppenheim, R.W. Schafer and J.R. Buck",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Digital Signal Processing.html"
+  },
+  {
+    "title": "Digital Signal Processing, 2nd Ed. by Emmanuel C. Ifeachor & Barrie. W. Jervis",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Digital Signal Processing.html"
+  },
+  {
+    "title": "Digital Signal Processing – A Computer Based Approach by Sanjit K. Mitra",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Digital Signal Processing.html"
+  },
+  {
+    "title": "Digital Signal Processing by Andreas Antoniou",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Digital Signal Processing.html"
+  },
+  {
+    "title": "Foundations of Analog and Digital Electronics by Anant Agarwal and Jefferey Lang",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Electronics Systems.html"
+  },
+  {
+    "title": "Signals and Systems by Oppenheim, Willsky, Nawab",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Electronics Systems.html"
+  },
+  {
+    "title": "Foundations of Analog and Digital Electronics by Anant Agarwal and Jefferey Lang",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Electronics Systems.html"
+  },
+  {
+    "title": "Tiny ML: Machine Learning with Tensorflow Lite on Arduino and Ultra-Low-Power Microcontrollers by Pete Warden and Daniel Situnayake",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Embedded Systems.html"
+  },
+  {
+    "title": "Modern Computer Architecture and Organization by Jim Ledin",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Embedded Systems.html"
+  },
+  {
+    "title": "Lean Startup Methodologies: Course material by Prof. Steve Blank",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Entrepreneurship 101 CIV UG.html"
+  },
+  {
+    "title": "Lean Startup Methodologies: Course material by Prof. Steve Blank",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Entrepreneurship 101 CIV UG.html"
+  },
+  {
+    "title": "Environmental Engineering by Peavy, H.S., Rowe, D.R. and Tchobanoglous, G.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Environment and Ecology.html"
+  },
+  {
+    "title": "Introduction to environmental engineering and science, 3rd Ed. by Masters G. M. & Ela W.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Environment and Ecology.html"
+  },
+  {
+    "title": "Environmental Engineering by Peavy, H.S., Rowe, D.R. and Tchobanoglous, G.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Environment and Ecology.html"
+  },
+  {
+    "title": "Introduction to environmental engineering and science by Masters G. M. & Ela W.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Environment and Ecology.html"
+  },
+  {
+    "title": "Corrosion Engineering, 3rd ed. by Mars G. Fontana",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Environmental Degradation of Engineering Materials.html"
+  },
+  {
+    "title": "Principles of Corrosion Engineering and Corrosion Control by Zaki Ahmed",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Environmental Degradation of Engineering Materials.html"
+  },
+  {
+    "title": "Materials Science and Engineering an Introduction by William D. Callister",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Environmental Degradation of Engineering Materials.html"
+  },
+  {
+    "title": "Finite element method linear static and dynamic finite element analysis by Thomas J. R. Hughes",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Finite Element Analysis.html"
+  },
+  {
+    "title": "A first course in finite elements: Jacob Fish and Ted Belytschko",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Finite Element Analysis.html"
+  },
+  {
+    "title": "Concepts and Applications of Finite Element Analysis by Cook, Malkus, Plesha and Witt",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Finite Element Analysis.html"
+  },
+  {
+    "title": "The Finite Element Method by Zienkiewicz and Taylor",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Finite Element Analysis.html"
+  },
+  {
+    "title": "Finite Element Procedures: K. J. Bathe",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Finite Element Analysis.html"
+  },
+  {
+    "title": "An introduction to the finite element method by J N Reddy",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Finite Element Analysis.html"
+  },
+  {
+    "title": "Finite Fields by R. Lidl and H. Niederreiter",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Finite Fields and Applications.html"
+  },
+  {
+    "title": "Handbook of Finite Fields by G. L. Mullen and D. Panario",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Finite Fields and Applications.html"
+  },
+  {
+    "title": "Fox and McDonald’s Introduction to Fluid Mechanics, 10th Ed. by R.W. Fox, A.T. McDonald, J.W. Mitchell",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fluid Flow Operations.html"
+  },
+  {
+    "title": "Chemical Engineering Fluid Mechanics, 3rd Ed. by R. Darby, R.P. Chhabra",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fluid Flow Operations.html"
+  },
+  {
+    "title": "Fluid Mechanics for Chemical Engineers, 3rd Ed. by N. de Nerves",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fluid Flow Operations.html"
+  },
+  {
+    "title": "Coulson and Richardson’s Chemical Engineering Vol-1, 7th Ed. by J.M. Coulson, J.F. Richarson, J. Backhurst, J. Hackner, R.P. Chhabra, V. Shankar,",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fluid Flow Operations.html"
+  },
+  {
+    "title": "Transport Processes and Separation Process Principles, 4th Ed. by C.J. Genakoplis",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fluid Flow Operations.html"
+  },
+  {
+    "title": "Introduction To Fluid Mechanics And Fluid Machines, 3rd Ed. by S.K. Som, G. Biswas, S. Chakraborty",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fluid Flow Operations.html"
+  },
+  {
+    "title": "Fracture Mechanics, Fundamentals and Applications by Anderson, T.L.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fracture Mechanics.html"
+  },
+  {
+    "title": "Fracture mechanics of rock by Atkinson, B.K.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fracture Mechanics.html"
+  },
+  {
+    "title": "Fundamentals of Fracture Mechanics by Knott, J.F.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fracture Mechanics.html"
+  },
+  {
+    "title": "Fundamentals of rock mechanics by Jaeger, J.C., Cook, N.G.W., Zimmerman, R.W.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fracture Mechanics.html"
+  },
+  {
+    "title": "Deformation and Fracture Mechanics of Engineering Materials by Hertzberg",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fracture Mechanics.html"
+  },
+  {
+    "title": "Elementary engineering fracture mechanics. 4th rev. ed. by Broek, D.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fracture Mechanics.html"
+  },
+  {
+    "title": "The practical use of fracture mechanics by Broek, D.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fracture Mechanics.html"
+  },
+  {
+    "title": "Principles of extractive metallurgy by Ahindra Ghosh and Hem Shankar Ray",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fundamentals of Metal Extraction.html"
+  },
+  {
+    "title": "Unit Processes of Extractive metallurgy by Robert D. Pehike",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fundamentals of Metal Extraction.html"
+  },
+  {
+    "title": "Ironmaking and Steel making by Ahindra Ghosh and Amit Chatterjee",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fundamentals of Metal Extraction.html"
+  },
+  {
+    "title": "Treatise of Process Metallurgy: Vol 3 Industrial Process by Sheshadri Seetharaman",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fundamentals of Metal Extraction.html"
+  },
+  {
+    "title": "Principals of Extractive Metallurgy by T. Rosenquist",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fundamentals of Metal Extraction.html"
+  },
+  {
+    "title": "Extraction of Non-ferrous Metals by H. S. Ray, R. Sridhar and K. P. Abraham",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fundamentals of Metal Extraction.html"
+  },
+  {
+    "title": "Principles and Applications of Tribology by Bhushan, B.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fundamentals of Tribology.html"
+  },
+  {
+    "title": "Applied Tribology: Bearing Design and Lubrication, 2nd Ed. by Khonsari, M. M. and Booser, E. R.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fundamentals of Tribology.html"
+  },
+  {
+    "title": "Engineering Tribology, 3rd Ed. by Stachowiak, G. and A W Batchelor, A. W.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fundamentals of Tribology.html"
+  },
+  {
+    "title": "Modeling and Analytical Methods in Tribology by Kudish, I. I. and Covitch, M. J.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Fundamentals of Tribology.html"
+  },
+  {
+    "title": "Pavement Analysis and Design, 2nd Ed. by Huang",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Geosynthetics in Road Structures Design and Construction.html"
+  },
+  {
+    "title": "Designing with geosynthetics, 6th Ed. by Robert M. Koerner",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Geosynthetics in Road Structures Design and Construction.html"
+  },
+  {
+    "title": "Handbook of Geosynthetic Engineering: geosynthetics and their applications by S.K.Shukla",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Geosynthetics in Road Structures Design and Construction.html"
+  },
+  {
+    "title": "Chemical Applications of Group Theory, 3rd Ed. by Cotton F A",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Group Theory Basics and Applications.html"
+  },
+  {
+    "title": "Molecular Symmetry and Group Theory, 1st Ed. by Carter R L",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Group Theory Basics and Applications.html"
+  },
+  {
+    "title": "Atomic & Molecular Symmetry Groups and Chemistry by Rakshit S C",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Group Theory Basics and Applications.html"
+  },
+  {
+    "title": "Group Theory and Quantum Mechanics by Tinkham M",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Group Theory Basics and Applications.html"
+  },
+  {
+    "title": "Molecular Quantum Mechanics, 2nd Ed. by Atkins W",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Group Theory Basics and Applications.html"
+  },
+  {
+    "title": "Quantum Chemistry, 3rd Ed. by Levine N",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Group Theory Basics and Applications.html"
+  },
+  {
+    "title": "Symmetry and Spectroscopy Of Molecules, 2nd Ed. by Reddy K V",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Group Theory Basics and Applications.html"
+  },
+  {
+    "title": "Group Theory and Chemistry by Bishop D M",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Group Theory Basics and Applications.html"
+  },
+  {
+    "title": "Symmetry and Spectroscopy: An Introduction to Vibrational and Electronic Spectroscopy by Harris D C and Bertolucci M D",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Group Theory Basics and Applications.html"
+  },
+  {
+    "title": "Heat Transfer by Y. V. C. Rao",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Heat Transfer Operations.html"
+  },
+  {
+    "title": "Unit operations of Chemical Engineering by W.L. McCabe, J.C., Smith, P. Harriott",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Heat Transfer Operations.html"
+  },
+  {
+    "title": "Incropera’s Principles of heat and mass transfer by F. P. Incropera, D.P. Dewitt, T.L. Bergman, A.S. Lavine",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Heat Transfer Operations.html"
+  },
+  {
+    "title": "Heat transfer by A. Bejan",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Heat Transfer Operations.html"
+  },
+  {
+    "title": "Process Heat Transfer by D.Q. Kern",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Heat Transfer Operations.html"
+  },
+  {
+    "title": "Fundamentals of Heat and Mass Transfer by Incropera, F.P. and Dewitt, D.P.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Heat Transfer.html"
+  },
+  {
+    "title": "Heat Transfer by Bejan, A.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Heat Transfer.html"
+  },
+  {
+    "title": "Heat Conduction by Kakac, S. and Yener, Y.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Heat Transfer.html"
+  },
+  {
+    "title": "Thermal Radiation Heat Transfer by Howell, J. R., Seigel, R., Menguc, M. P.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Heat Transfer.html"
+  },
+  {
+    "title": "Convection Heat Transfer by Bejan, A.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Heat Transfer.html"
+  },
+  {
+    "title": "Introduction to Parallel Processing - Algorithms and Architectures by Behrooz Parhami",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "High Performance Computer Systems.html"
+  },
+  {
+    "title": "The Design and Analysis of Parallel Algorithms by Selim G. AkL",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "High Performance Computer Systems.html"
+  },
+  {
+    "title": "Introduction to Parallel Computing, 2nd ed. by Ananth Grama, Anshul Gupta, George Karypis, Vipin Kumar",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "High Performance Computer Systems.html"
+  },
+  {
+    "title": "The Art of Multiprocessor Programming by Maurice Herlihy, Nir Shavit",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "High Performance Computer Systems.html"
+  },
+  {
+    "title": "Fuel Cell Fundamentals by O'Hayre, R.P.,S. Cha, W. Colella, F.B.Prinz",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Hydrogen Energy, Fuel Cells and Battery Technology.html"
+  },
+  {
+    "title": "Electrochemical Methods by Bard, A. J. , L. R., Faulkner",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Hydrogen Energy, Fuel Cells and Battery Technology.html"
+  },
+  {
+    "title": "Fuel Cells: principles, design and analysis by Shripad Revankar and Pradip Majumdar",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Hydrogen Energy, Fuel Cells and Battery Technology.html"
+  },
+  {
+    "title": "Mechanical Metallurgy, 3rd Ed. by G. E. Dieter",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Industrial Materials Processing.html"
+  },
+  {
+    "title": "Principles of Metal Casting by R. W. Heine, C. R. Loper, P. C. Rosenthal",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Industrial Materials Processing.html"
+  },
+  {
+    "title": "Modern Welding Technology by H B Cary",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Industrial Materials Processing.html"
+  },
+  {
+    "title": "Principles of Foundry Technology by P. L. Jain",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Industrial Materials Processing.html"
+  },
+  {
+    "title": "Welding Metallurgy, 2nd Ed. by Sindo Kou",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Industrial Materials Processing.html"
+  },
+  {
+    "title": "Metal Forming-Mechanics and Metallurgy, 3rd Ed. by W.F. Hosford. R.M. Caddell",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Industrial Materials Processing.html"
+  },
+  {
+    "title": "Introduction to Biostatistics by P.B. Hoebar and Bancroft, H.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Informatics for Health and Biology.html"
+  },
+  {
+    "title": "Biostatistics: A Foundation for Analysis in the Health Sciences by Daniel, W.W. and Cross, C.L.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Informatics for Health and Biology.html"
+  },
+  {
+    "title": "Fundamentals of Statistics Volumes I and II, 8th Ed. by Goon, A.M., Gupta, M. K. and Dasgupta, B.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Informatics for Health and Biology.html"
+  },
+  {
+    "title": "Fundamentals of Biostatistics, 2nd Ed. by Khan, I.A and Khanum, A.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Informatics for Health and Biology.html"
+  },
+  {
+    "title": "John E. Freund’s Mathematical Statistics with Applications, 8th Ed. by Miller, I. and Miller, M.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Informatics for Health and Biology.html"
+  },
+  {
+    "title": "Introduction to the Theory of Statistics, 3rd Ed. by Mood, A.M., Graybill, F.A. and Boes, D. C.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Informatics for Health and Biology.html"
+  },
+  {
+    "title": "Mathematical Statistics and Data Analysis, 3rd Ed. by John A. Rice",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Informatics for Health and Biology.html"
+  },
+  {
+    "title": "Biostar Handbook Student Edition",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Informatics for Health and Biology.html"
+  },
+  {
+    "title": "Elements of information theory by Cover, T.M. & Thomas, J.A.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Information and Coding Theory.html"
+  },
+  {
+    "title": "Error control coding by Lin and Costello",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Information and Coding Theory.html"
+  },
+  {
+    "title": "lTC and Cryptography, 2nd Ed. by Ranjan Bose",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Information and Coding Theory.html"
+  },
+  {
+    "title": "Cryptography and Network Security: Principles and Practice by William Stallings",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Information Security.html"
+  },
+  {
+    "title": "Fluid Mechanics, 6th Ed. by Pijush K. Kundu, Ira M. Cohen and David R. Dowlings",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Instabilities and Turbulence in Fluid Flows.html"
+  },
+  {
+    "title": "Turbulence, 1st Ed. by Christophe Bailly and Geneviève Comte-Bellot",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Instabilities and Turbulence in Fluid Flows.html"
+  },
+  {
+    "title": "Physical Hydrodynamics, 2nd Ed. by Etienne Guyon, Jean-Pierre Hulin, Luc Petit, Catalin D. Mitescu",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Instabilities and Turbulence in Fluid Flows.html"
+  },
+  {
+    "title": "Physical Fluid Dynamics, 2nd Ed. by  D. J. Tritton",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Instabilities and Turbulence in Fluid Flows.html"
+  },
+  {
+    "title": "Turbulence: An Introduction for Scientists and Engineers, 2nd Ed. by P. A. Davidson",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Instabilities and Turbulence in Fluid Flows.html"
+  },
+  {
+    "title": "An introduction to Combustion: Concepts and applications, 3rd Ed. by Stephen R Turns",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to combustion.html"
+  },
+  {
+    "title": "Combustion Physics by C.K Law",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to combustion.html"
+  },
+  {
+    "title": "Combustion by Irvin Glassman",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to combustion.html"
+  },
+  {
+    "title": "Economics, 4th ed. by Krugman, P., Wells, R.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Economics.html"
+  },
+  {
+    "title": "Economics, 4th ed. by Krugman, P., Wells, R.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Economics.html"
+  },
+  {
+    "title": "Organic Chemistry, 7th Ed. by Morrison and Boyd",
+    "course": "Course Materials",
+    "department": "Unknown Department",
     "url": "Introduction to Fundamental and applied chemistry II - Copy.html"
   },
-  {"title": "A Guidebook to Mechanism in Organic Chemistry by Petersykes",
-    "course": "Introduction to Fundamental and Applied Chemistry-II",
-    "department": "Computer Science & Engineering",
-    "type": "Textbook",
+  {
+    "title": "A Guidebook to Mechanism in Organic Chemistry by Petersykes",
+    "course": "Course Materials",
+    "department": "Unknown Department",
     "url": "Introduction to Fundamental and applied chemistry II - Copy.html"
   },
-  {"title": "Organic Chemistry, 7th Ed. by Paula Yurkanis Bruice",
-    "course": "Introduction to Fundamental and Applied Chemistry-II",
-    "department": "Computer Science & Engineering",
-    "type": "Textbook",
+  {
+    "title": "Organic Chemistry, 7th Ed. by Paula Yurkanis Bruice",
+    "course": "Course Materials",
+    "department": "Unknown Department",
     "url": "Introduction to Fundamental and applied chemistry II - Copy.html"
   },
-  {"title": "Stereochemistry by D G Morris",
-    "course": "Introduction to Fundamental and Applied Chemistry-II",
-    "department": "Computer Science & Engineering",
-    "type": "Textbook",
+  {
+    "title": "Stereochemistry by D G Morris",
+    "course": "Course Materials",
+    "department": "Unknown Department",
     "url": "Introduction to Fundamental and applied chemistry II - Copy.html"
   },
-  {"title": "Physical Chemistry, 6th Ed. by D G Morris",
-    "course": "Introduction to Fundamental and Applied Chemistry-II",
-    "department": "Computer Science & Engineering",
-    "type": "Textbook",
+  {
+    "title": "Physical Chemistry, 6th Ed. by D G Morris",
+    "course": "Course Materials",
+    "department": "Unknown Department",
     "url": "Introduction to Fundamental and applied chemistry II - Copy.html"
   },
-  {"title": "Physical Chemistry, 10th Ed. by Atkins and Paula",
-    "course": "Introduction to Fundamental and Applied Chemistry-II",
-    "department": "Computer Science & Engineering",
-    "type": "Textbook",
+  {
+    "title": "Physical Chemistry, 10th Ed. by Atkins and Paula",
+    "course": "Course Materials",
+    "department": "Unknown Department",
     "url": "Introduction to Fundamental and applied chemistry II - Copy.html"
   },
-  {"title": "Inorganic Chemistry: Principles of Structure and Reactivity, 4th Ed. by James E. Huheey, Ellen A. Keiter, Richard L. Keite",
-    "course": "Introduction to Fundamental and Applied Chemistry-II",
-    "department": "Computer Science & Engineering",
-    "type": "Textbook",
+  {
+    "title": "Inorganic Chemistry: Principles of Structure and Reactivity, 4th Ed. by James E. Huheey, Ellen A. Keiter, Richard L. Keite",
+    "course": "Course Materials",
+    "department": "Unknown Department",
     "url": "Introduction to Fundamental and applied chemistry II - Copy.html"
   },
-  {"title": "Bioinorganic Chemistry by I. Bertini, H. B. Gray, S. J. Lippard and J. S. Valentine",
-    "course": "Introduction to Fundamental and Applied Chemistry-II",
-    "department": "Computer Science & Engineering",
-    "type": "Textbook",
+  {
+    "title": "Bioinorganic Chemistry by I. Bertini, H. B. Gray, S. J. Lippard and J. S. Valentine",
+    "course": "Course Materials",
+    "department": "Unknown Department",
     "url": "Introduction to Fundamental and applied chemistry II - Copy.html"
   },
-  {"title": "Organic Chemistry, 7th Ed. by Morrison and Boyd",
-    "course": "Introduction to Fundamental and Applied Chemistry-II",
-    "department": "Computer Science & Engineering",
-    "type": "ReferenceBooks",
+  {
+    "title": "Organic Chemistry, 7th Ed. by Morrison and Boyd",
+    "course": "Course Materials",
+    "department": "Unknown Department",
     "url": "Introduction to Fundamental and applied chemistry II - Copy.html"
   },
-  {"title": "A Guidebook to Mechanism in Organic Chemistry by Petersykes",
-    "course": "Introduction to Fundamental and Applied Chemistry-II",
-    "department": "Computer Science & Engineering",
-    "type": "ReferenceBooks",
+  {
+    "title": "A Guidebook to Mechanism in Organic Chemistry by Petersykes",
+    "course": "Course Materials",
+    "department": "Unknown Department",
     "url": "Introduction to Fundamental and applied chemistry II - Copy.html"
   },
-  {"title": "Organic Chemistry, 7th Edition by Paula YurkanisBruice",
-    "course": "Introduction to Fundamental and Applied Chemistry-II",
-    "department": "Computer Science & Engineering",
-    "type": "ReferenceBooks",
+  {
+    "title": "Organic Chemistry, 7th Edition by Paula YurkanisBruice",
+    "course": "Course Materials",
+    "department": "Unknown Department",
     "url": "Introduction to Fundamental and applied chemistry II - Copy.html"
   },
-   {"title": "Stereochemistry by D G Morris",
-    "course": "Introduction to Fundamental and Applied Chemistry-II",
-    "department": "Computer Science & Engineering",
-    "type": "ReferenceBooks",
+  {
+    "title": "Stereochemistry by D G Morris",
+    "course": "Course Materials",
+    "department": "Unknown Department",
     "url": "Introduction to Fundamental and applied chemistry II - Copy.html"
   },
-   {"title": "Physical Chemistry, 6th Ed. by Levine",
-    "course": "Introduction to Fundamental and Applied Chemistry-II",
-    "department": "Computer Science & Engineering",
-    "type": "ReferenceBooks",
+  {
+    "title": "Physical Chemistry, 6th Ed. by Levine",
+    "course": "Course Materials",
+    "department": "Unknown Department",
     "url": "Introduction to Fundamental and applied chemistry II - Copy.html"
   },
-  {"title": "Physical Chemistry, 10th Ed. by Atkins and Paula",
-    "course": "Introduction to Fundamental and Applied Chemistry-II",
-    "department": "Computer Science & Engineering",
-    "type": "ReferenceBooks",
+  {
+    "title": "Physical Chemistry, 10th Ed. by Atkins and Paula",
+    "course": "Course Materials",
+    "department": "Unknown Department",
     "url": "Introduction to Fundamental and applied chemistry II - Copy.html"
   },
-  {"title": "Inorganic Chemistry: Principles of Structure and Reactivity, 4th Ed. by James E. Huheey, Ellen A. Keiter, Richard L. Keite",
-    "course": "Introduction to Fundamental and Applied Chemistry-II",
-    "department": "Computer Science & Engineering",
-    "type": "ReferenceBooks",
+  {
+    "title": "Inorganic Chemistry: Principles of Structure and Reactivity, 4th Ed.\nby James E. Huheey, Ellen A. Keiter, Richard L. Keite",
+    "course": "Course Materials",
+    "department": "Unknown Department",
     "url": "Introduction to Fundamental and applied chemistry II - Copy.html"
   },
-  {"title": "Organotransition Metal Chemistry: From Bonding to Catalysis, 1st Ed. by John Hartwig",
-    "course": "Introduction to Fundamental and Applied Chemistry-II",
-    "department": "Computer Science & Engineering",
-    "type": "ReferenceBooks",
+  {
+    "title": "Organotransition Metal Chemistry: From Bonding to Catalysis, 1st Ed.\nby John Hartwig",
+    "course": "Course Materials",
+    "department": "Unknown Department",
     "url": "Introduction to Fundamental and applied chemistry II - Copy.html"
   },
-  {"title": "Bioinorganic Chemistry By I. Bertini, H. B. Gray, S. J. Lippard and J. S. Valentine",
-    "course": "Introduction to Fundamental and Applied Chemistry-II",
-    "department": "Computer Science & Engineering",
-    "type": "ReferenceBooks",
+  {
+    "title": "Bioinorganic Chemistry By I. Bertini, H. B. Gray, S. J. Lippard and J. S. Valentine",
+    "course": "Course Materials",
+    "department": "Unknown Department",
     "url": "Introduction to Fundamental and applied chemistry II - Copy.html"
   },
-  
+  {
+    "title": "Miniature Guide to Critical Thinking by Richard Paul & Linda Elder",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Humanities.html"
+  },
+  {
+    "title": "Not for Profit: Why Democracy Needs the Humanities by Martha C. Nussbaum",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Humanities.html"
+  },
+  {
+    "title": "What is History? by E.H. Carr",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Humanities.html"
+  },
+  {
+    "title": "The Problems of Philosophy by Bertrand Russell",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Humanities.html"
+  },
+  {
+    "title": "The Argumentative Indian by Amartya Sen",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Humanities.html"
+  },
+  {
+    "title": "What is an Author? by Michel Foucault",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Humanities.html"
+  },
+  {
+    "title": "The Interpretation of Cultures by Clifford Geertz",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Humanities.html"
+  },
+  {
+    "title": "Mythologies by Roland Barthes",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Humanities.html"
+  },
+  {
+    "title": "The City Born Great by N.K. Jemisin",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Humanities.html"
+  },
+  {
+    "title": "Pattern Recognition and Machine Learning by C.M.Bishop",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Machine Learning.html"
+  },
+  {
+    "title": "Pattern Recognition, 4th Ed. by S.Theodoridis and K.Koutroumbas",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Machine Learning.html"
+  },
+  {
+    "title": "Pattern Classification by R.O.Duda, P.E.Hart and D.G.Stork",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Machine Learning.html"
+  },
+  {
+    "title": "Fundamentals and Applications of Microfluidics, 3rd Ed. by Nam-Trung Nguyen, Steven Wereley, Seyed Ali Mousavi Shaegh",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Microfluidics and Applications.html"
+  },
+  {
+    "title": "Theoretical Microfluidics, Vol-18 by Henrik Bruus",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Microfluidics and Applications.html"
+  },
+  {
+    "title": "Number hydrodynamics by John Happel, Howard Brenner, Low Reynolds",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Microfluidics and Applications.html"
+  },
+  {
+    "title": "Microfluidics and Microfabrication by Suman Chakraborty",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Microfluidics and Applications.html"
+  },
+  {
+    "title": "Introduction to Microfluidics by Patrik Tabeling",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Microfluidics and Applications.html"
+  },
+  {
+    "title": "Nanotechnology and Microfluidics by Xingyu Jiang",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Microfluidics and Applications.html"
+  },
+  {
+    "title": "Psychology by Baron, R. A. & Misra, G.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Psychology.html"
+  },
+  {
+    "title": "Understanding Psychology by Feldman, R. S.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introduction to Psychology.html"
+  },
+  {
+    "title": "Biology for Engineers by Suraishkumar G.K.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introductory Biology.html"
+  },
+  {
+    "title": "Biology for Engineers by Arthur T. Johnson",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introductory Biology.html"
+  },
+  {
+    "title": "Principles of Animal Locomotion by R. McNeill Alexander",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introductory Biology.html"
+  },
+  {
+    "title": "Physiology for Engineers by Michael Chappell and Stephen Payne",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introductory Biology.html"
+  },
+  {
+    "title": "Biology, 13th Ed. by Peter Raven and George Johnson and Kenneth Mason and Jonathan Losos",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introductory Biology.html"
+  },
+  {
+    "title": "Biology: A Global Approach, Global Edition by Neil Campbell and others",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Introductory Biology.html"
+  },
+  {
+    "title": "Fundamentals of Heat and Mass Transfer by Incropera, F.P. and Dewitt, D.P.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Kinematics and Dynamics of Machines.html"
+  },
+  {
+    "title": "Heat Transfer by Bejan, A.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Kinematics and Dynamics of Machines.html"
+  },
+  {
+    "title": "Heat Conduction by Kakac, S. and Yener, Y.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Kinematics and Dynamics of Machines.html"
+  },
+  {
+    "title": "Thermal Radiation Heat Transfer by Howell, J. R., Seigel, R., Menguc, M. P.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Kinematics and Dynamics of Machines.html"
+  },
+  {
+    "title": "Convection Heat Transfer by Bejan, A.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Kinematics and Dynamics of Machines.html"
+  },
+  {
+    "title": "Linear Algebra and its Applications, 4th Ed. by G. Strang",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Linear Algebra and Applications.html"
+  },
+  {
+    "title": "Linear Algebra and its Applications, 6th Ed. by D.C. Lay, S.R. Lay, J.J. McDonald",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Linear Algebra and Applications.html"
+  },
+  {
+    "title": "Linear Algebra Done Right, 4th Ed. by Sheldon Axler",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Linear Algebra and Applications.html"
+  },
+  {
+    "title": "Linear Algebra by K. Hoffman and R. Kunze",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Linear Algebra and Applications.html"
+  },
+  {
+    "title": "Algebra by M. Artin",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Linear Algebra and Applications.html"
+  },
+  {
+    "title": "Elementary Linear Algebra, 11th Ed. by H. Anton and C. Rorres",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Linear Algebra and Differential Equations - Copy.html"
+  },
+  {
+    "title": "Differential Equations, 2nd Ed. by G.F. Simmons",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Linear Algebra and Differential Equations - Copy.html"
+  },
+  {
+    "title": "Linear Algebra and its applications, 4th ed. by EG. Strang",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Linear Algebra and Differential Equations - Copy.html"
+  },
+  {
+    "title": "Linear Algebra its applications, 5th Ed. by D.C. Lay",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Linear Algebra and Differential Equations - Copy.html"
+  },
+  {
+    "title": "Elementary Differential Equations, 10 Ed. by W.E. Boyce and R.C. DiPrima",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Linear Algebra and Differential Equations - Copy.html"
+  },
+  {
+    "title": "An introduction to ordinary differential equations by  E.A. Coddington",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Linear Algebra and Differential Equations - Copy.html"
+  },
+  {
+    "title": "Linear Systems Theory and Design by Chi-Tsong Chen",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Linear System Theory.html"
+  },
+  {
+    "title": "Finite Dimensional Vector Spaces by Paul R. Halmos",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Linear System Theory.html"
+  },
+  {
+    "title": "The Theory of Linear Systems by J. E. Rubio",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Linear System Theory.html"
+  },
+  {
+    "title": "Linear Systems by T. Kailath",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Linear System Theory.html"
+  },
+  {
+    "title": "Linear Systems Theory by J P Hespanha",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Linear System Theory.html"
+  },
+  {
+    "title": "Linear Algebra and its Applications by G Strang",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Linear System Theory.html"
+  },
+  {
+    "title": "Pattern Recognition and Machine Learning by C.M.Bishop",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Machine Learning.html"
+  },
+  {
+    "title": "Pattern Recognition, 4th Ed. by S.Theodoridis and K.Koutroumbas",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Machine Learning.html"
+  },
+  {
+    "title": "Pattern Classification by R.O.Duda, P.E.Hart and D.G.Stork",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Machine Learning.html"
+  },
+  {
+    "title": "Machine Learning by Mitchell T",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Machine Learning.html"
+  },
+  {
+    "title": "Metal Cutting Principles by Shaw, M.C.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Manufacturing Process II.html"
+  },
+  {
+    "title": "Fundamentals of Metal Machining and Machine Tools by Boothroyd, G.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Manufacturing Process II.html"
+  },
+  {
+    "title": "Metal Cutting by Trent, E.M.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Manufacturing Process II.html"
+  },
+  {
+    "title": "Manufacturing Engineering and Technology by Serope Kalpakjian",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Manufacturing Process II.html"
+  },
+  {
+    "title": "Metal Cutting Principles by Shaw, M.C.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Manufacturing Process II.html"
+  },
+  {
+    "title": "Fundamentals of Metal Machining and Machine Tools by Boothroyd, G.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Manufacturing Process II.html"
+  },
+  {
+    "title": "Metal Cutting by Trent, E.M.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Manufacturing Process II.html"
+  },
+  {
+    "title": "Manufacturing Engineering and Technology by Serope Kalpakjian",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Manufacturing Process II.html"
+  },
+  {
+    "title": "Transport Processes and Separation Process Principles, 4th Ed. by C.J. Genakoplis",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Mass Transfer - I.html"
+  },
+  {
+    "title": "Mass Transfer Operations by R.E. Treybal",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Mass Transfer - I.html"
+  },
+  {
+    "title": "Unit Operations in Chemical Engineering by W.L. McCabe, J.C. Smith, P. Harriot",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Mass Transfer - I.html"
+  },
+  {
+    "title": "Separation Process Principles, 2nd Ed. by J.D. Seader, E.J. Henley",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Mass Transfer - I.html"
+  },
+  {
+    "title": "Coulson and Richardson’s Chemical Engineering Vol. 2, 6th Ed. by J.F. Richardson, J. Hacker, J. Backhurst, A.K. Ray",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Mass Transfer - I.html"
+  },
+  {
+    "title": "Separation Process Engineering: Includes Mass Transfer Analysis, 3rd Ed. by Wankat, P.C.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Mass Transfer - I.html"
+  },
+  {
+    "title": "Computational Design of Battery Materials",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Materials Design for Batteries.html"
+  },
+  {
+    "title": "Physical Chemistry of Ionic Materials by Joachim Maier",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Materials Design for Batteries.html"
+  },
+  {
+    "title": "Electrode for Li-ion batteries: Materials, Mechanism & Performance by Laure Monconduit, Laurence Croguennec and Remi Dedryvere",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Materials Design for Batteries.html"
+  },
+  {
+    "title": "Physics of Superionic conductors by M.B. Salamon",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Materials Design for Batteries.html"
+  },
+  {
+    "title": "Hydrogen and Fuel Cells: Fundamentals, Technologies and Applications by Detlef Stolten",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Materials for Hydrogen Energy.html"
+  },
+  {
+    "title": "Materials for the Hydrogen Economy by Russell H. Jones, George J. Thomas",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Materials for Hydrogen Energy.html"
+  },
+  {
+    "title": "Hydrogen Storage Materials by Darren P. Broom",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Materials for Hydrogen Energy.html"
+  },
+  {
+    "title": "Hydrogen and Fuel Cells: Emerging Technologies and Applications by Bent and Sorensen",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Materials for Hydrogen Energy.html"
+  },
+  {
+    "title": "Handbook of Hydrogen Energy by S.A. Sherif, D. Yogi Goswami, E.K. (Lee) Stefanakos, Aldo Steinfeld",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Materials for Hydrogen Energy.html"
+  },
+  {
+    "title": "Machine Drawing by N D Bhatt",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Mechanical Engineering Drawing.html"
+  },
+  {
+    "title": "Machine Drawing, 4th Ed. by K L Narayana, P. Kannaiah, K. Venkata Reddy",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Mechanical Engineering Drawing.html"
+  },
+  {
+    "title": "Fundamentals of Engineering Drawing, 11th Ed. by W J Luzadder and J M Duff",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Mechanical Engineering Drawing.html"
+  },
+  {
+    "title": "Micro manufacturing processes by V K Jain",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Medical Devices Manufacturing.html"
+  },
+  {
+    "title": "Fundamentals of Microfabrication and Nanotechnology by Marc J. Madou",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Medical Devices Manufacturing.html"
+  },
+  {
+    "title": "Micro manufacturing processes by V K Jain",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Medical Devices Manufacturing.html"
+  },
+  {
+    "title": "Fundamentals of Microfabrication and Nanotechnology by Marc J. Madou",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Medical Devices Manufacturing.html"
+  },
+  {
+    "title": "Principles of Bioinorganic chemistry by Stephen J. Lippard, Jeremy M. Berg",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Metalloproteins.html"
+  },
+  {
+    "title": "Bioinorganic Chemistry: A short course, 2nd Ed. by Rosette M. Roat-Malone",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Metalloproteins.html"
+  },
+  {
+    "title": "Bioinorganic Chemistry by Berthini, Gray, Lippard and Valentine",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Metalloproteins.html"
+  },
+  {
+    "title": "Bio-inorganic Chemistry: Inorganic Chemistry of Life by Kaim and Schwederski",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Metalloproteins.html"
+  },
+  {
+    "title": "Principles of Bioinorganic chemistry by Stephen J. Lippard, Jeremy M. Berg",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Metalloproteins.html"
+  },
+  {
+    "title": "Bioinorganic Chemistry: A short course, 2nd Ed. by Rosette M. Roat-Malone",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Metalloproteins.html"
+  },
+  {
+    "title": "Bioinorganic Chemistry by Berthini, Gray, Lippard and Valentine",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Metalloproteins.html"
+  },
+  {
+    "title": "Bio-inorganic Chemistry: Inorganic Chemistry of Life by Kaim and Schwederski",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Metalloproteins.html"
+  },
+  {
+    "title": "Microwave Engineering, 4th Ed. by David M. Pozar",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Microwave and Millimeter Wave Integrated Circuits.html"
+  },
+  {
+    "title": "Microwave Transistor Amplifiers by G.Gonzales",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Microwave and Millimeter Wave Integrated Circuits.html"
+  },
+  {
+    "title": "RF Circuit Design by R. Ludwig, G. Bogdanov",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Microwave and Millimeter Wave Integrated Circuits.html"
+  },
+  {
+    "title": "Cryptography: Theory and Practice by Douglas Stinson",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Modern Cryptography.html"
+  },
+  {
+    "title": "Introduction to Modern Cryptography by Jonathan Katz, Yehuda Lindell",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Modern Cryptography.html"
+  },
+  {
+    "title": "A graduate Course in Applied Cryptography by Dan Boneh and Victor Shoup",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Modern Cryptography.html"
+  },
+  {
+    "title": "Transportation Tunnels by S Ponnuswamy & Johnson Victor",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Monitoring and Maintenance of tunnels.html"
+  },
+  {
+    "title": "Nanobiotechnology: Concepts, Applications and Perspectives, edited by C.M. Niemeyer and C. A. Mirkin",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Nanobiotechnology.html"
+  },
+  {
+    "title": "A textbook of Nanoscience and Nanotechnology by T. Pradeep",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Nanobiotechnology.html"
+  },
+  {
+    "title": "Nanotechnology: An Introduction by Jeremy Ramsden",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Nanobiotechnology.html"
+  },
+  {
+    "title": "Nanomedicine by Huw Summers",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Nanobiotechnology.html"
+  },
+  {
+    "title": "Single-phase, two-phase and supercritical natural circulation systems by Vijayan, P.K., Nayak, A.K., Kumar, N.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Natural Circulation Based Passive Safety Systems.html"
+  },
+  {
+    "title": "Nuclear Systems, vol 1: Thermal-Hydraulic Fundamentals by Todreas, N.E., Kazimi, M.M.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Natural Circulation Based Passive Safety Systems.html"
+  },
+  {
+    "title": "Nuclear Power Reactor Safety by Lewis, E.E.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Natural Circulation Based Passive Safety Systems.html"
+  },
+  {
+    "title": "Speech and Language Processing 3rd Ed., by Dan Jurafsky and James H Martin",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Natural Language Processing.html"
+  },
+  {
+    "title": "Natural Language Processing by Jacob E",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Natural Language Processing.html"
+  },
+  {
+    "title": "A primer on Neural Network Models for NLP by Yoav Goldberg",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Natural Language Processing.html"
+  },
+  {
+    "title": "Deep Learning in Natural Language Processing by Li Deng, Yang Liu",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Natural Language Processing.html"
+  },
+  {
+    "title": "Wireless Communications: Principles and Practice by T. S. Rappaport",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Next Generation Communication Networks.html"
+  },
+  {
+    "title": "Fundamentals of Wireless Communication by D. Tse and P. Viswanath",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Next Generation Communication Networks.html"
+  },
+  {
+    "title": "Data Communications and Networking by B. A. Forouzan",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Next Generation Communication Networks.html"
+  },
+  {
+    "title": "Wireless Communications by A. Goldsmith",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Next Generation Communication Networks.html"
+  },
+  {
+    "title": "Communication Networks: Fundamental Concepts and Key Architectures by A. Leon-Garcia and I. Widjaja",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Next Generation Communication Networks.html"
+  },
+  {
+    "title": "Computer Networks by A. S. Tanenbaum and D. Wetherall",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Next Generation Communication Networks.html"
+  },
+  {
+    "title": "Renewable Energy Resources, 3rd Ed. by Twidell J., Weir T.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Non-Conventional Sources of Energy.html"
+  },
+  {
+    "title": "Solar Engineering of Thermal Processes, 4th Ed. by Duffie J. A., Beckman W.A.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Non-Conventional Sources of Energy.html"
+  },
+  {
+    "title": "Renewable Energy: Power for a Sustainable Future by Boyle G.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Non-Conventional Sources of Energy.html"
+  },
+  {
+    "title": "Fusion-An Introduction to the Physics and Technology of Magnetic Confinement Fusion by Weston M. S.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Non-Conventional Sources of Energy.html"
+  },
+  {
+    "title": "Introduction to Plasma Physics and Controlled Fusion: Volume 1: Plasma Physics by Chen F. F.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Non-Conventional Sources of Energy.html"
+  },
+  {
+    "title": "Physics of Solar Cells by Nelson J.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Non-Conventional Sources of Energy.html"
+  },
+  {
+    "title": "Fusion Energy by Gross R. A.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Non-Conventional Sources of Energy.html"
+  },
+  {
+    "title": "Elementary Number Theory by David M. Burton",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Number Theory.html"
+  },
+  {
+    "title": "An Introduction to the Theory of Numbers by I. Niven, H. S. Zuckerman and H. L. Montgomery",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Number Theory.html"
+  },
+  {
+    "title": "A Classical Introduction to Modern Number Theory by K. Ireland, and M. Rosen",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Number Theory.html"
+  },
+  {
+    "title": "An Introduction to the Theory of Numbers by G . H. Hardy and E. M. Wright",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Number Theory.html"
+  },
+  {
+    "title": "Numerical methods for Engineers by Steven Chapra",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Numerical Methods and computational physics.html"
+  },
+  {
+    "title": "Practical numerical computing using Python by Mahendra Verma",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Numerical Methods and computational physics.html"
+  },
+  {
+    "title": "Open Channel Hydraulics by VT Chow",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Open Channel Hydraulics.html"
+  },
+  {
+    "title": "Open Channel Flow by M Hanif Chaudhry",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Open Channel Hydraulics.html"
+  },
+  {
+    "title": "Flow in Open Channels by K Subramanya",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Open Channel Hydraulics.html"
+  },
+  {
+    "title": "Phase Transformations in Metals and Alloys, 3rd Ed. by David A. Porter, Kenneth E. Easterling, and Mohamed Y. Sherif",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Phase Transformations in Materials.html"
+  },
+  {
+    "title": "Physical Metallurgy Principles by Reed-Hill",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Phase Transformations in Materials.html"
+  },
+  {
+    "title": "Solid State Phase Transformations by V. Raghavan",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Phase Transformations in Materials.html"
+  },
+  {
+    "title": "Modern Physical Metallurgy and Materials Engineering, 6th Ed. by R. E. Smallman and R.J. Bishop",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Phase Transformations in Materials.html"
+  },
+  {
+    "title": "Applied Rheology in Polymer Processing by B.R. Gupta",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Polymer Physics.html"
+  },
+  {
+    "title": "Introduction to Polymer Physics by M. Doi",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Polymer Physics.html"
+  },
+  {
+    "title": "Polymer Physics by Rubinstein and Colby",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Polymer Physics.html"
+  },
+  {
+    "title": "Power system Analysis by Hadi Saadat",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Power Engineering.html"
+  },
+  {
+    "title": "Power System Analysis by John J. Grainger and W. D. Stevenson Jr.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Power Engineering.html"
+  },
+  {
+    "title": "Modern Power System Analysis by D P Kothari and I J Nagrath",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Power Engineering.html"
+  },
+  {
+    "title": "Power System Analysis and Design by J. D. Glover",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Power Engineering.html"
+  },
+  {
+    "title": "FACTS Concepts and Technology of Flexible AC Transmission Systems by Narain G. Hingorani and Laszlo Gyugyi",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Power Engineering.html"
+  },
+  {
+    "title": "Introduction to Probability Models, 11th Ed. by Sheldon Ross",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Probability and Stochastic Process.html"
+  },
+  {
+    "title": "An introduction to probability theory and it’s applications by William Feller",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Probability and Stochastic Process.html"
+  },
+  {
+    "title": "Introduction to Probability and Statistics for Engineers and Scientists by Sheldon Ross",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Probability and Stochastic Process.html"
+  },
+  {
+    "title": "Stochastic Processes, 2nd Ed. by Sheldon Ross",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Probability and Stochastic Process.html"
+  },
+  {
+    "title": "Probability and Measure, 3rd Ed. by Patrick Billingsley",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Probability and Stochastic Process.html"
+  },
+  {
+    "title": "Process Systems Analysis and Control, 3rd Ed. by D.R. Coughanowr, S.E. LeBlanc",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Process Instrumentation Dynamics and Control.html"
+  },
+  {
+    "title": "Chemical Process Control by G. Stephanopoulos",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Process Instrumentation Dynamics and Control.html"
+  },
+  {
+    "title": "Industrial Instrumentation by D.P. Eckman",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Process Instrumentation Dynamics and Control.html"
+  },
+  {
+    "title": "Instrumentation Engineers Handbook Vol 1-3, 4th Ed. by B.G. Liptak (ed)",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Process Instrumentation Dynamics and Control.html"
+  },
+  {
+    "title": "Process Control: Modeling, Design and Simulation by B. Bequette",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Process Instrumentation Dynamics and Control.html"
+  },
+  {
+    "title": "Modern Control Engineering, 5th Ed. by K. Ogata",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Process Instrumentation Dynamics and Control.html"
+  },
+  {
+    "title": "Reengineering the chemical plant by Stankiewicz, A., Moulijn, J.A., (Eds.)",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Process Intensification.html"
+  },
+  {
+    "title": "Process Intensification by Raey, D., Ramshaw C., Harvey, A.P.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Process Intensification.html"
+  },
+  {
+    "title": "Process Intensification in Chemical Engineering by Segovia-Hernandez, J.G., Bonilla-Petriciolet, A., (Eds.)",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Process Intensification.html"
+  },
+  {
+    "title": "Mathematical Analysis, 2nd ed. by T. M. Apostol",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Real and Complex Analysis.html"
+  },
+  {
+    "title": "Principles of mathematical analysis, 3rd Ed. by W. Rudin",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Real and Complex Analysis.html"
+  },
+  {
+    "title": "Real and complex analysis, 3rd Ed. by W. Rudin",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Real and Complex Analysis.html"
+  },
+  {
+    "title": "Complex variables and applications, 4th Ed. by R. V. Churchill and J. W. Brown",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Real and Complex Analysis.html"
+  },
+  {
+    "title": "Fundamentals of Medical Device Regulations, 5th Ed. by Gert Bos and Jocelyn Jennings",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Regulatory and Quality Compliance in Medical Devices.html"
+  },
+  {
+    "title": "Medical Device Quality Assurance and Regulatory Compliance by Richard C. Fries",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Regulatory and Quality Compliance in Medical Devices.html"
+  },
+  {
+    "title": "Medical Device Regulations: Global overview and guiding principles by World Health\nOrganisation",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Regulatory and Quality Compliance in Medical Devices.html"
+  },
+  {
+    "title": "Getting Started with MATLAB: A Quick Introduction for Scientists & Engineers by Rudra Pratap",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Research Methodology and Software Tools.html"
+  },
+  {
+    "title": "Research Methodology by Kothari C R",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Research Methodology and Software Tools.html"
+  },
+  {
+    "title": "Introduction to Robotics by S. K. Saha",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Robotics and Autonomous Systems.html"
+  },
+  {
+    "title": "Robot Dynamics and Control by M. Vidyasagar, M. W. Spong",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Robotics and Autonomous Systems.html"
+  },
+  {
+    "title": "Robotics: Modelling, Planning and Control by Bruno Siciliano, Lorenzo Sciavicco, Luigi Villani, and Giuseppe Oriolo",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Robotics and Autonomous Systems.html"
+  },
+  {
+    "title": "Introduction to Robotics: Mechanics and Control by John J. Craig",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Robotics and Autonomous Systems.html"
+  },
+  {
+    "title": "Probabilistic Robotics by Sebastian Thrun, Wolfram Burgard, and Dieter Fox",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Robotics and Autonomous Systems.html"
+  },
+  {
+    "title": "Introduction to Robotics: Mechanics and Control by John J Craig",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Robotics and Control.html"
+  },
+  {
+    "title": "ROBOTICS by Ashitava Ghosal",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Robotics and Control.html"
+  },
+  {
+    "title": "Soil Strength and Slope stability by Duncan M. and Wright, S.G.,",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Slopes and Retaining Structures.html"
+  },
+  {
+    "title": "Rock Slope Engineering by Hoek, E. and Bray, J.W.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Slopes and Retaining Structures.html"
+  },
+  {
+    "title": "Advanced Soil Mechanics by Das, B.M.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Slopes and Retaining Structures.html"
+  },
+  {
+    "title": "Earth Pressure and Earth Retaining Structures by Clayton, C. R. I., Milititsky, J. and Woods, R. I.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Slopes and Retaining Structures.html"
+  },
+  {
+    "title": "Introduction to Rock Mechanics by Richard E. Goodman",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Slopes and Retaining Structures.html"
+  },
+  {
+    "title": "Dimensions of Human Behavior: Person and Environment by D. Hutchison, Elizabeth",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Society, Culture, and Human Behaviour.html"
+  },
+  {
+    "title": "How to Think Like an Anthropologist by Engelke, Matthew",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Society, Culture, and Human Behaviour.html"
+  },
+  {
+    "title": "Sociology. 6th Ed. by Giddens, Anthony",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Society, Culture, and Human Behaviour.html"
+  },
+  {
+    "title": "Cultural Anthropology: A Toolkit for a Global Age by Guest, Kenneth J.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Society, Culture, and Human Behaviour.html"
+  },
+  {
+    "title": "Sociology: The Core. 12th Ed. by Hughes, Michael, Carolyn J. Kroehler, and James W. Vander Zanden",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Society, Culture, and Human Behaviour.html"
+  },
+  {
+    "title": "Doing Sociology in India: Genealogies, Locations, and Practices by Patel, Sujata",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Society, Culture, and Human Behaviour.html"
+  },
+  {
+    "title": "Humanity: An Introduction to Cultural Anthropology by Peoples, James G., and Garrick A. Bailey",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Society, Culture, and Human Behaviour.html"
+  },
+  {
+    "title": "The Sociological Imagination by Mills, C. Wright",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Society, Culture, and Human Behaviour.html"
+  },
+  {
+    "title": "The Interpretation of Cultures by Geertz, Clifford",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Society, Culture, and Human Behaviour.html"
+  },
+  {
+    "title": "The Presentation of Self in Everyday Life by Goffman, Erving",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Society, Culture, and Human Behaviour.html"
+  },
+  {
+    "title": "Outsiders: Studies in the Sociology of Deviance by Becker, Howard S",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Society, Culture, and Human Behaviour.html"
+  },
+  {
+    "title": "Annihilation of Caste by Ambedkar, B.R.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Society, Culture, and Human Behaviour.html"
+  },
+  {
+    "title": "Modernity at Large: Cultural Dimensions of Globalisation by Appadurai, Arjun",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Society, Culture, and Human Behaviour.html"
+  },
+  {
+    "title": "The Age of Surveillance Capitalism by Zuboff, Shoshana",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Society, Culture, and Human Behaviour.html"
+  },
+  {
+    "title": "Mechanics of Materials, 10th Ed. by Hibbeler, R.C.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Solid Mechanics.html"
+  },
+  {
+    "title": "Engineering Mechanics of Solids, 2nd Ed. by Popov, E.P.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Solid Mechanics.html"
+  },
+  {
+    "title": "Strength of Materials, Vol. 1: Elementary Theory and Problems, 3rd Ed. by S. Timoshenko",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Solid Mechanics.html"
+  },
+  {
+    "title": "Strength of Materials by S. S. Ratan",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Solid Mechanics.html"
+  },
+  {
+    "title": "Microwave Engineering by David M. Pozar",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Statistical Foundations for Machine Learning.html"
+  },
+  {
+    "title": "Microwave Transistor Amplifiers by G.Gonzales",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Statistical Foundations for Machine Learning.html"
+  },
+  {
+    "title": "RF Circuit Design by R. Ludwig, G. Bogdanov",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Statistical Foundations for Machine Learning.html"
+  },
+  {
+    "title": "Structural Analysis, 10th Ed. by R.C. Hibbeler",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Structural Analysis II.html"
+  },
+  {
+    "title": "Intermediate Structural Analysis by C.K. Wang",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Structural Analysis II.html"
+  },
+  {
+    "title": "Intermediate Structural Analysis by C.K. Wang",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Structural Analysis II.html"
+  },
+  {
+    "title": "Matrix Analysis of Framed Structures by William Weaver and James M. Gere",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Structural Analysis II.html"
+  },
+  {
+    "title": "Surveying theory and practice, 11th Ed. by Anderson, J.M. and Mikhail, E. M",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Surveying Theory and Practices.html"
+  },
+  {
+    "title": "Engineering surveying, 5th Ed. by Schoffield, W.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Surveying Theory and Practices.html"
+  },
+  {
+    "title": "Elementary surveying, Introduction to geomatics, 10th Ed. by Wolf, P.R. and Ghilani, C.D.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Surveying Theory and Practices.html"
+  },
+  {
+    "title": "Understanding GPS: Principles and Application, 2nd ed. by Kaplan, E. D. and Hegarty, C. J.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Surveying Theory and Practices.html"
+  },
+  {
+    "title": "Elements of Photogrammetry, 2nd Ed. by Wolf, Paul, R.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Surveying Theory and Practices.html"
+  },
+  {
+    "title": "Introduction to Modern Photogrammetry by Mikhail, E., M., Bethel, J. S. and McGlone, J. C.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Surveying Theory and Practices.html"
+  },
+  {
+    "title": "Basic Topology by M. A. Armstrong",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Topology.html"
+  },
+  {
+    "title": "Topology, 2nd Ed. by J. R. Munkres",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Topology.html"
+  },
+  {
+    "title": "Introduction to Topology and Modern Analysis by G. F. Simmons",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Topology.html"
+  },
+  {
+    "title": "Traffic Engineering and Transport Planning by L.R. Kadiyali",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Transportation Engineering-1.html"
+  },
+  {
+    "title": "Highway Engineering by Khanna, S.K. and Justo A, and Veeraragavan, A.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Transportation Engineering-1.html"
+  },
+  {
+    "title": "Transportation Engineering and Planning, 3rd Ed. by C.S. Papacostas and P.D. Prevedouros",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Transportation Engineering-1.html"
+  },
+  {
+    "title": "Transportation Engineering – An Introduction, 3rd Ed. by C. Jotin Khisty and B. Kent Lall",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Transportation Engineering-1.html"
+  },
+  {
+    "title": "Principles of Transportation Engineering by P. Chakroborty and A. Das, P",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Transportation Engineering-1.html"
+  },
+  {
+    "title": "Traffic Engineering by W.R. McShane and R.P. Roess",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Transportation Engineering-1.html"
+  },
+  {
+    "title": "Pavement Analysis and Design by Y.H. Huang",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Transportation Engineering-1.html"
+  },
+  {
+    "title": "Practical Tunnel Construction by Gary B. Hemphill",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Tunnel Excavation Methods and Philosophies.html"
+  },
+  {
+    "title": "Tunnel Engineering Handbook by  Kuesel, Thomas R., King, Elwyn H., Bickel, John",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Tunnel Excavation Methods and Philosophies.html"
+  },
+  {
+    "title": "Hardrock tunnel boring machines by Maidl, B., Schmid, L., Ritz, W. and Herrenknecht, M.",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Tunnel Excavation Methods and Philosophies.html"
+  },
+  {
+    "title": "Silicon VLSI Technology: Fundamentals, Practice, and Modeling by James Plummer, Michael Deal, Peter Griffin",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "VLSI Technology.html"
+  },
+  {
+    "title": "VLSI Fabrication Principles: Silicon and Gallium Arsenide by Sorab K. Ghandhi",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "VLSI Technology.html"
+  },
+  {
+    "title": "VLSI Technology by S M Sze",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "VLSI Technology.html"
+  },
+  {
+    "title": "Water and Wastewater Engineering: Design Principles and Practice by Mackenzie L. Davis",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Water Supply and Wastewater Engineering.html"
+  },
+  {
+    "title": "Water Supply Engineering Vol-1 by SK Garg",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Water Supply and Wastewater Engineering.html"
+  },
+  {
+    "title": "Water Supply Engineering Vol-2 by SK Garg",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Water Supply and Wastewater Engineering.html"
+  },
+  {
+    "title": "Water and Wastewater Engineering: Design Principles and Practice by Mackenzie L. Davis",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Water Supply and Wastewater Engineering.html"
+  },
+  {
+    "title": "PRINCIPLES OF MODERN WIRELESS COMMUNICATIONS SYSTEMS by Aditya K. Jagannatham",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Wireless Communication.html"
+  },
+  {
+    "title": "Fundamentals of Wireless Communications by David Tse and Pramod Viswanath",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Wireless Communication.html"
+  },
+  {
+    "title": "Wireless Communications by Andrea Goldsmith",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Wireless Communication.html"
+  },
+  {
+    "title": "Wireless Communications: Principles and Practice by Theodore Rappaport",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Wireless Communication.html"
+  },
+  {
+    "title": "Wireless Communications & Networks by William Stallings",
+    "course": "Course Materials",
+    "department": "Unknown Department",
+    "url": "Wireless Communication.html"
+  }
 ]
