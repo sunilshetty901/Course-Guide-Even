@@ -52,22 +52,47 @@ header p {
 
 /* ================= OPAC SEARCH ================= */
 .opac-search {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  width: 340px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
 }
 
-.opac-search input {
+.search-wrapper {
+  position: relative;
+  width: 600px;
+  max-width: 90%;
+}
+
+.search-wrapper input {
   width: 100%;
-  padding: 14px 16px;
-  border-radius: 10px;
+  padding: 18px 60px 18px 20px;
+  border-radius: 40px;
   border: none;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   outline: none;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
 }
 
+.search-wrapper button {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  border: none;
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.search-wrapper button:hover {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
 /* ================= LAYOUT ================= */
 .container {
   max-width: 1600px;
@@ -174,10 +199,16 @@ footer {
   <header>
   <h1>COURSE GUIDE</h1>
   <p>Mini OPAC for Library Resources</p>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <div class="opac-search">
+  <div class="search-wrapper">
     <input type="text" id="opacSearch" placeholder="Search course, subject, book...">
+    <button id="searchBtn">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
   </div>
+</div>
 </header>
 
   <div class="container">
@@ -338,6 +369,7 @@ async function loadSearchIndex() {
 loadSearchIndex();
 
 const searchInput = document.getElementById("opacSearch");
+const searchBtn = document.getElementById("searchBtn"); // ✅ Added
 
 // Create dropdown
 const resultsBox = document.createElement("div");
@@ -354,6 +386,13 @@ resultsBox.style.maxHeight = "300px";
 resultsBox.style.overflowY = "auto";
 
 document.querySelector(".opac-search").appendChild(resultsBox);
+
+// ✅ Make Search Button Work
+if (searchBtn) {
+  searchBtn.addEventListener("click", function() {
+    searchInput.dispatchEvent(new Event("input"));
+  });
+}
 
 // Search logic
 searchInput.addEventListener("input", function () {
@@ -405,6 +444,7 @@ document.addEventListener("click", function(e) {
   © 2025 Course Guide · Library Portal
 </footer>
 </html>
+
 
 
 
