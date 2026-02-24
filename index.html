@@ -69,6 +69,10 @@ header h1{
   border-radius:50%;
   cursor:pointer;
 }
+  .search-wrapper {
+  position: relative;
+  z-index: 1000;   /* ensure dropdown appears above header */
+}
 
 /* CONTENT */
 .container{
@@ -374,18 +378,20 @@ const searchInput = document.getElementById("opacSearch");
 const searchBtn = document.getElementById("searchBtn");
 
 const resultsBox = document.createElement("div");
-resultsBox.style.position="absolute";
-resultsBox.style.top="100%";
-resultsBox.style.left="0";
-resultsBox.style.width="100%";
-resultsBox.style.marginTop="8px";
-resultsBox.style.background="#fff";
-resultsBox.style.borderRadius="12px";
-resultsBox.style.boxShadow="0 15px 40px rgba(0,0,0,0.25)";
-resultsBox.style.display="none";
-resultsBox.style.zIndex="9999";
-resultsBox.style.maxHeight="320px";
-resultsBox.style.overflowY="auto";
+resultsBox.style.position = "absolute";
+resultsBox.style.top = "100%";
+resultsBox.style.left = "0";
+resultsBox.style.width = "100%";
+resultsBox.style.marginTop = "8px";
+resultsBox.style.background = "#ffffff";
+resultsBox.style.color = "#111111";   // ✅ FORCE DARK TEXT
+resultsBox.style.borderRadius = "14px";
+resultsBox.style.boxShadow = "0 15px 40px rgba(0,0,0,0.25)";
+resultsBox.style.display = "none";
+resultsBox.style.zIndex = "99999";    // ✅ HIGHER THAN HEADER
+resultsBox.style.maxHeight = "320px";
+resultsBox.style.overflowY = "auto";
+resultsBox.style.fontFamily = "Inter, sans-serif";  // ✅ Ensure font
 
 document.querySelector(".search-wrapper").appendChild(resultsBox);
 
@@ -411,7 +417,10 @@ function performSearch(){
       div.style.padding="12px";
       div.style.cursor="pointer";
       div.style.borderBottom="1px solid #eee";
-      div.innerHTML=`<strong>${item.title}</strong><br><small>${item.course}</small>`;
+      div.innerHTML = `
+  <div style="color:#111; font-weight:600;">${item.title}</div>
+  <div style="color:#555; font-size:13px;">${item.course}</div>
+`;
       div.onclick=()=>window.open(item.url,"_blank");
       resultsBox.appendChild(div);
     });
@@ -441,3 +450,4 @@ count.toString().padStart(6,'0');
 
 </body>
 </html>
+
