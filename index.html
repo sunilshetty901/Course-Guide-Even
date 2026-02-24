@@ -11,8 +11,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-
-/* ================= BASE ================= */
 body{
   font-family:'Inter',sans-serif;
   margin:0;
@@ -20,7 +18,7 @@ body{
   color:#1f2937;
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 header{
   background:radial-gradient(circle at top,#004080 0%,#001f4d 100%);
   color:white;
@@ -36,12 +34,6 @@ header h1{
   letter-spacing:3px;
 }
 
-header p{
-  font-size:1.2rem;
-  color:#dbeafe;
-}
-
-/* ================= SEARCH ================= */
 .opac-search{
   margin-top:30px;
   display:flex;
@@ -78,7 +70,7 @@ header p{
   cursor:pointer;
 }
 
-/* ================= CONTENT GRID ================= */
+/* CONTENT */
 .container{
   max-width:1600px;
   margin:auto;
@@ -124,11 +116,9 @@ header p{
   color:white;
   text-decoration:none;
   font-weight:600;
-  font-size:1.1rem;
 }
 
-/* ================= FULL WIDTH IIT FOOTER ================= */
-
+/* FOOTER */
 .footer-section{
   width:100%;
   background: linear-gradient(135deg, #002147 0%, #001733 60%, #000f24 100%);
@@ -156,17 +146,11 @@ header p{
   margin-bottom:20px;
 }
 
-.footer-column p,
 .footer-column a{
   color:#dbeafe;
   text-decoration:none;
   display:block;
   margin-bottom:12px;
-}
-
-.footer-column a:hover{
-  color:#00b4d8;
-  padding-left:6px;
 }
 
 .footer-map iframe{
@@ -197,7 +181,6 @@ header p{
   .row{grid-template-columns:1fr;}
   .footer-container{flex-direction:column;}
 }
-
 </style>
 </head>
 
@@ -206,15 +189,16 @@ header p{
 <header>
 <h1>COURSE GUIDE</h1>
 <p>Mini OPAC for Library Resources</p>
+
 <div class="opac-search">
-<div class="search-wrapper">
-<input type="text" placeholder="Search course, subject, book...">
-<button><i class="fa-solid fa-magnifying-glass"></i></button>
-</div>
+  <div class="search-wrapper">
+    <input type="text" id="opacSearch" placeholder="Search course, subject, book...">
+    <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </div>
 </div>
 </header>
 
-  <div class="container">
+<div class="container">
 
   <!-- Row 1 -->
   <div class="row">
@@ -335,110 +319,16 @@ header p{
 
 </div>
 
-<script>
-let searchData = [];
-
-// Load JSON
-async function loadSearchIndex() {
-  try {
-    const response = await fetch("search-index.json");
-    searchData = await response.json();
-    console.log("Loaded data:", searchData);
-  } catch (error) {
-    console.error("Search index failed:", error);
-  }
-}
-
-loadSearchIndex();
-
-const searchInput = document.getElementById("opacSearch");
-const searchBtn = document.getElementById("searchBtn"); // ✅ Added
-
-// Create dropdown
-const resultsBox = document.createElement("div");
-resultsBox.style.position = "absolute";
-resultsBox.style.top = "100%";
-resultsBox.style.left = "0";
-resultsBox.style.width = "100%";
-resultsBox.style.marginTop = "8px";
-resultsBox.style.background = "#ffffff";
-resultsBox.style.color = "#000000";
-resultsBox.style.borderRadius = "12px";
-resultsBox.style.boxShadow = "0 15px 40px rgba(0,0,0,0.25)";
-resultsBox.style.display = "none";
-resultsBox.style.zIndex = "9999";
-resultsBox.style.maxHeight = "320px";
-resultsBox.style.overflowY = "auto";
-
-document.querySelector(".opac-search").appendChild(resultsBox);
-document.querySelector(".search-wrapper").appendChild(resultsBox);
-
-// ✅ Make Search Button Work
-if (searchBtn) {
-  searchBtn.addEventListener("click", function() {
-    searchInput.dispatchEvent(new Event("input"));
-  });
-}
-
-// Search logic
-searchInput.addEventListener("input", function () {
-  const query = this.value.toLowerCase().trim();
-  resultsBox.innerHTML = "";
-
-  if (query.length < 2) {
-    resultsBox.style.display = "none";
-    return;
-  }
-
-  const matches = searchData.filter(item =>
-    item.title.toLowerCase().includes(query) ||
-    item.course.toLowerCase().includes(query)
-  );
-
-  if (matches.length === 0) {
-    resultsBox.innerHTML = "<div style='padding:12px;'>No records found</div>";
-  } else {
-    matches.forEach(item => {
-      const div = document.createElement("div");
-      div.style.padding = "12px";
-      div.style.cursor = "pointer";
-      div.style.borderBottom = "1px solid #eee";
-      div.innerHTML = `
-        <strong style="color:#111;">${item.title}</strong><br>
-        <small style="color:#555;">${item.course}</small>
-      `;
-      div.onclick = () => window.open(item.url, "_blank");
-      resultsBox.appendChild(div);
-    });
-  }
-
-  resultsBox.style.display = "block";
-});
-
-// Close dropdown when clicking outside
-document.addEventListener("click", function(e) {
-  if (!document.querySelector(".opac-search").contains(e.target)) {
-    resultsBox.style.display = "none";
-  }
-});
-</script>
-</body>
-</div>
-
 <div class="footer-section">
 <div class="footer-container">
 
 <div class="footer-column">
 <img src="https://library.iitjammu.ac.in/wp-content/uploads/2024/02/light_logo-1.png" width="200">
-<p>
-Central Library, IIT Jammu<br>
-Jagti, NH-44, PO Nagrota<br>
-Jammu – 181221, J&K, India
-</p>
+<p>Central Library, IIT Jammu<br>Jagti, NH-44, PO Nagrota<br>Jammu – 181221</p>
 </div>
 
 <div class="footer-column footer-map">
-<iframe src="https://maps.google.com/maps?q=iit%20jammu%20jammu%20kashmir&t=m&z=8&output=embed"></iframe>
+<iframe src="https://maps.google.com/maps?q=iit%20jammu&t=m&z=8&output=embed"></iframe>
 </div>
 
 <div class="footer-column">
@@ -451,24 +341,15 @@ Jammu – 181221, J&K, India
 
 <div class="footer-column">
 <h3>Get in Touch</h3>
-
-<a href="tel:+911912570631">
-<i class="fa-solid fa-phone"></i> +91-191-257-0631
-</a>
-
-<a href="mailto:library@iitjammu.ac.in">
-<i class="fa-solid fa-envelope"></i> library@iitjammu.ac.in
-</a>
-
+<a href="tel:+911912570631"><i class="fa-solid fa-phone"></i> +91-191-257-0631</a>
+<a href="mailto:library@iitjammu.ac.in"><i class="fa-solid fa-envelope"></i> library@iitjammu.ac.in</a>
 <a href="https://wa.me/919451527031" target="_blank">
-<i class="fa-brands fa-whatsapp" style="color:#25D366;"></i>
-+91 94515 27031
+<i class="fa-brands fa-whatsapp" style="color:#25D366;"></i> +91 94515 27031
 </a>
 
 <div class="visitor-box">
 <i class="fa-solid fa-eye"></i>
-Visitors:
-<span id="visitor-count">000001</span>
+Visitors: <span id="visitor-count">000001</span>
 </div>
 
 </div>
@@ -480,13 +361,83 @@ Visitors:
 </div>
 
 <script>
+document.addEventListener("DOMContentLoaded", function(){
+
+let searchData = [];
+
+fetch("search-index.json")
+  .then(res => res.json())
+  .then(data => searchData = data)
+  .catch(err => console.error(err));
+
+const searchInput = document.getElementById("opacSearch");
+const searchBtn = document.getElementById("searchBtn");
+
+const resultsBox = document.createElement("div");
+resultsBox.style.position="absolute";
+resultsBox.style.top="100%";
+resultsBox.style.left="0";
+resultsBox.style.width="100%";
+resultsBox.style.marginTop="8px";
+resultsBox.style.background="#fff";
+resultsBox.style.borderRadius="12px";
+resultsBox.style.boxShadow="0 15px 40px rgba(0,0,0,0.25)";
+resultsBox.style.display="none";
+resultsBox.style.zIndex="9999";
+resultsBox.style.maxHeight="320px";
+resultsBox.style.overflowY="auto";
+
+document.querySelector(".search-wrapper").appendChild(resultsBox);
+
+function performSearch(){
+  const query = searchInput.value.toLowerCase().trim();
+  resultsBox.innerHTML="";
+
+  if(query.length<2){
+    resultsBox.style.display="none";
+    return;
+  }
+
+  const matches = searchData.filter(item =>
+    item.title.toLowerCase().includes(query) ||
+    item.course.toLowerCase().includes(query)
+  );
+
+  if(matches.length===0){
+    resultsBox.innerHTML="<div style='padding:12px;'>No records found</div>";
+  }else{
+    matches.forEach(item=>{
+      const div=document.createElement("div");
+      div.style.padding="12px";
+      div.style.cursor="pointer";
+      div.style.borderBottom="1px solid #eee";
+      div.innerHTML=`<strong>${item.title}</strong><br><small>${item.course}</small>`;
+      div.onclick=()=>window.open(item.url,"_blank");
+      resultsBox.appendChild(div);
+    });
+  }
+
+  resultsBox.style.display="block";
+}
+
+searchInput.addEventListener("input",performSearch);
+searchBtn.addEventListener("click",performSearch);
+
+document.addEventListener("click",function(e){
+  if(!document.querySelector(".search-wrapper").contains(e.target)){
+    resultsBox.style.display="none";
+  }
+});
+
+/* Visitor Counter */
 let count = localStorage.getItem("page_view");
 count = count ? parseInt(count)+1 : 1;
 localStorage.setItem("page_view",count);
 document.getElementById("visitor-count").innerText =
 count.toString().padStart(6,'0');
+
+});
 </script>
 
 </body>
 </html>
-
