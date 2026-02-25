@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Course Guide – Civil Engineering</title>
+  <title>Course Guide – Electrical Engineering</title>
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
@@ -13,8 +12,7 @@
       --primary: #003366;
       --secondary: #0055aa;
       --accent: #00b4d8;
-      --bg: #f1f5f9;
-      --card-bg: rgba(255, 255, 255, 0.85);
+      --card-bg: rgba(255, 255, 255, 0.9);
     }
 
     * {
@@ -28,56 +26,42 @@
       color: #1f2933;
     }
 
-    /* HEADER */
     .top-header {
-      position: relative;
       background: linear-gradient(135deg, #003366, #0055aa);
       color: white;
       padding: 28px 20px;
       text-align: center;
       font-size: 30px;
       font-weight: 700;
-      letter-spacing: 1px;
-    }
-
-    /* LOGO */
-    .logo {
-      position: absolute;
-      top: 18px;
-      right: 25px;
-      height: 55px;
     }
 
     h1 {
       text-align: center;
-      margin: 35px 0 25px;
+      margin: 35px 0 30px;
       font-weight: 600;
       color: #003366;
     }
 
-    /* GRID */
-    .grid-row {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 35px;
-      margin-bottom: 40px;
-      padding: 0 20px;
+    /* GRID LAYOUT - 2 PER ROW */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      padding: 0 40px 60px;
+      max-width: 1200px;
+      margin: auto;
     }
 
-    /* SEMESTER CARD */
     .semester-block {
       background: var(--card-bg);
-      backdrop-filter: blur(10px);
       padding: 25px;
       border-radius: 20px;
-      width: 420px;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: 0.3s ease;
     }
 
     .semester-block:hover {
-      transform: translateY(-8px);
+      transform: translateY(-6px);
       box-shadow: 0 30px 60px rgba(0, 0, 0, 0.18);
     }
 
@@ -87,20 +71,8 @@
       font-weight: 600;
       color: var(--primary);
       margin-bottom: 22px;
-      position: relative;
     }
 
-    .semester-title::after {
-      content: "";
-      display: block;
-      width: 60px;
-      height: 4px;
-      background: linear-gradient(90deg, var(--secondary), var(--accent));
-      margin: 10px auto 0;
-      border-radius: 5px;
-    }
-
-    /* BUTTONS */
     .course-buttons {
       display: flex;
       flex-direction: column;
@@ -116,43 +88,20 @@
       border-radius: 12px;
       background: linear-gradient(135deg, var(--secondary), var(--accent));
       text-align: center;
-      transition: all 0.3s ease;
+      transition: 0.3s ease;
       box-shadow: 0 8px 18px rgba(0, 85, 170, 0.3);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .course-button::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.25);
-      transition: left 0.4s ease;
-    }
-
-    .course-button:hover::before {
-      left: 0;
     }
 
     .course-button:hover {
-      transform: translateY(-3px) scale(1.01);
+      transform: translateY(-3px);
       box-shadow: 0 12px 25px rgba(0, 85, 170, 0.45);
     }
 
-    /* RESPONSIVE */
+    /* MOBILE RESPONSIVE */
     @media (max-width: 900px) {
-      .semester-block {
-        width: 100%;
-        max-width: 420px;
-      }
-
-      .logo {
-        height: 45px;
-        top: 15px;
-        right: 15px;
+      .grid-container {
+        grid-template-columns: 1fr;
+        padding: 0 20px 40px;
       }
     }
   </style>
@@ -164,7 +113,7 @@
     Course Guide
   </div>
 
-  <h1>Electrical Engineering (CSP)</h1>
+  <h1>B.Tech-Electrical Engineering</h1>
 
   <!-- Semester I -->
   <div class="semester-block">
@@ -192,7 +141,6 @@
       <a class="course-button" href="Nonlinear Dynamics and Intelligent Control.html" target="_blank">RF Circuits and Antennas</a>
     </div>
   </div>
-   <h1>Electrical Engineering (VLSI)</h1>
 
   <!-- Semester I -->
   <div class="semester-block">
@@ -236,3 +184,4 @@
 
 </body>
 </html>
+
