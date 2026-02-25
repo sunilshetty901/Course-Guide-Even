@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Course Guide – Civil Engineering</title>
+  <title>Course Guide – Computer Science Engineering</title>
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -40,14 +40,6 @@
       letter-spacing: 1px;
     }
 
-    /* LOGO */
-    .logo {
-      position: absolute;
-      top: 18px;
-      right: 25px;
-      height: 55px;
-    }
-
     h1 {
       text-align: center;
       margin: 35px 0 25px;
@@ -55,7 +47,7 @@
       color: #003366;
     }
 
-    /* GRID */
+    /* GRID CONTAINER */
     .grid-row {
       display: flex;
       justify-content: center;
@@ -120,6 +112,8 @@
       box-shadow: 0 8px 18px rgba(0, 85, 170, 0.3);
       position: relative;
       overflow: hidden;
+      border: none;
+      cursor: pointer;
     }
 
     .course-button::before {
@@ -148,12 +142,6 @@
         width: 100%;
         max-width: 420px;
       }
-
-      .logo {
-        height: 45px;
-        top: 15px;
-        right: 15px;
-      }
     }
   </style>
 </head>
@@ -166,37 +154,34 @@
 
   <h1>Computer Science Engineering</h1>
 
-  <!-- Semester I -->
-  <div class="semester-block">
-    <div class="semester-title">Semester II</div>
-    <div class="course-buttons">
-      <a class="course-button" href="Information Security.html" target="_blank">Information Security</a>
-      <a class="course-button" href="Modern Cryptography.html" target="_blank">Modern Cryptography</a>
-      <button class="course-button">Pattern Recognition Machine Learning</button>
-      <button class="course-button">Fundamentals of SDN and NFV</button>
-      <a class="course-button" href="Natural Language Processing.html" target="_blank">Natural Language Processing</a>
-      <a class="course-button" href="High Performance Computer Systems.html" target="_blank">High-Performace Computing Systems</a>
-    </div>
-  </div>
+  <!-- GRID WRAPPER (IMPORTANT FOR SIDE-BY-SIDE) -->
+  <div class="grid-row">
 
-  <!-- Semester III -->
-  <div class="semester-block">
-    <div class="semester-title">Semester IV</div>
-    <div class="course-buttons">
-      <a class="course-button" href="Natural Language Processing.html" target="_blank">Natural Language Processing</a>
-      <a class="course-button" href="Computer Vision.html" target="_blank">Pattern Recognition Machine Learning</a>
-      <a class="course-button" href="Networks and System Security.html" target="_blank">Fundamentals of SDN and NFV</a>
-      <a class="course-button" href="Modern Cryptography.html" target="_blank">Modern Cryptography</a>
+    <!-- Semester II -->
+    <div class="semester-block">
+      <div class="semester-title">Semester II</div>
+      <div class="course-buttons">
+        <a class="course-button" href="Information Security.html" target="_blank">Information Security</a>
+        <a class="course-button" href="Modern Cryptography.html" target="_blank">Modern Cryptography</a>
+        <button class="course-button">Pattern Recognition Machine Learning</button>
+        <button class="course-button">Fundamentals of SDN and NFV</button>
+        <a class="course-button" href="Natural Language Processing.html" target="_blank">Natural Language Processing</a>
+        <a class="course-button" href="High Performance Computer Systems.html" target="_blank">High-Performance Computing Systems</a>
+      </div>
     </div>
+
+    <!-- Semester IV -->
+    <div class="semester-block">
+      <div class="semester-title">Semester IV</div>
+      <div class="course-buttons">
+        <a class="course-button" href="Natural Language Processing.html" target="_blank">Natural Language Processing</a>
+        <a class="course-button" href="Computer Vision.html" target="_blank">Pattern Recognition Machine Learning</a>
+        <a class="course-button" href="Networks and System Security.html" target="_blank">Fundamentals of SDN and NFV</a>
+        <a class="course-button" href="Modern Cryptography.html" target="_blank">Modern Cryptography</a>
+      </div>
+    </div>
+
   </div>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
