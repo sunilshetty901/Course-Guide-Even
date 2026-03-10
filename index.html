@@ -406,7 +406,7 @@ Visitors: <span id="visitor-count">000001</span>
 
 <script>
 
-const sheetAPI = "https://opensheet.elk.sh/17Q8x40U88fXn4juThh25b6xFKIvQs8EawD_vHLYJY3g/Sheet1";
+const sheetAPI = "https://opensheet.elk.sh/17Q8x40U88fXn4juThh25b6xFKIvQs8EawD_vHLYJY3g/Students";
 
 let students = [];
 
@@ -424,9 +424,11 @@ console.log("Students loaded:", students);
 
 function loginStudent(){
 
-const id = document.getElementById("studentID").value.trim();
+const enteredID = document.getElementById("studentID").value.trim().toUpperCase();
 
-const student = students.find(s => String(s["Student ID"]).trim() === id);
+const student = students.find(s => 
+String(s["Student ID"]).trim().toUpperCase() === enteredID
+);
 
 if(student){
 
@@ -437,7 +439,7 @@ window.location.href = "dashboard.html";
 }
 else{
 
-alert("Invalid Student ID");
+alert("Student ID not found. Please check the ID.");
 
 }
 
@@ -528,6 +530,7 @@ count.toString().padStart(6,'0');
 
 </body>
 </html>
+
 
 
 
