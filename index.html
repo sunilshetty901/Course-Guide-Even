@@ -424,21 +424,20 @@ console.log("Students loaded:", students);
 
 function loginStudent(){
 
-const enteredID = document.getElementById("studentID").value.trim();
+const id = document.getElementById("studentID").value.trim();
 
-const student = students.find(s =>
-String(s.ID || s.Id || s["Student ID"]).trim() === enteredID
-);
+const student = students.find(s => String(s["Student ID"]).trim() === id);
 
 if(student){
 
 localStorage.setItem("studentData", JSON.stringify(student));
 
-window.location.href="dashboard.html";
+window.location.href = "dashboard.html";
 
-}else{
+}
+else{
 
-alert("Student ID not found");
+alert("Invalid Student ID");
 
 }
 
@@ -529,6 +528,7 @@ count.toString().padStart(6,'0');
 
 </body>
 </html>
+
 
 
 
