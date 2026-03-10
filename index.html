@@ -416,7 +416,7 @@ fetch(sheetAPI)
 
 students = data;
 
-console.log("Student data loaded:", students);
+console.log("Students loaded:", students);
 
 })
 .catch(err => console.error("Error loading sheet:", err));
@@ -424,20 +424,21 @@ console.log("Student data loaded:", students);
 
 function loginStudent(){
 
-const id = document.getElementById("studentID").value.trim();
+const enteredID = document.getElementById("studentID").value.trim();
 
-const student = students.find(s => s.ID === id);
+const student = students.find(s =>
+String(s.ID || s.Id || s["Student ID"]).trim() === enteredID
+);
 
 if(student){
 
 localStorage.setItem("studentData", JSON.stringify(student));
 
-window.location.href = "dashboard.html";
+window.location.href="dashboard.html";
 
-}
-else{
+}else{
 
-alert("Invalid Student ID");
+alert("Student ID not found");
 
 }
 
@@ -528,6 +529,7 @@ count.toString().padStart(6,'0');
 
 </body>
 </html>
+
 
 
 
