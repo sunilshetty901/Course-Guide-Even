@@ -1,0 +1,290 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Guide – Mini OPAC</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+font-family:'Inter',sans-serif;
+margin:0;
+background:linear-gradient(180deg,#f8fafc,#eef2f7);
+color:#1f2937;
+}
+
+/* HEADER */
+
+header{
+background:radial-gradient(circle at top,#004080 0%,#001f4d 100%);
+color:white;
+padding:90px 20px 70px;
+text-align:center;
+border-bottom:6px solid #00b4d8;
+}
+
+header h1{
+font-family:'Bebas Neue',cursive;
+font-size:4.2rem;
+margin:0;
+letter-spacing:3px;
+}
+
+/* STUDENT LOGIN */
+
+.student-login{
+background:white;
+max-width:500px;
+margin:-40px auto 40px auto;
+padding:30px;
+border-radius:16px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+text-align:center;
+}
+
+.student-login input{
+padding:12px;
+width:70%;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+.student-login button{
+padding:12px 18px;
+background:#0077b6;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin-left:10px;
+}
+
+/* SEARCH */
+
+.opac-search{
+margin-top:30px;
+display:flex;
+justify-content:center;
+}
+
+.search-wrapper{
+position:relative;
+width:600px;
+max-width:90%;
+}
+
+.search-wrapper input{
+width:100%;
+padding:18px 60px 18px 20px;
+border-radius:40px;
+border:none;
+font-size:1.05rem;
+outline:none;
+box-shadow:0 8px 25px rgba(0,0,0,0.25);
+}
+
+.search-wrapper button{
+position:absolute;
+right:8px;
+top:50%;
+transform:translateY(-50%);
+background:linear-gradient(135deg,#00b4d8,#0077b6);
+border:none;
+color:white;
+width:45px;
+height:45px;
+border-radius:50%;
+cursor:pointer;
+}
+
+/* CONTENT */
+
+.container{
+max-width:1600px;
+margin:auto;
+padding:50px 25px;
+}
+
+.row{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:32px;
+margin-bottom:40px;
+}
+
+.section{
+background:white;
+border-radius:20px;
+padding:30px;
+box-shadow:0 12px 30px rgba(0,0,0,0.1);
+}
+
+.section h2{
+font-family:'Playfair Display',serif;
+color:#002147;
+margin-bottom:20px;
+border-left:6px solid #005490;
+padding-left:15px;
+}
+
+.tools{
+display:flex;
+gap:20px;
+}
+
+.tool{
+flex:1;
+background:linear-gradient(135deg,#003f7f,#005fa3);
+border-radius:15px;
+padding:20px;
+text-align:center;
+}
+
+.tool a{
+color:white;
+text-decoration:none;
+font-weight:600;
+}
+
+@media(max-width:900px){
+.row{grid-template-columns:1fr;}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>COURSE GUIDE</h1>
+<p>Mini OPAC for Library Resources</p>
+</header>
+
+
+<!-- STUDENT LOGIN -->
+
+<div class="student-login">
+
+<h3>Student Dashboard Login</h3>
+
+<input type="text" id="studentID" placeholder="Enter Student ID">
+
+<button onclick="loginStudent()">Login</button>
+
+</div>
+
+
+<div class="opac-search">
+<div class="search-wrapper">
+<input type="text" id="opacSearch" placeholder="Search course, subject, book...">
+<button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+</div>
+</div>
+
+
+<div class="container">
+
+<div class="row">
+
+<div class="section">
+<h2>Computer Science & Engineering</h2>
+<div class="tools">
+<div class="tool">
+<a href="Semester Details CSE UG.html" target="_blank">B. Tech</a>
+</div>
+
+<div class="tool">
+<a href="Semester Details CSE PG.html" target="_blank">M. Tech</a>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>Electrical Engineering</h2>
+<div class="tools">
+<div class="tool">
+<a href="Semester Details EE UG.html" target="_blank">B. Tech</a>
+</div>
+
+<div class="tool">
+<a href="Semester Details EE PG.html" target="_blank">M. Tech</a>
+</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+
+<script>
+
+/* GOOGLE SHEET STUDENT LOGIN */
+
+const sheetURL="https://docs.google.com/spreadsheets/d/e/2PACX-1vS8TqnRd_OuKJlsaVp2-vl0ndmFq9ockyvjI7KuumdMR9xBQO8TIVegxiT3bQkUjp4MwVx41pK6PcyY/pub?output=csv";
+
+let students=[];
+
+fetch(sheetURL)
+.then(res=>res.text())
+.then(csv=>{
+
+const rows=csv.split("\n").slice(1);
+
+students=rows.map(row=>{
+
+const cols=row.split(",");
+
+return{
+
+id:cols[0],
+name:cols[1],
+photo:cols[2],
+dept:cols[3],
+mobile:cols[4],
+email:cols[5],
+semester:cols[6],
+courses:cols[7]
+
+}
+
+});
+
+});
+
+
+function loginStudent(){
+
+const id=document.getElementById("studentID").value.trim();
+
+const student=students.find(s=>s.id===id);
+
+if(student){
+
+localStorage.setItem("studentData",JSON.stringify(student));
+
+window.location.href="dashboard.html";
+
+}
+
+else{
+
+alert("Invalid Student ID");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
+```
