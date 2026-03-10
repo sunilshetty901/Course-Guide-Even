@@ -33,6 +33,35 @@ header h1{
   margin:0;
   letter-spacing:3px;
 }
+  
+  /* STUDENT LOGIN */
+
+.student-login{
+background:white;
+max-width:500px;
+margin:-40px auto 40px auto;
+padding:30px;
+border-radius:16px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+text-align:center;
+}
+
+.student-login input{
+padding:12px;
+width:70%;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+.student-login button{
+padding:12px 18px;
+background:#0077b6;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin-left:10px;
+}
 
 .opac-search{
   margin-top:30px;
@@ -193,6 +222,17 @@ header h1{
 <header>
 <h1>COURSE GUIDE</h1>
 <p>Mini OPAC for Library Resources</p>
+  </header>
+
+  <div class="student-login">
+
+<h3>Student Dashboard Login</h3>
+
+<input type="text" id="studentID" placeholder="Enter Student ID">
+
+<button onclick="loginStudent()">Login</button>
+
+</div>
 
 <div class="opac-search">
   <div class="search-wrapper">
@@ -200,7 +240,7 @@ header h1{
     <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
   </div>
 </div>
-</header>
+
 
 <div class="container">
 
@@ -365,6 +405,60 @@ Visitors: <span id="visitor-count">000001</span>
 </div>
 
 <script>
+  const sheetURL="https://docs.google.com/spreadsheets/d/e/2PACX-1vS8TqnRd_OuKJlsaVp2-vl0ndmFq9ockyvjI7KuumdMR9xBQO8TIVegxiT3bQkUjp4MwVx41pK6PcyY/pub?output=csv";
+
+let students=[];
+
+fetch(sheetURL)
+.then(res=>res.text())
+.then(csv=>{
+
+const rows=csv.split("\n").slice(1);
+
+students=rows.map(row=>{
+
+const cols=row.split(",");
+
+return{
+
+id:cols[0],
+name:cols[1],
+photo:cols[2],
+dept:cols[3],
+mobile:cols[4],
+email:cols[5],
+semester:cols[6],
+courses:cols[7]
+
+}
+
+});
+
+});
+
+
+function loginStudent(){
+
+const id=document.getElementById("studentID").value.trim();
+
+const student=students.find(s=>s.id===id);
+
+if(student){
+
+localStorage.setItem("studentData",JSON.stringify(student));
+
+window.location.href="dashboard.html";
+
+}
+
+else{
+
+alert("Invalid Student ID");
+
+}
+
+}
+  
 document.addEventListener("DOMContentLoaded", function(){
 
 let searchData = [];
@@ -450,5 +544,6 @@ count.toString().padStart(6,'0');
 
 </body>
 </html>
+
 
 
