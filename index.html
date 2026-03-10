@@ -405,52 +405,36 @@ Visitors: <span id="visitor-count">000001</span>
 </div>
 
 <script>
-  const sheetURL="https://docs.google.com/spreadsheets/d/e/2PACX-1vS8TqnRd_OuKJlsaVp2-vl0ndmFq9ockyvjI7KuumdMR9xBQO8TIVegxiT3bQkUjp4MwVx41pK6PcyY/pub?output=csv";
 
-let students=[];
+const sheetAPI = "https://opensheet.elk.sh/17Q8x40U88fXn4juThh25b6xFKIvQs8EawD_vHLYJY3g/Sheet1";
 
-fetch(sheetURL)
-.then(res=>res.text())
-.then(csv=>{
+let students = [];
 
-const rows=csv.split("\n").slice(1);
+fetch(sheetAPI)
+.then(res => res.json())
+.then(data => {
 
-students=rows.map(row=>{
+students = data;
 
-const cols=row.split(",");
+console.log("Student data loaded:", students);
 
-return{
-
-id:cols[0],
-name:cols[1],
-photo:cols[2],
-dept:cols[3],
-mobile:cols[4],
-email:cols[5],
-semester:cols[6],
-courses:cols[7]
-
-}
-
-});
-
-});
+})
+.catch(err => console.error("Error loading sheet:", err));
 
 
 function loginStudent(){
 
-const id=document.getElementById("studentID").value.trim();
+const id = document.getElementById("studentID").value.trim();
 
-const student=students.find(s=>s.id===id);
+const student = students.find(s => s.ID === id);
 
 if(student){
 
-localStorage.setItem("studentData",JSON.stringify(student));
+localStorage.setItem("studentData", JSON.stringify(student));
 
-window.location.href="dashboard.html";
+window.location.href = "dashboard.html";
 
 }
-
 else{
 
 alert("Invalid Student ID");
@@ -544,6 +528,7 @@ count.toString().padStart(6,'0');
 
 </body>
 </html>
+
 
 
 
