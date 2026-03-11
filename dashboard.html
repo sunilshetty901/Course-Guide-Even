@@ -345,7 +345,7 @@
 <div class="top-strip">
   Central Library, IIT Jammu &nbsp;·&nbsp;
   <a href="https://iitjammu.ac.in/" target="_blank">iitjammu.ac.in</a>
-  &nbsp;·&nbsp; library@iitjammu.ac.in
+  &nbsp;·&nbsp; <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="dfb3b6bdadbeada69fb6b6abb5beb2b2aaf1bebcf1b6b1">[email&#160;protected]</a>
 </div>
 
 <!-- HEADER -->
@@ -418,7 +418,7 @@
 <!-- FOOTER -->
 <footer>© 2024–25 All Rights Reserved · Central Library, IIT Jammu</footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const student = JSON.parse(localStorage.getItem("studentData"));
 
 if(!student){
@@ -443,17 +443,25 @@ if(!student){
     if(!url) return 'https://via.placeholder.com/130';
     url = url.trim();
 
-    // Already a raw URL — return as-is
+    // Case 1: Mixed mistake — raw.githubusercontent.com + /blob/
+    // e.g. https://raw.githubusercontent.com/user/repo/blob/main/file.jpg
+    // Fix: just remove /blob/
+    if(url.includes('raw.githubusercontent.com') && url.includes('/blob/')){
+      return url.replace('/blob/', '/');
+    }
+
+    // Case 2: Already a correct raw URL — return as-is
     if(url.includes('raw.githubusercontent.com')) return url;
 
-    // Convert /blob/ path
+    // Case 3: Normal github.com /blob/ link
+    // e.g. https://github.com/user/repo/blob/main/file.jpg
     if(url.includes('github.com') && url.includes('/blob/')){
       return url
         .replace('https://github.com/', 'https://raw.githubusercontent.com/')
         .replace('/blob/', '/');
     }
 
-    // Convert /raw/ path (some repos use this)
+    // Case 4: github.com /raw/ link
     if(url.includes('github.com') && url.includes('/raw/')){
       return url
         .replace('https://github.com/', 'https://raw.githubusercontent.com/')
@@ -544,15 +552,4 @@ if(!student){
       <div class="card-header-icon">📚</div>
       <div class="card-header-text">
         <div class="title">Current Semester Courses</div>
-        <div class="subtitle">Semester ${student.Semester || '—'} &nbsp;·&nbsp; ${courses.length} course${courses.length !== 1 ? 's' : ''} enrolled</div>
-      </div>
-    </div>
-    <div class="course-list">${courseItems}</div>
-  `;
-
-  /* Hide loading screen */
-  document.getElementById("loadingState").style.display = "none";
-}
-</script>
-</body>
-</html>
+        <div class="subtitle">Semester ${student.Semester || '—'} &nbsp;·&nbsp; ${courses.length} course${courses.length !=
