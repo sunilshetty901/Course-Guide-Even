@@ -132,26 +132,23 @@ document.body.innerHTML="Student data not found";
 const photo = student.PhotoURL.replace("github.com","raw.githubusercontent.com").replace("/blob","");
 
 const courses = student.Courses ? student.Courses.split(";") : [];
-
-document.getElementById("profileCard").innerHTML = `
-<img src="${photo}">
-<h2>${student.Name}</h2>
-
-<div class="info">
-<p><b>Department:</b> ${student.Department}</p>
-<p><b>Student ID:</b> ${student["Student ID"]}</p>
-<p><b>Mobile:</b> ${student.Mobile}</p>
-<p><b>Email:</b> ${student.Email}</p>
-</div>
-`;
+const links = student.CourseLinks ? student.CourseLinks.split(";") : [];
 
 let courseHTML = `
 <div class="course-title">📚 Current Semester Courses</div>
 <p><b>Semester:</b> ${student.Semester}</p>
 `;
 
-courses.forEach(c=>{
-courseHTML += `<div class="course">${c}</div>`;
+courses.forEach((course,index)=>{
+
+const link = links[index] || "#";
+
+courseHTML += `
+<div class="course">
+<a href="${link}" target="_blank">${course}</a>
+</div>
+`;
+
 });
 
 document.getElementById("courseCard").innerHTML = courseHTML;
@@ -160,3 +157,4 @@ document.getElementById("courseCard").innerHTML = courseHTML;
 
 </body>
 </html>
+
