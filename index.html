@@ -85,32 +85,39 @@
     }
     .login-btn svg { width: 14px; height: 14px; }
 
-    /* ── HERO ── */
+    /* ── HERO ──
+       overflow: visible is CRITICAL — allows search dropdown
+       to escape the hero boundary and display above the dept grid */
     .hero {
       background: linear-gradient(140deg, var(--dark-blue) 0%, #0d2550 45%, #0f3470 100%);
-      position: relative; overflow: hidden;
+      position: relative;
+      overflow: visible;
       padding: clamp(3rem, 7vw, 5.5rem) clamp(1.5rem, 5vw, 5rem) clamp(3.5rem, 6vw, 5.5rem);
       text-align: center;
     }
     .hero::before {
-      content: ''; position: absolute; inset: 0; pointer-events: none;
+      content: ''; position: absolute; inset: 0; pointer-events: none; z-index: 0;
       background:
         radial-gradient(circle at 20% 50%, rgba(0,180,216,0.12) 0%, transparent 50%),
         radial-gradient(circle at 80% 20%, rgba(26,75,140,0.3) 0%, transparent 45%),
         radial-gradient(circle at 60% 80%, rgba(0,180,216,0.07) 0%, transparent 40%);
     }
     .hero-grid {
-      position: absolute; inset: 0; pointer-events: none;
+      position: absolute; inset: 0; pointer-events: none; z-index: 0;
       background-image:
         linear-gradient(rgba(0,180,216,0.04) 1px, transparent 1px),
         linear-gradient(90deg, rgba(0,180,216,0.04) 1px, transparent 1px);
       background-size: 50px 50px;
     }
+    /* Wave sits at z-index 1 — behind hero-content (z-index 200) */
     .hero::after {
-      content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 56px;
-      background: var(--off-white); clip-path: ellipse(55% 100% at 50% 100%);
+      content: ''; position: absolute; bottom: -2px; left: 0; right: 0;
+      height: 56px; background: var(--off-white);
+      clip-path: ellipse(55% 100% at 50% 100%);
+      z-index: 1; pointer-events: none;
     }
-    .hero-content { position: relative; z-index: 2; }
+    /* hero-content at z-index 200 so search dropdown floats above everything */
+    .hero-content { position: relative; z-index: 200; }
 
     .hero-eyebrow {
       display: inline-flex; align-items: center; gap: 0.5rem;
@@ -144,10 +151,12 @@
       margin: 0 auto 2.3rem; line-height: 1.8;
     }
 
-    /* ── SEARCH BAR (id hooks kept for JS) ── */
+    /* ── SEARCH BAR ──
+       z-index: 9999 ensures dropdown floats above section-label
+       and dept-grid which are at z-index: 1 */
     .search-wrap {
       max-width: 480px; margin: 0 auto;
-      position: relative; z-index: 1000;
+      position: relative; z-index: 9999;
     }
     .search-wrap input {
       width: 100%; padding: 0.9rem 3.4rem 0.9rem 1.4rem;
@@ -166,17 +175,17 @@
       background: linear-gradient(135deg, var(--cyan), var(--medium-blue));
       border: none; color: white; width: 40px; height: 40px;
       border-radius: 50%; cursor: pointer; font-size: 0.9rem;
-      display: flex; align-items: center; justify-content: center;
-      transition: all 0.2s;
+      display: flex; align-items: center; justify-content: center; transition: all 0.2s;
     }
     .search-wrap button:hover {
       background: var(--cyan-light); box-shadow: 0 4px 14px var(--cyan-glow);
     }
 
-    /* ── SECTION LABEL ── */
+    /* ── SECTION LABEL ── z-index:1 keeps it below search dropdown */
     .section-label {
       display: flex; align-items: center; gap: 1rem;
       padding: 2.5rem clamp(1.5rem, 5vw, 4rem) 1.5rem;
+      position: relative; z-index: 1;
     }
     .section-label::before, .section-label::after {
       content: ''; flex: 1; height: 1px; background: var(--light-line);
@@ -186,12 +195,13 @@
       color: var(--medium-blue); font-weight: 600; white-space: nowrap;
     }
 
-    /* ── DEPT GRID ── */
+    /* ── DEPT GRID ── z-index:1 keeps cards below search dropdown */
     .dept-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
       gap: 1.1rem;
       padding: 0 clamp(1.5rem, 5vw, 4rem) clamp(3rem, 6vw, 5rem);
+      position: relative; z-index: 1;
     }
 
     .dept-card {
@@ -313,7 +323,7 @@
       font-size: 0.73rem; color: rgba(255,255,255,0.38); letter-spacing: 0.04em;
     }
 
-    /* ── MODAL OVERLAY ── */
+    /* ── MODAL ── */
     .modal-overlay {
       display: none; position: fixed; inset: 0; z-index: 200;
       background: rgba(0,10,30,0.65); backdrop-filter: blur(6px);
@@ -323,8 +333,7 @@
     .modal-box {
       background: white; border-radius: 16px; border-top: 4px solid var(--cyan);
       padding: 2.5rem; width: min(420px, 92vw);
-      box-shadow: 0 30px 80px rgba(0,0,0,0.3);
-      animation: fadeUp 0.3s ease;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.3); animation: fadeUp 0.3s ease;
     }
     .modal-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.35rem; }
     .modal-icon {
@@ -565,7 +574,6 @@
     </div>
     <p>Sign in with your IIT Jammu institute credentials to access your library account.</p>
     <label>Roll Number / Student ID</label>
-    <!-- id="studentID" kept exactly as original -->
     <input type="text" id="studentID" placeholder="e.g. 2022CSB001" style="text-transform:uppercase"/>
     <div class="modal-actions">
       <button class="modal-submit" onclick="loginStudent()">Login</button>
@@ -574,11 +582,7 @@
   </div>
 </div>
 
-<!-- ══════════════════════════════════════════════
-     ALL ORIGINAL JAVASCRIPT — COMPLETELY UNCHANGED
-     ══════════════════════════════════════════════ -->
 <script>
-
 /* ── Student Login via Google Sheet ── */
 const sheetAPI = "https://opensheet.elk.sh/17Q8x40U88fXn4juThh25b6xFKIvQs8EawD_vHLYJY3g/Students";
 let students = [];
@@ -650,12 +654,12 @@ document.addEventListener("DOMContentLoaded", function(){
     } else {
       matches.forEach(item => {
         const div = document.createElement("div");
-        div.style.padding      = "12px";
+        div.style.padding      = "12px 16px";
         div.style.cursor       = "pointer";
         div.style.borderBottom = "1px solid #eee";
-        div.innerHTML = `
-          <div style="color:#0A1628;font-weight:600;">${item.title}</div>
-          <div style="color:#6B8CAE;font-size:13px;">${item.course}</div>`;
+        div.innerHTML =
+          "<div style='color:#0A1628;font-weight:600;'>" + item.title + "</div>" +
+          "<div style='color:#6B8CAE;font-size:13px;margin-top:2px;'>" + item.course + "</div>";
         div.onmouseenter = () => div.style.background = "#F0F6FF";
         div.onmouseleave = () => div.style.background = "white";
         div.onclick = () => window.open(item.url, "_blank");
@@ -674,7 +678,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
   });
 
-  /* Visitor Counter */
+  /* ── Visitor Counter ── */
   let count = localStorage.getItem("page_view");
   count = count ? parseInt(count) + 1 : 1;
   localStorage.setItem("page_view", count);
