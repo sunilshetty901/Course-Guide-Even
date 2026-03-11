@@ -1,234 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Course Guide – Civil Engineering</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>B.Tech Mechanical Engineering | IIT Jammu Course Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
-    :root {
-      --primary: #003366;
-      --secondary: #0055aa;
-      --accent: #00b4d8;
-      --bg: #f1f5f9;
-      --card-bg: rgba(255, 255, 255, 0.85);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #eef3f8, #ffffff);
-      color: #1f2933;
-    }
-
-    /* HEADER */
-    .top-header {
-      position: relative;
-      background: linear-gradient(135deg, #003366, #0055aa);
-      color: white;
-      padding: 28px 20px;
-      text-align: center;
-      font-size: 30px;
-      font-weight: 700;
-      letter-spacing: 1px;
-    }
-
-    /* LOGO */
-    .logo {
-      position: absolute;
-      top: 18px;
-      right: 25px;
-      height: 55px;
-    }
-
-    h1 {
-      text-align: center;
-      margin: 35px 0 25px;
-      font-weight: 600;
-      color: #003366;
-    }
-
-    /* GRID */
-    .grid-row {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 35px;
-      margin-bottom: 40px;
-      padding: 0 20px;
-    }
-
-    /* SEMESTER CARD */
-    .semester-block {
-      background: var(--card-bg);
-      backdrop-filter: blur(10px);
-      padding: 25px;
-      border-radius: 20px;
-      width: 420px;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .semester-block:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.18);
-    }
-
-    .semester-title {
-      text-align: center;
-      font-size: 22px;
-      font-weight: 600;
-      color: var(--primary);
-      margin-bottom: 22px;
-      position: relative;
-    }
-
-    .semester-title::after {
-      content: "";
-      display: block;
-      width: 60px;
-      height: 4px;
-      background: linear-gradient(90deg, var(--secondary), var(--accent));
-      margin: 10px auto 0;
-      border-radius: 5px;
-    }
-
-    /* BUTTONS */
-    .course-buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .course-button {
-      text-decoration: none;
-      padding: 14px 18px;
-      font-size: 15px;
-      font-weight: 500;
-      color: white;
-      border-radius: 12px;
-      background: linear-gradient(135deg, var(--secondary), var(--accent));
-      text-align: center;
-      transition: all 0.3s ease;
-      box-shadow: 0 8px 18px rgba(0, 85, 170, 0.3);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .course-button::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -100%;
-      width: 100%;
-      height: 100%;
-      background: rgba(255, 255, 255, 0.25);
-      transition: left 0.4s ease;
-    }
-
-    .course-button:hover::before {
-      left: 0;
-    }
-
-    .course-button:hover {
-      transform: translateY(-3px) scale(1.01);
-      box-shadow: 0 12px 25px rgba(0, 85, 170, 0.45);
-    }
-
-    /* RESPONSIVE */
-    @media (max-width: 900px) {
-      .semester-block {
-        width: 100%;
-        max-width: 420px;
-      }
-
-      .logo {
-        height: 45px;
-        top: 15px;
-        right: 15px;
-      }
-    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--dark-blue:#0A1628;--dark-blue-2:#0D1F3C;--medium-blue:#1A4B8C;--cyan:#00B4D8;--cyan-light:#48CAE4;--cyan-glow:rgba(0,180,216,0.18);--white:#FFFFFF;--off-white:#F0F6FF;--muted:#6B8CAE;--light-line:#D0E4F5;--text-body:#1C2E45}
+    html{scroll-behavior:smooth}
+    body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--text-body);min-height:100vh;overflow-x:hidden}
+    .top-strip{background:var(--dark-blue);color:rgba(255,255,255,0.7);font-size:.71rem;letter-spacing:.1em;text-align:center;padding:.38rem 1rem;border-bottom:1px solid rgba(0,180,216,0.2)}
+    .top-strip a{color:var(--cyan-light);text-decoration:none}
+    header{background:var(--dark-blue-2);border-bottom:3px solid var(--cyan);box-shadow:0 2px 20px rgba(0,0,0,.35);position:sticky;top:0;z-index:100}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;padding:.85rem clamp(1.2rem,4vw,4rem);gap:1rem}
+    .brand{display:flex;align-items:center;gap:1rem;text-decoration:none}
+    .brand img{height:48px;object-fit:contain;filter:brightness(0) invert(1)}
+    .brand-divider{width:1px;height:34px;background:rgba(255,255,255,.12)}
+    .brand-text .sub{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);font-weight:600}
+    .brand-text .main{font-family:'Playfair Display',serif;font-size:1.05rem;color:white;font-weight:700}
+    .back-btn{display:flex;align-items:center;gap:.45rem;padding:.5rem 1.1rem;border-radius:6px;background:transparent;border:1.5px solid rgba(0,180,216,.4);color:var(--cyan-light);font-family:'DM Sans',sans-serif;font-size:.82rem;font-weight:600;cursor:pointer;transition:all .22s;text-decoration:none}
+    .back-btn:hover{background:var(--cyan);color:var(--dark-blue);border-color:var(--cyan)}
+    .hero{background:linear-gradient(140deg,var(--dark-blue) 0%,#0d2550 50%,#0f3470 100%);position:relative;overflow:hidden;padding:clamp(2.5rem,6vw,4.5rem) clamp(1.5rem,5vw,5rem) clamp(4rem,7vw,6rem);text-align:center}
+    .hero::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 15% 50%,rgba(0,180,216,.12) 0%,transparent 50%),radial-gradient(circle at 85% 20%,rgba(26,75,140,.28) 0%,transparent 45%)}
+    .hero-grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(0,180,216,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,180,216,.04) 1px,transparent 1px);background-size:50px 50px}
+    .hero::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:60px;background:var(--off-white);clip-path:ellipse(55% 100% at 50% 100%)}
+    .hero-content{position:relative;z-index:2}
+    .hero-eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cyan);font-weight:600;margin-bottom:1rem;padding:.3rem 1rem;border:1px solid rgba(0,180,216,.3);border-radius:100px;background:rgba(0,180,216,.08)}
+    .hero-eyebrow::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--cyan);box-shadow:0 0 8px var(--cyan);animation:blink 2s infinite}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+    .hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,4.5vw,3.4rem);color:white;font-weight:700;line-height:1.15;margin-bottom:.6rem}
+    .hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--cyan),var(--cyan-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .hero p{font-size:clamp(.83rem,1.3vw,.96rem);color:rgba(255,255,255,.58);margin:.6rem auto 0;max-width:460px;line-height:1.8}
+    .hero-badges{display:flex;justify-content:center;gap:.7rem;margin-top:1.4rem;flex-wrap:wrap}
+    .hero-badge{display:inline-flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);color:rgba(255,255,255,.75);border-radius:100px;font-size:.72rem;font-weight:500;padding:.28rem .85rem}
+    .hero-badge i{color:var(--cyan);font-size:.65rem}
+    .sem-nav{display:flex;justify-content:center;gap:.5rem;padding:2rem clamp(1rem,4vw,4rem) 0;flex-wrap:wrap}
+    .sem-tab{padding:.45rem 1.1rem;border-radius:100px;border:1.5px solid var(--light-line);background:var(--white);color:var(--muted);font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:600;cursor:pointer;transition:all .2s;text-decoration:none}
+    .sem-tab:hover,.sem-tab.active{background:var(--medium-blue);color:white;border-color:var(--medium-blue);box-shadow:0 4px 14px rgba(26,75,140,.25)}
+    .section-label{display:flex;align-items:center;gap:1rem;padding:2.2rem clamp(1.5rem,5vw,4rem) 1.4rem}
+    .section-label::before,.section-label::after{content:'';flex:1;height:1px;background:var(--light-line)}
+    .section-label span{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--medium-blue);font-weight:600;white-space:nowrap}
+    .semesters-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr));gap:1.4rem;padding:0 clamp(1.5rem,5vw,4rem) clamp(3rem,6vw,5rem)}
+    .sem-card{background:var(--white);border:1px solid var(--light-line);border-radius:16px;overflow:hidden;box-shadow:0 4px 20px rgba(0,100,180,.07);opacity:0;animation:fadeUp .5s ease forwards;transition:box-shadow .3s,transform .3s}
+    .sem-card:hover{box-shadow:0 12px 36px rgba(0,100,180,.13);transform:translateY(-3px)}
+    .sem-card:nth-child(1){animation-delay:.05s}.sem-card:nth-child(2){animation-delay:.10s}.sem-card:nth-child(3){animation-delay:.15s}.sem-card:nth-child(4){animation-delay:.20s}.sem-card:nth-child(5){animation-delay:.25s}.sem-card:nth-child(6){animation-delay:.30s}.sem-card:nth-child(7){animation-delay:.35s}.sem-card:nth-child(8){animation-delay:.40s}
+    .sem-card-header{background:linear-gradient(135deg,var(--dark-blue-2),#112040);padding:1.2rem 1.6rem;display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid var(--cyan);position:relative;overflow:hidden}
+    .sem-card-header::before{content:'';position:absolute;right:-20px;top:-20px;width:90px;height:90px;border-radius:50%;background:rgba(0,180,216,.07)}
+    .sem-label-wrap{position:relative;z-index:2}
+    .sem-number-label{font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan);font-weight:600;margin-bottom:.2rem}
+    .sem-title{font-family:'Playfair Display',serif;font-size:1.3rem;color:white;font-weight:700}
+    .sem-count-badge{position:relative;z-index:2;background:rgba(0,180,216,.15);border:1px solid rgba(0,180,216,.3);color:var(--cyan-light);border-radius:100px;font-size:.72rem;font-weight:700;padding:.28rem .75rem;white-space:nowrap}
+    .course-list{padding:.8rem 1.4rem 1.4rem;display:flex;flex-direction:column;gap:.5rem}
+    .course-btn{display:flex;align-items:center;gap:.8rem;padding:.72rem 1rem;border-radius:9px;text-decoration:none;border:1.5px solid transparent;transition:all .22s ease;cursor:pointer;font-family:'DM Sans',sans-serif;background:transparent;width:100%;text-align:left}
+    a.course-btn{background:rgba(26,75,140,.05);border-color:rgba(26,75,140,.15);color:var(--medium-blue)}
+    a.course-btn:hover{background:var(--medium-blue);border-color:var(--medium-blue);color:white;box-shadow:0 4px 14px rgba(26,75,140,.22);transform:translateX(3px)}
+    a.course-btn:hover .course-icon{background:rgba(255,255,255,.15);color:white}
+    a.course-btn:hover .course-arrow{opacity:1;transform:translateX(0)}
+    button.course-btn{background:rgba(107,140,174,.06);border-color:rgba(107,140,174,.15);color:var(--text-body)}
+    button.course-btn:hover{background:rgba(107,140,174,.12);border-color:rgba(107,140,174,.3)}
+    .course-icon{width:30px;height:30px;flex-shrink:0;border-radius:7px;background:rgba(0,180,216,.08);border:1px solid rgba(0,180,216,.15);display:flex;align-items:center;justify-content:center;font-size:.7rem;color:var(--cyan);transition:all .22s}
+    button.course-btn .course-icon{background:rgba(107,140,174,.1);border-color:rgba(107,140,174,.2);color:var(--muted)}
+    .course-text{flex:1;font-size:.84rem;font-weight:500;line-height:1.4}
+    .course-arrow{color:var(--cyan-light);font-size:.7rem;opacity:0;transform:translateX(-4px);transition:all .2s}
+    footer{background:var(--dark-blue);color:rgba(255,255,255,.4);border-top:2px solid var(--cyan);text-align:center;padding:1.1rem;font-size:.73rem;letter-spacing:.04em}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    @media (max-width:600px){.semesters-grid{grid-template-columns:1fr}.sem-nav{gap:.4rem}}
   </style>
 </head>
-
 <body>
-
-  <div class="top-header">
-    Course Guide
+<div class="top-strip">Central Library, IIT Jammu &nbsp;·&nbsp; <a href="https://iitjammu.ac.in/" target="_blank">iitjammu.ac.in</a> &nbsp;·&nbsp; library@iitjammu.ac.in</div>
+<header>
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <img src="https://library.iitjammu.ac.in/wp-content/uploads/2024/02/light_logo-1.png" alt="IIT Jammu"/>
+      <div class="brand-divider"></div>
+      <div class="brand-text"><div class="sub">Central Library</div><div class="main">Course Guide · Mini OPAC</div></div>
+    </a>
+    <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Departments</a>
   </div>
-
-  <h1>B Tech - Mechanical Engineering</h1>
-
-  <!-- First Row: Semester I and III -->
-  <div class="grid-row">
-    <div class="semester-block">
-      <div class="semester-title">Semester II</div>
-      <div class="course-buttons">
-       <a class="course-button" href="Introduction to Fundamental and applied chemistry II - Copy.html" target="_blank">Introduction to Fundamental and Applied Chemistry-II</a>
-        <a class="course-button" href="Calculus CSE UG.html" target="_blank">Engineering Thermodynamics</a>
-        <a class="course-button" href="Solid Mechanics.html" target="_blank">Solid Mechanics</a>
-       <a class="course-button" href="Data Structures and Algorithms.html" target="_blank">Data Structures and Algorithms</a>
-        <a class="course-button" href="Linear Algebra and Differential Equations - Copy.html" target="_blank">Linear Algebra and Differential Equations</a>
-        <a class="course-button" href="Design Thinking CSE UG.html" target="_blank">Design Thinking</a>
-      </div>
-    </div>
-
-    <div class="semester-block">
-      <div class="semester-title">Semester IV</div>
-      <div class="course-buttons">
-        <a class="course-button" href="Introductory Biology.html" target="_blank">Biology</a>
-        <a class="course-button" href="Manufacturing Process 1.html" target="_blank">Engineering Standards</a>
-        <a class="course-button" href="Heat Transfer.html" target="_blank">Heat Transfer</a>
-         <a class="course-button" href="Kinematics and Dynamics of Machines.html" target="_blank">Kinematics and Dynamics of Machines</a>
-       <a class="course-button" href="Manufacturing Process II.html" target="_blank">Manufacturing Processes-II</a>
-        <a class="course-button" href="Design Thinking CSE UG.html" target="_blank">Design Thinking</a>
-      </div>
+</header>
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">B.Tech Programme · IIT Jammu</div>
+    <h1>Mechanical<br/><em>Engineering</em></h1>
+    <p>Semester-wise course resources — textbooks and references curated by the Central Library.</p>
+    <div class="hero-badges">
+      <span class="hero-badge"><i class="fa-solid fa-graduation-cap"></i> B.Tech · 4 Years</span>
+      <span class="hero-badge"><i class="fa-solid fa-book-open"></i> 8 Semesters</span>
+      <span class="hero-badge"><i class="fa-solid fa-gears"></i> ME Department</span>
     </div>
   </div>
+</section>
+<div class="sem-nav"><a href="#sem1" class="sem-tab">Sem 1</a><a href="#sem2" class="sem-tab">Sem 2</a><a href="#sem3" class="sem-tab">Sem 3</a><a href="#sem4" class="sem-tab">Sem 4</a><a href="#sem5" class="sem-tab">Sem 5</a><a href="#sem6" class="sem-tab">Sem 6</a><a href="#sem7" class="sem-tab">Sem 7</a><a href="#sem8" class="sem-tab">Sem 8</a></div>
+<div class="section-label"><span>Semester-wise Course Resources</span></div>
+<div class="semesters-grid">
 
-  <!-- Second Row: Semester V and VII -->
-  <div class="grid-row">
-    <div class="semester-block">
-      <div class="semester-title">Semester VI</div>
-      <div class="course-buttons">
-        <button class="course-button">Introduction to Operations Research</button>
-         <a class="course-button" href="Control Engineering.html" target="_blank">Control Engineering</a>
-        <a class="course-button" href="Mechanical Engineering Drawing.html" target="_blank">Mechanical Drawing</a>
-        <button class="course-button">Differential Equations for Engineers and Scientists</button>
-		  <a class="course-button" href="Medical Devices Manufacturing.html" target="_blank">Medical Devices Manufacturing</a>
-      </div>
-    </div>
+  <!-- SEM 1 – Coming Soon -->
+  <div class="sem-card" id="sem1">
+    <div class="sem-card-header"><div class="sem-label-wrap"><div class="sem-number-label">First Year · Odd</div><div class="sem-title">Semester 1</div></div><span class="sem-count-badge">Coming Soon</span></div>
+    <div class="course-list"><button class="course-btn" style="opacity:0.5;cursor:default;"><span class="course-icon"><i class="fa-solid fa-clock"></i></span><span class="course-text">Course resources will be updated soon</span></button></div>
+  </div>
 
-    <div class="semester-block">
-      <div class="semester-title">Semester VIII</div>
-      <div class="course-buttons">
-        <button class="course-button">Differential Equations for Engineers and Scientists</button>
-        <a class="course-button" href="Medical Devices Manufacturing.html" target="_blank">Medical Devices Manufacturing</a>
-       <a class="course-button" href="Abrasive Machining and Finishing.html" target="_blank">Abrasive Machining and Finishing</a>
-        <a class="course-button" href="Fracture Mechanics.html" target="_blank">Fracture Mechanics</a>
-        <a class="course-button" href="Fundamentals of Tribology.html" target="_blank">Fundamentals of Tribology</a>
-        <a class="course-button" href="Fundamentals of Tribology.html" target="_blank">Powder Bed Fusion AM</a>
-		  <a class="course-button" href="Design for Additive Manufacturing.html" target="_blank">Design for Additive Manufacturing</a>
-		  <a class="course-button" href="Design for Additive Manufacturing.html" target="_blank">Mechatronics for Manufacturing</a>
-		  <a class="course-button" href="Instabilities and Turbulence in Fluid Flows.html" target="_blank">Instabilities and Turbulence in Fluid Flows</a>
-		  <a class="course-button" href="Introduction to combustion.html" target="_blank">Introduction to combustion</a>
-		  <a class="course-button" href="Computational Fluid Dynamics and Heat Transfer.html" target="_blank">Computational Fluid Dynamics</a>
-		  <a class="course-button" href="Decision Theory and Design Optimization.html" target="_blank">Decision Theory and Optimization</a>
-      </div>
+  <!-- SEM 2 -->
+  <div class="sem-card" id="sem2">
+    <div class="sem-card-header"><div class="sem-label-wrap"><div class="sem-number-label">First Year · Even</div><div class="sem-title">Semester 2</div></div><span class="sem-count-badge">6 Courses</span></div>
+    <div class="course-list">      <a class="course-btn" href="Introduction to Fundamental and applied chemistry II - Copy.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-flask-vial"></i></span><span class="course-text">Introduction to Fundamental and Applied Chemistry-II</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Calculus CSE UG.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-temperature-half"></i></span><span class="course-text">Engineering Thermodynamics</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Solid Mechanics.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-cubes"></i></span><span class="course-text">Solid Mechanics</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Data Structures and Algorithms.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-code-branch"></i></span><span class="course-text">Data Structures and Algorithms</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Linear Algebra and Differential Equations - Copy.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-square-root-variable"></i></span><span class="course-text">Linear Algebra and Differential Equations</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Design Thinking CSE UG.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-lightbulb"></i></span><span class="course-text">Design Thinking</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
     </div>
   </div>
 
+  <!-- SEM 3 – Coming Soon -->
+  <div class="sem-card" id="sem3">
+    <div class="sem-card-header"><div class="sem-label-wrap"><div class="sem-number-label">Second Year · Odd</div><div class="sem-title">Semester 3</div></div><span class="sem-count-badge">Coming Soon</span></div>
+    <div class="course-list"><button class="course-btn" style="opacity:0.5;cursor:default;"><span class="course-icon"><i class="fa-solid fa-clock"></i></span><span class="course-text">Course resources will be updated soon</span></button></div>
+  </div>
+
+  <!-- SEM 4 -->
+  <div class="sem-card" id="sem4">
+    <div class="sem-card-header"><div class="sem-label-wrap"><div class="sem-number-label">Second Year · Even</div><div class="sem-title">Semester 4</div></div><span class="sem-count-badge">6 Courses</span></div>
+    <div class="course-list">      <a class="course-btn" href="Introductory Biology.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-dna"></i></span><span class="course-text">Biology</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Manufacturing Process 1.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-certificate"></i></span><span class="course-text">Engineering Standards</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Heat Transfer.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-fire-flame-curved"></i></span><span class="course-text">Heat Transfer</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Kinematics and Dynamics of Machines.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-gears"></i></span><span class="course-text">Kinematics and Dynamics of Machines</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Manufacturing Process II.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-industry"></i></span><span class="course-text">Manufacturing Processes-II</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Design Thinking CSE UG.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-lightbulb"></i></span><span class="course-text">Design Thinking</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+    </div>
+  </div>
+
+  <!-- SEM 5 – Coming Soon -->
+  <div class="sem-card" id="sem5">
+    <div class="sem-card-header"><div class="sem-label-wrap"><div class="sem-number-label">Third Year · Odd</div><div class="sem-title">Semester 5</div></div><span class="sem-count-badge">Coming Soon</span></div>
+    <div class="course-list"><button class="course-btn" style="opacity:0.5;cursor:default;"><span class="course-icon"><i class="fa-solid fa-clock"></i></span><span class="course-text">Course resources will be updated soon</span></button></div>
+  </div>
+
+  <!-- SEM 6 -->
+  <div class="sem-card" id="sem6">
+    <div class="sem-card-header"><div class="sem-label-wrap"><div class="sem-number-label">Third Year · Even</div><div class="sem-title">Semester 6</div></div><span class="sem-count-badge">5 Courses</span></div>
+    <div class="course-list">      <button class="course-btn"><span class="course-icon"><i class="fa-solid fa-chart-bar"></i></span><span class="course-text">Introduction to Operations Research</span></button>
+      <a class="course-btn" href="Control Engineering.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-sliders"></i></span><span class="course-text">Control Engineering</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Mechanical Engineering Drawing.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-compass-drafting"></i></span><span class="course-text">Mechanical Drawing</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <button class="course-btn"><span class="course-icon"><i class="fa-solid fa-square-root-variable"></i></span><span class="course-text">Differential Equations for Engineers and Scientists</span></button>
+      <a class="course-btn" href="Medical Devices Manufacturing.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-heart-pulse"></i></span><span class="course-text">Medical Devices Manufacturing</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+    </div>
+  </div>
+
+  <!-- SEM 7 – Coming Soon -->
+  <div class="sem-card" id="sem7">
+    <div class="sem-card-header"><div class="sem-label-wrap"><div class="sem-number-label">Fourth Year · Odd</div><div class="sem-title">Semester 7</div></div><span class="sem-count-badge">Coming Soon</span></div>
+    <div class="course-list"><button class="course-btn" style="opacity:0.5;cursor:default;"><span class="course-icon"><i class="fa-solid fa-clock"></i></span><span class="course-text">Course resources will be updated soon</span></button></div>
+  </div>
+
+  <!-- SEM 8 -->
+  <div class="sem-card" id="sem8">
+    <div class="sem-card-header"><div class="sem-label-wrap"><div class="sem-number-label">Fourth Year · Even</div><div class="sem-title">Semester 8</div></div><span class="sem-count-badge">12 Courses</span></div>
+    <div class="course-list">      <button class="course-btn"><span class="course-icon"><i class="fa-solid fa-square-root-variable"></i></span><span class="course-text">Differential Equations for Engineers and Scientists</span></button>
+      <a class="course-btn" href="Medical Devices Manufacturing.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-heart-pulse"></i></span><span class="course-text">Medical Devices Manufacturing</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Abrasive Machining and Finishing.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-screwdriver-wrench"></i></span><span class="course-text">Abrasive Machining and Finishing</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Fracture Mechanics.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-circle-xmark"></i></span><span class="course-text">Fracture Mechanics</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Fundamentals of Tribology.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-oil-can"></i></span><span class="course-text">Fundamentals of Tribology</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Fundamentals of Tribology.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-layer-group"></i></span><span class="course-text">Powder Bed Fusion AM</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Design for Additive Manufacturing.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-cube"></i></span><span class="course-text">Design for Additive Manufacturing</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Design for Additive Manufacturing.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-robot"></i></span><span class="course-text">Mechatronics for Manufacturing</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Instabilities and Turbulence in Fluid Flows.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-wind"></i></span><span class="course-text">Instabilities and Turbulence in Fluid Flows</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Introduction to combustion.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-fire"></i></span><span class="course-text">Introduction to Combustion</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Computational Fluid Dynamics and Heat Transfer.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-chart-area"></i></span><span class="course-text">Computational Fluid Dynamics</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+      <a class="course-btn" href="Decision Theory and Design Optimization.html" target="_blank"><span class="course-icon"><i class="fa-solid fa-diagram-project"></i></span><span class="course-text">Decision Theory and Optimization</span><i class="fa-solid fa-arrow-up-right-from-square course-arrow"></i></a>
+    </div>
+  </div>
+</div>
+<footer>© 2024–25 All Rights Reserved · Central Library, IIT Jammu</footer>
+<script>
+  const tabs=document.querySelectorAll('.sem-tab');
+  const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){tabs.forEach(t=>t.classList.remove('active'));const a=document.querySelector('.sem-tab[href="#'+e.target.id+'"]');if(a)a.classList.add('active');}});},{threshold:0.4});
+  document.querySelectorAll('.sem-card').forEach(c=>obs.observe(c));
+</script>
 </body>
 </html>
-
-
-
-
-
