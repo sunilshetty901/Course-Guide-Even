@@ -1,186 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Student Dashboard</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Dashboard | IIT Jammu Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    :root {
+      --dark-blue:    #0A1628;
+      --dark-blue-2:  #0D1F3C;
+      --dark-blue-3:  #112547;
+      --medium-blue:  #1A4B8C;
+      --cyan:         #00B4D8;
+      --cyan-light:   #48CAE4;
+      --cyan-glow:    rgba(0,180,216,0.18);
+      --cyan-tint:    rgba(0,180,216,0.08);
+      --white:        #FFFFFF;
+      --off-white:    #F0F6FF;
+      --muted:        #6B8CAE;
+      --light-line:   #D0E4F5;
+      --text-dark:    #0A1628;
+      --text-body:    #1C2E45;
+    }
 
-<style>
+    html { scroll-behavior: smooth; }
 
-body{
-font-family: Arial, sans-serif;
-background:#eef2f7;
-margin:0;
-}
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--off-white);
+      color: var(--text-body);
+      min-height: 100vh;
+    }
 
-.header{
-padding:25px 40px;
-font-size:28px;
-font-weight:bold;
-background:white;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-}
+    /* ── TOP STRIP ── */
+    .top-strip {
+      background: var(--dark-blue);
+      color: rgba(255,255,255,0.7);
+      font-size: 0.71rem; letter-spacing: 0.1em;
+      text-align: center; padding: 0.38rem 1rem;
+      border-bottom: 1px solid rgba(0,180,216,0.2);
+    }
+    .top-strip a { color: var(--cyan-light); text-decoration: none; }
 
-.container{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:25px;
-padding:40px;
-}
+    /* ── HEADER ── */
+    header {
+      background: var(--dark-blue-2);
+      border-bottom: 3px solid var(--cyan);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.35);
+      position: sticky; top: 0; z-index: 100;
+    }
+    .header-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0.85rem clamp(1.2rem, 4vw, 4rem); gap: 1rem;
+    }
+    .brand { display: flex; align-items: center; gap: 1rem; text-decoration: none; }
+    .brand img { height: 48px; object-fit: contain; filter: brightness(0) invert(1); }
+    .brand-divider { width: 1px; height: 34px; background: rgba(255,255,255,0.12); margin: 0 0.4rem; }
+    .brand-text .sub {
+      font-size: 0.66rem; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--cyan); font-weight: 600;
+    }
+    .brand-text .main {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem; color: white; font-weight: 700;
+    }
+    .back-btn {
+      display: flex; align-items: center; gap: 0.45rem;
+      padding: 0.5rem 1.1rem; border-radius: 6px;
+      background: transparent; border: 1.5px solid rgba(0,180,216,0.4);
+      color: var(--cyan-light); font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem; font-weight: 600; cursor: pointer;
+      transition: all 0.22s; text-decoration: none;
+    }
+    .back-btn:hover {
+      background: var(--cyan); color: var(--dark-blue);
+      border-color: var(--cyan); box-shadow: 0 4px 14px var(--cyan-glow);
+    }
 
-.card{
-background:white;
-border-radius:15px;
-padding:30px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-}
+    /* ── HERO BANNER ── */
+    .dash-hero {
+      background: linear-gradient(140deg, var(--dark-blue) 0%, #0d2550 50%, #0f3470 100%);
+      position: relative; overflow: hidden;
+      padding: 2.5rem clamp(1.5rem, 5vw, 4rem) 5rem;
+    }
+    .dash-hero::before {
+      content: ''; position: absolute; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(circle at 15% 50%, rgba(0,180,216,0.1) 0%, transparent 50%),
+        radial-gradient(circle at 85% 20%, rgba(26,75,140,0.25) 0%, transparent 45%);
+    }
+    .hero-grid {
+      position: absolute; inset: 0; pointer-events: none;
+      background-image:
+        linear-gradient(rgba(0,180,216,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,180,216,0.04) 1px, transparent 1px);
+      background-size: 50px 50px;
+    }
+    .dash-hero::after {
+      content: ''; position: absolute; bottom: -2px; left: 0; right: 0;
+      height: 56px; background: var(--off-white);
+      clip-path: ellipse(55% 100% at 50% 100%);
+    }
+    .hero-label {
+      position: relative; z-index: 2;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--cyan); font-weight: 600; margin-bottom: 0.9rem;
+      padding: 0.3rem 1rem; border: 1px solid rgba(0,180,216,0.3);
+      border-radius: 100px; background: rgba(0,180,216,0.08);
+    }
+    .hero-label::before {
+      content:''; width:6px; height:6px; border-radius:50%;
+      background:var(--cyan); box-shadow:0 0 8px var(--cyan);
+    }
+    .dash-hero h1 {
+      position: relative; z-index: 2;
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      color: white; font-weight: 700; line-height: 1.2;
+    }
+    .dash-hero h1 em {
+      font-style: normal;
+      background: linear-gradient(90deg, var(--cyan), var(--cyan-light));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
 
-.profile{
-text-align:center;
-}
+    /* ── MAIN LAYOUT ── */
+    .dash-body {
+      max-width: 1400px; margin: 0 auto;
+      padding: 0 clamp(1.2rem, 4vw, 4rem) 4rem;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 1.5rem;
+      margin-top: -2.5rem;
+      position: relative; z-index: 10;
+    }
+    @media (max-width: 860px) {
+      .dash-body { grid-template-columns: 1fr; }
+    }
 
-.profile img{
-width:180px;
-height:180px;
-border-radius:15px;
-object-fit:cover;
-margin-bottom:15px;
-}
+    /* ── CARDS ── */
+    .card {
+      background: var(--white);
+      border: 1px solid var(--light-line);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,100,180,0.08);
+      opacity: 0; animation: fadeUp 0.5s ease forwards;
+    }
+    .card:nth-child(1) { animation-delay: 0.05s; }
+    .card:nth-child(2) { animation-delay: 0.12s; }
 
-.profile h2{
-margin:10px 0;
-}
+    .card-top-bar {
+      height: 4px;
+      background: linear-gradient(90deg, var(--medium-blue), var(--cyan));
+    }
 
-.info{
-text-align:left;
-margin-top:20px;
-}
+    /* ── PROFILE CARD ── */
+    .profile-card { text-align: center; }
+    .profile-photo-wrap {
+      padding: 2rem 2rem 1rem;
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .photo-ring {
+      width: 130px; height: 130px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--medium-blue), var(--cyan));
+      padding: 3px; margin-bottom: 1.2rem;
+      box-shadow: 0 6px 24px var(--cyan-glow);
+    }
+    .photo-ring img {
+      width: 100%; height: 100%; border-radius: 50%;
+      object-fit: cover; background: var(--off-white);
+      display: block;
+    }
+    .profile-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem; font-weight: 700; color: var(--dark-blue);
+      margin-bottom: 0.3rem;
+    }
+    .profile-dept {
+      font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em;
+      text-transform: uppercase; margin-bottom: 1.5rem;
+    }
+    .profile-badge {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      background: var(--cyan-tint); border: 1px solid rgba(0,180,216,0.25);
+      color: var(--medium-blue); border-radius: 100px;
+      font-size: 0.74rem; font-weight: 600; padding: 0.3rem 0.9rem;
+      margin-bottom: 1.5rem;
+    }
 
-.info p{
-margin:10px 0;
-font-size:16px;
-}
+    .profile-info {
+      text-align: left; border-top: 1px solid var(--light-line);
+      padding: 1.4rem 1.8rem 1.8rem;
+    }
+    .info-row {
+      display: flex; align-items: flex-start; gap: 0.9rem;
+      padding: 0.7rem 0; border-bottom: 1px solid rgba(208,228,245,0.6);
+    }
+    .info-row:last-child { border-bottom: none; }
+    .info-icon {
+      width: 32px; height: 32px; border-radius: 8px;
+      background: var(--cyan-tint); border: 1px solid rgba(0,180,216,0.18);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--medium-blue); font-size: 0.78rem; flex-shrink: 0; margin-top: 2px;
+    }
+    .info-label { font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+    .info-value { font-size: 0.88rem; color: var(--dark-blue); font-weight: 500; margin-top: 0.1rem; }
 
-.course-title{
-font-size:20px;
-font-weight:bold;
-margin-bottom:15px;
-}
+    /* ── RIGHT COLUMN ── */
+    .right-col { display: flex; flex-direction: column; gap: 1.5rem; }
 
-.course{
-padding:12px;
-border-bottom:1px solid #eee;
-}
+    /* ── COURSE CARD ── */
+    .card-header {
+      display: flex; align-items: center; gap: 0.75rem;
+      padding: 1.4rem 1.8rem 1rem;
+      border-bottom: 1px solid var(--light-line);
+    }
+    .card-header-icon {
+      width: 38px; height: 38px; border-radius: 9px;
+      background: var(--cyan-tint); border: 1px solid rgba(0,180,216,0.2);
+      display: flex; align-items: center; justify-content: center; font-size: 1.1rem;
+    }
+    .card-header-text .title {
+      font-family: 'Playfair Display', serif; font-size: 1.05rem;
+      font-weight: 600; color: var(--dark-blue);
+    }
+    .card-header-text .subtitle { font-size: 0.76rem; color: var(--muted); margin-top: 0.1rem; }
 
-.bottom{
-display:flex;
-gap:20px;
-padding:0 40px 40px;
-}
+    .course-list { padding: 0.6rem 1.8rem 1.4rem; }
+    .course-item {
+      display: flex; align-items: center; gap: 0.9rem;
+      padding: 0.78rem 0; border-bottom: 1px solid rgba(208,228,245,0.5);
+      transition: all 0.2s;
+    }
+    .course-item:last-child { border-bottom: none; }
+    .course-num {
+      width: 26px; height: 26px; border-radius: 6px;
+      background: rgba(26,75,140,0.09);
+      border: 1px solid rgba(26,75,140,0.2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.7rem; font-weight: 700; color: var(--medium-blue); flex-shrink: 0;
+    }
+    .course-item a {
+      color: var(--text-dark); text-decoration: none; font-size: 0.88rem;
+      font-weight: 500; transition: color 0.2s; flex: 1; line-height: 1.4;
+    }
+    .course-item:hover a { color: var(--medium-blue); }
+    .course-item a::after {
+      content: ' ↗'; font-size: 0.75rem; color: var(--cyan); opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .course-item:hover a::after { opacity: 1; }
 
-.stat{
-flex:1;
-background:white;
-padding:20px;
-border-radius:12px;
-text-align:center;
-box-shadow:0 8px 20px rgba(0,0,0,0.1);
-}
+    /* ── STATS ROW ── */
+    .stats-row {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
+    }
+    @media (max-width: 600px) { .stats-row { grid-template-columns: 1fr; } }
 
-</style>
+    .stat-card {
+      background: var(--white);
+      border: 1px solid var(--light-line);
+      border-radius: 14px; padding: 1.4rem 1.5rem;
+      box-shadow: 0 4px 16px rgba(0,100,180,0.07);
+      opacity: 0; animation: fadeUp 0.5s ease forwards;
+      position: relative; overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .stat-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 3px; background: linear-gradient(90deg, var(--medium-blue), var(--cyan));
+    }
+    .stat-card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(0,100,180,0.13); }
+    .stat-card:nth-child(1) { animation-delay: 0.2s; }
+    .stat-card:nth-child(2) { animation-delay: 0.28s; }
+    .stat-card:nth-child(3) { animation-delay: 0.36s; }
+
+    .stat-icon {
+      font-size: 1.6rem; margin-bottom: 0.7rem; display: block;
+    }
+    .stat-value {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.7rem; font-weight: 700; color: var(--dark-blue);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.76rem; color: var(--muted); margin-top: 0.3rem; letter-spacing: 0.03em;
+    }
+    .stat-detail {
+      font-size: 0.78rem; color: var(--medium-blue); font-weight: 600;
+      margin-top: 0.6rem;
+    }
+
+    /* ── EMPTY STATE ── */
+    .empty-state {
+      text-align: center; padding: 2.5rem 1rem; color: var(--muted);
+    }
+    .empty-state i { font-size: 2rem; margin-bottom: 0.7rem; color: var(--light-line); display: block; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark-blue); color: rgba(255,255,255,0.5);
+      border-top: 2px solid var(--cyan);
+      text-align: center; padding: 1rem;
+      font-size: 0.73rem; letter-spacing: 0.04em;
+    }
+
+    /* ── LOADING ── */
+    #loadingState {
+      position: fixed; inset: 0; z-index: 999;
+      background: var(--dark-blue);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 1rem;
+    }
+    .loader-ring {
+      width: 48px; height: 48px; border-radius: 50%;
+      border: 3px solid rgba(0,180,216,0.2);
+      border-top-color: var(--cyan);
+      animation: spin 0.8s linear infinite;
+    }
+    #loadingState p { color: rgba(255,255,255,0.55); font-size: 0.85rem; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="header">
-Student Dashboard
+<!-- LOADING SCREEN -->
+<div id="loadingState">
+  <div class="loader-ring"></div>
+  <p>Loading your dashboard…</p>
 </div>
 
-<div class="container">
-
-<div class="card profile" id="profileCard"></div>
-
-<div class="card" id="courseCard"></div>
-
+<!-- TOP STRIP -->
+<div class="top-strip">
+  Central Library, IIT Jammu &nbsp;·&nbsp;
+  <a href="https://iitjammu.ac.in/" target="_blank">iitjammu.ac.in</a>
+  &nbsp;·&nbsp; library@iitjammu.ac.in
 </div>
 
-<div class="bottom">
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a class="brand" href="index.html">
+      <img src="https://library.iitjammu.ac.in/wp-content/uploads/2024/02/light_logo-1.png" alt="IIT Jammu"/>
+      <div class="brand-divider"></div>
+      <div class="brand-text">
+        <div class="sub">Central Library</div>
+        <div class="main">Student Dashboard</div>
+      </div>
+    </a>
+    <a href="index.html" class="back-btn">
+      <i class="fa-solid fa-arrow-left"></i> Back to Course Guide
+    </a>
+  </div>
+</header>
 
-<div class="stat">
-📚 Library Books: 3 Issued
+<!-- HERO BANNER -->
+<div class="dash-hero">
+  <div class="hero-grid"></div>
+  <div class="hero-label">Student Portal</div>
+  <h1>Welcome back, <em id="heroName">Student</em></h1>
 </div>
 
-<div class="stat">
-💰 Fine Due: ₹50
+<!-- MAIN CONTENT -->
+<div class="dash-body">
+
+  <!-- LEFT: PROFILE CARD -->
+  <div class="card profile-card" id="profileCard">
+    <div class="card-top-bar"></div>
+    <!-- Filled by JS -->
+  </div>
+
+  <!-- RIGHT COLUMN -->
+  <div class="right-col">
+
+    <!-- COURSES CARD -->
+    <div class="card" id="courseCard" style="animation-delay:0.12s;">
+      <div class="card-top-bar"></div>
+      <!-- Filled by JS -->
+    </div>
+
+    <!-- STATS ROW -->
+    <div class="stats-row">
+      <div class="stat-card">
+        <span class="stat-icon">📚</span>
+        <div class="stat-value">3</div>
+        <div class="stat-label">Books Issued</div>
+        <div class="stat-detail">Library · Active</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">💰</span>
+        <div class="stat-value">₹50</div>
+        <div class="stat-label">Fine Due</div>
+        <div class="stat-detail">Pay at counter</div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">📅</span>
+        <div class="stat-value">May 15</div>
+        <div class="stat-label">Upcoming Exam</div>
+        <div class="stat-detail">Mark your calendar</div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-<div class="stat">
-📅 Upcoming: Exam on May 15
-</div>
-
-</div>
+<!-- FOOTER -->
+<footer>© 2024–25 All Rights Reserved · Central Library, IIT Jammu</footer>
 
 <script>
-
 const student = JSON.parse(localStorage.getItem("studentData"));
 
 if(!student){
-document.body.innerHTML="Student data not found";
+  document.getElementById("loadingState").innerHTML =
+    `<div style="text-align:center;color:white;">
+      <i class="fa fa-triangle-exclamation" style="font-size:2rem;color:#00B4D8;margin-bottom:1rem;display:block;"></i>
+      <p style="font-size:1rem;margin-bottom:1.2rem;">No student data found.<br>Please login first.</p>
+      <a href="index.html" style="background:#00B4D8;color:#0A1628;padding:0.6rem 1.4rem;
+        border-radius:8px;text-decoration:none;font-weight:700;font-size:0.88rem;">
+        ← Go to Login
+      </a>
+    </div>`;
+} else {
+
+  /* ── FIX GITHUB IMAGE URL ──
+     Handles multiple GitHub URL formats:
+     1. https://github.com/user/repo/blob/branch/file.jpg
+     2. https://raw.githubusercontent.com/... (already correct)
+     3. https://github.com/user/repo/raw/branch/file.jpg
+  */
+  function fixGithubURL(url){
+    if(!url) return 'https://via.placeholder.com/130';
+    url = url.trim();
+
+    // Already a raw URL — return as-is
+    if(url.includes('raw.githubusercontent.com')) return url;
+
+    // Convert /blob/ path
+    if(url.includes('github.com') && url.includes('/blob/')){
+      return url
+        .replace('https://github.com/', 'https://raw.githubusercontent.com/')
+        .replace('/blob/', '/');
+    }
+
+    // Convert /raw/ path (some repos use this)
+    if(url.includes('github.com') && url.includes('/raw/')){
+      return url
+        .replace('https://github.com/', 'https://raw.githubusercontent.com/')
+        .replace('/raw/', '/');
+    }
+
+    return url;
+  }
+
+  const photo = fixGithubURL(student.PhotoURL);
+
+  /* Update hero name */
+  const firstName = student.Name ? student.Name.split(' ')[0] : 'Student';
+  document.getElementById("heroName").textContent = firstName;
+
+  /* ── PROFILE CARD ── */
+  document.getElementById("profileCard").innerHTML = `
+    <div class="card-top-bar"></div>
+    <div class="profile-photo-wrap">
+      <div class="photo-ring">
+        <img id="studentPhoto" src="${photo}"
+          onerror="this.onerror=null;this.src='https://ui-avatars.com/api/?name=${encodeURIComponent(student.Name)}&background=1A4B8C&color=ffffff&size=130&bold=true'"
+          alt="${student.Name}"/>
+      </div>
+      <div class="profile-name">${student.Name}</div>
+      <div class="profile-dept">${student.Department || 'IIT Jammu'}</div>
+      <div class="profile-badge">
+        <i class="fa fa-circle" style="font-size:0.45rem;color:#00B4D8;"></i>
+        Semester ${student.Semester || '—'}
+      </div>
+    </div>
+    <div class="profile-info">
+      <div class="info-row">
+        <div class="info-icon"><i class="fa fa-id-card"></i></div>
+        <div>
+          <div class="info-label">Student ID</div>
+          <div class="info-value">${student["Student ID"] || '—'}</div>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-icon"><i class="fa fa-graduation-cap"></i></div>
+        <div>
+          <div class="info-label">Department</div>
+          <div class="info-value">${student.Department || '—'}</div>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-icon"><i class="fa fa-phone"></i></div>
+        <div>
+          <div class="info-label">Mobile</div>
+          <div class="info-value">${student.Mobile || '—'}</div>
+        </div>
+      </div>
+      <div class="info-row">
+        <div class="info-icon"><i class="fa fa-envelope"></i></div>
+        <div>
+          <div class="info-label">Email</div>
+          <div class="info-value" style="word-break:break-all;">${student.Email || '—'}</div>
+        </div>
+      </div>
+    </div>
+  `;
+
+  /* ── COURSE CARD ── */
+  const courses = student.Courses ? student.Courses.split(";").map(c=>c.trim()).filter(Boolean) : [];
+  const links   = student.CourseLinks ? student.CourseLinks.split(";").map(l=>l.trim()) : [];
+
+  let courseItems = '';
+  if(courses.length === 0){
+    courseItems = `<div class="empty-state">
+      <i class="fa fa-book-open"></i>
+      No courses found for this semester.
+    </div>`;
+  } else {
+    courses.forEach((course, i) => {
+      const link = links[i] || '#';
+      courseItems += `
+        <div class="course-item">
+          <div class="course-num">${i+1}</div>
+          <a href="${link}" target="_blank">${course}</a>
+        </div>`;
+    });
+  }
+
+  document.getElementById("courseCard").innerHTML = `
+    <div class="card-top-bar"></div>
+    <div class="card-header">
+      <div class="card-header-icon">📚</div>
+      <div class="card-header-text">
+        <div class="title">Current Semester Courses</div>
+        <div class="subtitle">Semester ${student.Semester || '—'} &nbsp;·&nbsp; ${courses.length} course${courses.length !== 1 ? 's' : ''} enrolled</div>
+      </div>
+    </div>
+    <div class="course-list">${courseItems}</div>
+  `;
+
+  /* Hide loading screen */
+  document.getElementById("loadingState").style.display = "none";
 }
-
-// Fix GitHub image URL
-const photo = student.PhotoURL
-.replace("https://github.com/","https://raw.githubusercontent.com/")
-.replace("/blob/","/");
-
-
-// ---------- PROFILE CARD ----------
-
-let profileHTML = `
-<img src="${photo}" onerror="this.src='https://via.placeholder.com/180'">
-
-<h2>${student.Name}</h2>
-
-<div class="info">
-<p><i class="fa fa-graduation-cap"></i> <b>Department:</b> ${student.Department}</p>
-<p><i class="fa fa-id-card"></i> <b>Student ID:</b> ${student["Student ID"]}</p>
-<p><i class="fa fa-phone"></i> <b>Mobile:</b> ${student.Mobile}</p>
-<p><i class="fa fa-envelope"></i> <b>Email:</b> ${student.Email}</p>
-</div>
-`;
-
-document.getElementById("profileCard").innerHTML = profileHTML;
-
-
-// ---------- COURSE CARD ----------
-
-const courses = student.Courses ? student.Courses.split(";") : [];
-const links = student.CourseLinks ? student.CourseLinks.split(";") : [];
-
-let courseHTML = `
-<div class="course-title">📚 Current Semester Courses</div>
-<p><b>Semester:</b> ${student.Semester}</p>
-`;
-
-courses.forEach((course,index)=>{
-
-const link = links[index] || "#";
-
-courseHTML += `
-<div class="course">
-<a href="${link}" target="_blank">${course}</a>
-</div>
-`;
-
-});
-
-document.getElementById("courseCard").innerHTML = courseHTML;
-
-
 </script>
-
 </body>
 </html>
-
-
