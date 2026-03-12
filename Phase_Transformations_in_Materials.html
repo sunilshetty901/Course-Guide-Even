@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Phase Transformations in Materials | IIT Jammu Library</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{--dark-blue:#0A1628;--dark-blue-2:#0D1F3C;--medium-blue:#1A4B8C;--cyan:#00B4D8;--cyan-light:#48CAE4;--white:#FFFFFF;--off-white:#F0F6FF;--muted:#6B8CAE;--light-line:#D0E4F5;--text-body:#1C2E45;--card-shadow:0 4px 24px rgba(0,100,180,0.09)}
+    html{scroll-behavior:smooth}
+    body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--text-body);overflow-x:hidden}
+    .top-strip{background:var(--dark-blue);color:rgba(255,255,255,0.65);font-size:.7rem;letter-spacing:.1em;text-align:center;padding:.36rem 1rem;border-bottom:1px solid rgba(0,180,216,0.2)}
+    .top-strip a{color:var(--cyan-light);text-decoration:none}
+    header{background:var(--dark-blue-2);border-bottom:3px solid var(--cyan);box-shadow:0 2px 20px rgba(0,0,0,.35);position:sticky;top:0;z-index:100}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;padding:.85rem clamp(1.2rem,4vw,4rem);gap:1rem}
+    .brand{display:flex;align-items:center;gap:1rem;text-decoration:none}
+    .brand img{height:46px;object-fit:contain;filter:brightness(0) invert(1)}
+    .brand-divider{width:1px;height:32px;background:rgba(255,255,255,.12)}
+    .brand-text .sub{font-size:.64rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);font-weight:600}
+    .brand-text .main{font-family:'Playfair Display',serif;font-size:1rem;color:white;font-weight:700}
+    .back-btn{display:flex;align-items:center;gap:.45rem;padding:.48rem 1.05rem;border-radius:6px;background:transparent;border:1.5px solid rgba(0,180,216,.4);color:var(--cyan-light);font-size:.8rem;font-weight:600;cursor:pointer;transition:all .22s;text-decoration:none}
+    .back-btn:hover{background:var(--cyan);color:var(--dark-blue);border-color:var(--cyan)}
+    .hero{background:linear-gradient(140deg,var(--dark-blue) 0%,#0d2550 55%,#0f3470 100%);position:relative;overflow:hidden;padding:clamp(2.8rem,6vw,5rem) clamp(1.5rem,5vw,5rem) clamp(4.5rem,8vw,7rem);text-align:center}
+    .hero::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 10% 60%,rgba(0,180,216,.13) 0%,transparent 48%),radial-gradient(circle at 88% 18%,rgba(26,75,140,.3) 0%,transparent 45%)}
+    .hero-grid{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(0,180,216,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,180,216,.04) 1px,transparent 1px);background-size:52px 52px}
+    .hero::after{content:'';position:absolute;bottom:-2px;left:0;right:0;height:65px;background:var(--off-white);clip-path:ellipse(55% 100% at 50% 100%)}
+    .hero-content{position:relative;z-index:2}
+    .hero-eyebrow{display:inline-flex;align-items:center;gap:.5rem;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;color:var(--cyan);font-weight:600;margin-bottom:1rem;padding:.3rem 1rem;border:1px solid rgba(0,180,216,.3);border-radius:100px;background:rgba(0,180,216,.08)}
+    .hero-eyebrow::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--cyan);box-shadow:0 0 8px var(--cyan);animation:blink 2s infinite}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+    .hero h1{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,4.5vw,3.2rem);color:white;font-weight:700;line-height:1.12;margin-bottom:.7rem}
+    .hero h1 em{font-style:normal;background:linear-gradient(90deg,var(--cyan),var(--cyan-light));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+    .hero-meta{display:flex;justify-content:center;gap:.7rem;margin-top:1.5rem;flex-wrap:wrap}
+    .hero-chip{display:inline-flex;align-items:center;gap:.4rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.8);border-radius:100px;font-size:.72rem;font-weight:500;padding:.28rem .9rem}
+    .hero-chip i{color:var(--cyan);font-size:.65rem}
+    .section-label{display:flex;align-items:center;gap:1rem;padding:2.5rem clamp(1.5rem,5vw,4rem) 1.2rem}
+    .section-label::before,.section-label::after{content:'';flex:1;height:1px;background:var(--light-line)}
+    .section-label span{font-size:.67rem;letter-spacing:.22em;text-transform:uppercase;color:var(--medium-blue);font-weight:600;white-space:nowrap}
+    .page-body{padding:0 clamp(1.5rem,5vw,4rem) clamp(2rem,4vw,3rem)}
+    .books-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,480px),1fr));gap:1.2rem}
+    .book-card{background:var(--white);border:1px solid var(--light-line);border-radius:16px;overflow:hidden;box-shadow:var(--card-shadow);display:flex;transition:box-shadow .28s,transform .28s;opacity:0;animation:fadeUp .5s ease forwards}
+    .book-card:nth-child(1){animation-delay:.05s}.book-card:nth-child(2){animation-delay:.12s}.book-card:nth-child(3){animation-delay:.18s}.book-card:nth-child(4){animation-delay:.24s}.book-card:nth-child(5){animation-delay:.30s}.book-card:nth-child(6){animation-delay:.36s}.book-card:nth-child(7){animation-delay:.42s}.book-card:nth-child(8){animation-delay:.48s}.book-card:nth-child(9){animation-delay:.54s}
+    .book-card:hover{box-shadow:0 12px 36px rgba(0,100,180,.14);transform:translateY(-3px)}
+    .book-cover-wrap{flex-shrink:0;width:95px;background:linear-gradient(160deg,var(--dark-blue-2),#112040);display:flex;align-items:center;justify-content:center;padding:.8rem;border-right:2px solid var(--cyan)}
+    .book-cover{width:75px;height:100px;object-fit:cover;border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,.35)}
+    .book-cover-placeholder{width:75px;height:100px;border-radius:6px;background:rgba(0,180,216,.1);border:1px solid rgba(0,180,216,.2);display:flex;align-items:center;justify-content:center}
+    .book-cover-placeholder i{color:var(--cyan);font-size:1.8rem}
+    .book-body{flex:1;padding:1.1rem 1.3rem;display:flex;flex-direction:column;justify-content:space-between;gap:.7rem}
+    .book-type-tag{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--cyan);font-weight:700}
+    .book-title-text{font-family:'Playfair Display',serif;font-size:.96rem;font-weight:600;color:var(--dark-blue);line-height:1.4}
+    .book-actions{display:flex;flex-wrap:wrap;gap:.5rem}
+    .book-btn{display:inline-flex;align-items:center;gap:.4rem;padding:.38rem .85rem;border-radius:100px;font-size:.76rem;font-weight:600;text-decoration:none;transition:all .2s;border:1.5px solid;font-family:'DM Sans',sans-serif;cursor:pointer}
+    .book-btn.primary{background:var(--medium-blue);color:white;border-color:var(--medium-blue)}
+    .book-btn.primary:hover{background:#133a70;border-color:#133a70;box-shadow:0 4px 14px rgba(26,75,140,.3)}
+    .book-btn.outline{background:transparent;color:var(--medium-blue);border-color:rgba(26,75,140,.25)}
+    .book-btn.outline:hover{background:rgba(26,75,140,.06);border-color:var(--medium-blue)}
+    .book-btn.disabled{background:rgba(107,140,174,.08);color:var(--muted);border-color:rgba(107,140,174,.2);cursor:default}
+
+    /* ── REDESIGNED ERESOURCE CARD ── */
+    .tab-nav{display:flex;gap:.5rem;flex-wrap:wrap;padding:0 0 1.4rem}
+    .tab-btn{padding:.44rem 1.15rem;border-radius:100px;border:1.5px solid var(--light-line);background:var(--white);color:var(--muted);font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:600;cursor:pointer;transition:all .2s}
+    .tab-btn:hover,.tab-btn.active{background:var(--medium-blue);color:white;border-color:var(--medium-blue);box-shadow:0 4px 14px rgba(26,75,140,.22)}
+    .eresource-section{display:none}.eresource-section.active{display:block}
+    .eresource-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem}
+    /* Card = white box, logo top zone + info bottom strip */
+    .eresource-card{
+      display:flex;flex-direction:column;border-radius:14px;overflow:hidden;
+      text-decoration:none;border:1px solid var(--light-line);
+      background:var(--white);box-shadow:var(--card-shadow);
+      transition:transform .28s,box-shadow .28s;
+    }
+    .eresource-card:hover{transform:translateY(-5px);box-shadow:0 14px 32px rgba(0,100,180,.18)}
+    /* Logo zone: brand-coloured bg, white logo centred */
+    .ec-logo-zone{
+      height:110px;display:flex;align-items:center;justify-content:center;
+      position:relative;padding:1.2rem;
+    }
+    .ec-logo-zone img{
+      max-width:80%;max-height:70px;object-fit:contain;
+      filter:brightness(0) invert(1);  /* make logo white */
+    }
+    /* Fallback icon when no logo */
+    .ec-logo-zone .ec-icon{font-size:2.2rem;color:rgba(255,255,255,0.85)}
+    /* Arrow badge */
+    .ec-arrow{
+      position:absolute;top:.55rem;right:.55rem;
+      width:22px;height:22px;border-radius:50%;
+      background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);
+      display:flex;align-items:center;justify-content:center;
+    }
+    .eresource-card:hover .ec-arrow{background:white;}
+    .ec-arrow i{font-size:.52rem;color:white}
+    .eresource-card:hover .ec-arrow i{color:var(--medium-blue)}
+    /* Info strip at bottom */
+    .ec-info{
+      padding:.65rem .85rem .8rem;
+      background:var(--white);
+      border-top:1px solid var(--light-line);
+      flex:1;display:flex;flex-direction:column;gap:.18rem;
+    }
+    .ec-title{font-size:.78rem;font-weight:700;color:var(--dark-blue);line-height:1.3}
+    .ec-tag{font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
+
+    .opensource-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr));gap:1rem}
+    .os-card{background:var(--white);border:1px solid var(--light-line);border-radius:14px;padding:1.2rem 1.3rem;display:flex;flex-direction:column;gap:.6rem;box-shadow:var(--card-shadow);transition:box-shadow .25s,transform .25s;text-decoration:none;color:inherit}
+    .os-card:hover{box-shadow:0 10px 28px rgba(0,100,180,.13);transform:translateY(-3px)}
+    .os-card-top{display:flex;align-items:center;gap:.8rem}
+    .os-icon{width:38px;height:38px;border-radius:9px;background:rgba(0,180,216,.1);border:1px solid rgba(0,180,216,.2);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .os-icon i{color:var(--cyan);font-size:.9rem}
+    .os-name{font-size:.88rem;font-weight:700;color:var(--dark-blue);line-height:1.3}
+    .os-desc{font-size:.78rem;color:var(--muted);line-height:1.55}
+    .os-badge{display:inline-flex;align-items:center;gap:.3rem;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#22c55e;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.2);padding:.18rem .55rem;border-radius:100px;width:fit-content}
+    footer{background:var(--dark-blue);color:rgba(255,255,255,.4);border-top:2px solid var(--cyan);text-align:center;padding:1.1rem;font-size:.72rem;letter-spacing:.04em}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:600px){.eresource-grid{grid-template-columns:repeat(auto-fill,minmax(148px,1fr))}.book-cover-wrap{width:80px}}
+</style></head><body>
+<div class="top-strip">Central Library, IIT Jammu &nbsp;·&nbsp; <a href="https://iitjammu.ac.in/" target="_blank">iitjammu.ac.in</a> &nbsp;·&nbsp; library@iitjammu.ac.in</div>
+<header><div class="header-inner">
+  <a class="brand" href="index.html"><img src="https://library.iitjammu.ac.in/wp-content/uploads/2024/02/light_logo-1.png" alt="IIT Jammu"/><div class="brand-divider"></div><div class="brand-text"><div class="sub">Central Library</div><div class="main">Course Guide · Mini OPAC</div></div></a>
+  <a href="javascript:history.back()" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back</a>
+</div></header>
+<section class="hero"><div class="hero-grid"></div><div class="hero-content">
+  <div class="hero-eyebrow">Materials Science & Engineering</div>
+  <h1>Phase Transformations<br/><em>in Materials</em></h1>
+  <div class="hero-meta"><span class="hero-chip"><i class="fa-solid fa-layer-group"></i> Phase Diagrams</span><span class="hero-chip"><i class="fa-solid fa-fire"></i> Solidification</span><span class="hero-chip"><i class="fa-solid fa-microscope"></i> Microstructure</span></div>
+</div></section>
+
+<div class="section-label"><span>TEXTBOOKS</span></div>
+<div class="page-body"><div class="books-grid">
+<div class="book-card"><div class="book-cover-wrap"><img class="book-cover" src="Phase Transformations in Metals and Alloys, 3rd Ed. by David A. Porte.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="book-cover-placeholder" style="display:none"><i class="fa-solid fa-book"></i></div></div><div class="book-body"><div><div class="book-type-tag">Textbook</div><div class="book-title-text">Phase Transformations in Metals and Alloys, 3rd Ed. by David A. Porter, Kenneth E. Easterling, and Mohamed Y. Sherif</div></div><div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=293" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><a class="book-btn outline" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-reserve.pl?biblionumber=293" target="_blank"><i class="fa-regular fa-bookmark"></i> Reserve</a></div></div></div>
+<div class="book-card"><div class="book-cover-wrap"><img class="book-cover" src="Physical Metallurgy Principles by Reed-Hill.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="book-cover-placeholder" style="display:none"><i class="fa-solid fa-book"></i></div></div><div class="book-body"><div><div class="book-type-tag">Textbook</div><div class="book-title-text">Physical Metallurgy Principles by Reed-Hill</div></div><div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=1340" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><a class="book-btn outline" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-reserve.pl?biblionumber=1340" target="_blank"><i class="fa-regular fa-bookmark"></i> Reserve</a></div></div></div>
+</div></div>
+
+<div class="section-label"><span>REFERENCE BOOKS</span></div>
+<div class="page-body"><div class="books-grid">
+<div class="book-card"><div class="book-cover-wrap"><img class="book-cover" src="Solid State Phase Transformations by V. Raghavan.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="book-cover-placeholder" style="display:none"><i class="fa-solid fa-book"></i></div></div><div class="book-body"><div><div class="book-type-tag">Reference</div><div class="book-title-text">Solid State Phase Transformations by V. Raghavan</div></div><div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=505" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><a class="book-btn outline" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-reserve.pl?biblionumber=505" target="_blank"><i class="fa-regular fa-bookmark"></i> Reserve</a></div></div></div>
+<div class="book-card"><div class="book-cover-wrap"><img class="book-cover" src="Modern Physical Metallurgy and Materials Engineering, 6th Ed. by R. E. Smallman.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="book-cover-placeholder" style="display:none"><i class="fa-solid fa-book"></i></div></div><div class="book-body"><div><div class="book-type-tag">Reference</div><div class="book-title-text">Modern Physical Metallurgy and Materials Engineering, 6th Ed. by R. E. Smallman and R.J. Bishop</div></div><div class="book-actions"><span class="book-btn disabled"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</span><span class="book-btn disabled"><i class="fa-regular fa-bookmark"></i> Reserve</span></div></div></div>
+</div></div>
+
+
+<div class="section-label"><span>E-Resources · ONOS Subscribed Databases</span></div>
+<div class="page-body">
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="showTab('db',this)">Full-Text Databases</button>
+    <button class="tab-btn" onclick="showTab('jnl',this)">Key Journals</button>
+    <button class="tab-btn" onclick="showTab('oa',this)">Open Access</button>
+  </div>
+  <div class="eresource-section active" id="db"><div class="eresource-grid"><a class="eresource-card" href="http://www.sciencedirect.com/" target="_blank"><div class="ec-logo-zone" style="background:#FF6900;"><img src="https://res.cloudinary.com/drqmgoe6a/image/upload/v1753265486/science-direct-logo_mqp9ce.png" alt="Elsevier ScienceDirect logo" onerror="this.style.display='none';this.nextSibling.style.display='flex'" /><span class="ec-icon" style="display:none"><i class="fa-solid fa-layer-group"></i></span><div class="ec-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div><div class="ec-info"><div class="ec-title">Elsevier ScienceDirect</div><div class="ec-tag">2389 Journals · ONOS</div></div></a>
+<a class="eresource-card" href="https://link.springer.com/" target="_blank"><div class="ec-logo-zone" style="background:#007D3B;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Springer_Nature_Logo.svg/400px-Springer_Nature_Logo.svg.png" alt="Springer Nature logo" onerror="this.style.display='none';this.nextSibling.style.display='flex'" /><span class="ec-icon" style="display:none"><i class="fa-solid fa-book-open"></i></span><div class="ec-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div><div class="ec-info"><div class="ec-title">Springer Nature</div><div class="ec-tag">2403 Journals · ONOS</div></div></a>
+<a class="eresource-card" href="https://onlinelibrary.wiley.com/" target="_blank"><div class="ec-logo-zone" style="background:#003087;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Wiley_logo.svg/400px-Wiley_logo.svg.png" alt="Wiley Online Library logo" onerror="this.style.display='none';this.nextSibling.style.display='flex'" /><span class="ec-icon" style="display:none"><i class="fa-solid fa-w"></i></span><div class="ec-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div><div class="ec-info"><div class="ec-title">Wiley Online Library</div><div class="ec-tag">1332 Journals · ONOS</div></div></a>
+<a class="eresource-card" href="https://www.tandfonline.com/" target="_blank"><div class="ec-logo-zone" style="background:#CC0000;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Taylor_%26_Francis_logo.svg/400px-Taylor_%26_Francis_logo.svg.png" alt="Taylor & Francis logo" onerror="this.style.display='none';this.nextSibling.style.display='flex'" /><span class="ec-icon" style="display:none"><i class="fa-solid fa-t"></i></span><div class="ec-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div><div class="ec-info"><div class="ec-title">Taylor & Francis</div><div class="ec-tag">2548 Journals · ONOS</div></div></a>
+<a class="eresource-card" href="http://asmedigitalcollection.asme.org/" target="_blank"><div class="ec-logo-zone" style="background:#E4002B;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/ASME_logo.svg/400px-ASME_logo.svg.png" alt="ASME Digital Collection logo" onerror="this.style.display='none';this.nextSibling.style.display='flex'" /><span class="ec-icon" style="display:none"><i class="fa-solid fa-gear"></i></span><div class="ec-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div><div class="ec-info"><div class="ec-title">ASME Digital Collection</div><div class="ec-tag">Materials Journals</div></div></a>
+<a class="eresource-card" href="https://pubs.acs.org/" target="_blank"><div class="ec-logo-zone" style="background:#2D6DAB;"><img src="https://res.cloudinary.com/drqmgoe6a/image/upload/v1753266412/ACSpublications_haekbm.png" alt="ACS Publications logo" onerror="this.style.display='none';this.nextSibling.style.display='flex'" /><span class="ec-icon" style="display:none"><i class="fa-solid fa-flask"></i></span><div class="ec-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div><div class="ec-info"><div class="ec-title">ACS Publications</div><div class="ec-tag">Chemistry & Materials</div></div></a>
+</div></div>
+  <div class="eresource-section" id="jnl"><div class="eresource-grid"><a class="eresource-card" href="https://www.sciencedirect.com/journal/acta-materialia" target="_blank"><div class="ec-logo-zone" style="background:#1A3A5C;"><span class="ec-icon"><i class="fa-solid fa-database"></i></span><div class="ec-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div><div class="ec-info"><div class="ec-title">Acta Materialia</div><div class="ec-tag">Elsevier</div></div></a>
+<a class="eresource-card" href="https://link.springer.com/journal/11661" target="_blank"><div class="ec-logo-zone" style="background:#1A3A5C;"><span class="ec-icon"><i class="fa-solid fa-database"></i></span><div class="ec-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div><div class="ec-info"><div class="ec-title">Metallurgical & Materials Trans. A</div><div class="ec-tag">Springer</div></div></a>
+<a class="eresource-card" href="https://www.sciencedirect.com/journal/journal-of-alloys-and-compounds" target="_blank"><div class="ec-logo-zone" style="background:#1A3A5C;"><span class="ec-icon"><i class="fa-solid fa-database"></i></span><div class="ec-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div><div class="ec-info"><div class="ec-title">J. Alloys and Compounds</div><div class="ec-tag">Elsevier</div></div></a>
+<a class="eresource-card" href="https://link.springer.com/journal/10853" target="_blank"><div class="ec-logo-zone" style="background:#1A3A5C;"><span class="ec-icon"><i class="fa-solid fa-database"></i></span><div class="ec-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div><div class="ec-info"><div class="ec-title">J. Materials Science</div><div class="ec-tag">Springer</div></div></a>
+<a class="eresource-card" href="https://www.sciencedirect.com/journal/calphad" target="_blank"><div class="ec-logo-zone" style="background:#1A3A5C;"><span class="ec-icon"><i class="fa-solid fa-database"></i></span><div class="ec-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div><div class="ec-info"><div class="ec-title">CALPHAD</div><div class="ec-tag">Elsevier</div></div></a>
+</div></div>
+  <div class="eresource-section" id="oa"><div class="eresource-grid"><a class="eresource-card" href="https://nopr.niscpr.res.in" target="_blank"><div class="ec-logo-zone" style="background:#003580;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Council_of_Scientific_%26_Industrial_Research_logo.png/400px-Council_of_Scientific_%26_Industrial_Research_logo.png" alt="CSIR–NIScPR Journals logo" onerror="this.style.display='none';this.nextSibling.style.display='flex'" /><span class="ec-icon" style="display:none"><i class="fa-solid fa-microscope"></i></span><div class="ec-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div><div class="ec-info"><div class="ec-title">CSIR–NIScPR Journals</div><div class="ec-tag">Open Access · ONOS Indian</div></div></a>
+<a class="eresource-card" href="https://publicationsdrdo.in/" target="_blank"><div class="ec-logo-zone" style="background:#003580;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/DRDO_Logo.svg/400px-DRDO_Logo.svg.png" alt="DRDO Research Journals logo" onerror="this.style.display='none';this.nextSibling.style.display='flex'" /><span class="ec-icon" style="display:none"><i class="fa-solid fa-shield-halved"></i></span><div class="ec-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div><div class="ec-info"><div class="ec-title">DRDO Research Journals</div><div class="ec-tag">Open Access · ONOS Indian</div></div></a>
+<a class="eresource-card" href="https://indianjournals.com/" target="_blank"><div class="ec-logo-zone" style="background:#1A3A5C;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/India_Gate.jpg/400px-India_Gate.jpg" alt="IndianJournals.com logo" onerror="this.style.display='none';this.nextSibling.style.display='flex'" /><span class="ec-icon" style="display:none"><i class="fa-solid fa-newspaper"></i></span><div class="ec-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div><div class="ec-info"><div class="ec-title">IndianJournals.com</div><div class="ec-tag">253 Indian Journals · ONOS</div></div></a>
+<a class="eresource-card" href="https://nptel.ac.in/" target="_blank"><div class="ec-logo-zone" style="background:#E45C2E;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/NPTEL-LOGO.png/400px-NPTEL-LOGO.png" alt="NPTEL Open Courseware logo" onerror="this.style.display='none';this.nextSibling.style.display='flex'" /><span class="ec-icon" style="display:none"><i class="fa-solid fa-play-circle"></i></span><div class="ec-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div></div><div class="ec-info"><div class="ec-title">NPTEL Open Courseware</div><div class="ec-tag">Free IIT Lectures</div></div></a>
+</div></div>
+</div>
+
+<div class="section-label"><span>Open Source &amp; Free Resources</span></div>
+<div class="page-body"><div class="opensource-grid"><a class="os-card" href="https://nptel.ac.in/courses/113105023" target="_blank"><div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-play-circle"></i></div><div class="os-name">NPTEL: Phase Transformations</div></div><div class="os-desc">IIT lectures on solidification & diffusion</div><div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · NPTEL</div></a>
+<a class="os-card" href="https://ocw.mit.edu/courses/3-205-thermodynamics-and-kinetics-of-materials-fall-2006/" target="_blank"><div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-graduation-cap"></i></div><div class="os-name">MIT OCW: Thermodynamics</div></div><div class="os-desc">Materials thermodynamics & kinetics</div><div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · MIT OCW</div></a>
+<a class="os-card" href="https://www.thermocalc.com/learn-and-support/educational/" target="_blank"><div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-chart-bar"></i></div><div class="os-name">Thermo-Calc Educational</div></div><div class="os-desc">Free educational resources for CALPHAD</div><div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · Free</div></a>
+<a class="os-card" href="https://scholar.google.com/" target="_blank"><div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-magnifying-glass"></i></div><div class="os-name">Google Scholar</div></div><div class="os-desc">Free scholarly articles & citations</div><div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · Free Search</div></a>
+</div></div>
+
+<footer>© 2024–25 All Rights Reserved · Central Library, IIT Jammu</footer>
+<script>
+  function showTab(id,el){
+    document.querySelectorAll('.eresource-section').forEach(s=>s.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    el.classList.add('active');
+  }
+</script>
+</body></html>
