@@ -1127,10 +1127,20 @@ document.addEventListener("DOMContentLoaded", function(){
 
   let searchData = [];
 
-  fetch("search-index.json")
-    .then(res => res.json())
-    .then(data => searchData = data)
-    .catch(err => console.error(err));
+  // FIX 1: Use leading slash so the path always resolves from the site root,
+  //         regardless of which page or subdirectory the user is on.
+  fetch("/search-index.json")
+    .then(res => {
+      if (!res.ok) throw new Error("HTTP " + res.status + " – search-index.json not found");
+      return res.json();
+    })
+    .then(data => {
+      searchData = data;
+    })
+    // FIX 2: Surface load errors so failures are visible during debugging.
+    .catch(err => {
+      console.error("Search index failed to load:", err);
+    });
 
   const searchInput = document.getElementById("opacSearch");
   const searchBtn   = document.getElementById("searchBtn");
@@ -1158,13 +1168,24 @@ document.addEventListener("DOMContentLoaded", function(){
     resultsBox.innerHTML = "";
     if(query.length < 2){ resultsBox.style.display = "none"; return; }
 
+    // FIX 3: Guard against searchData being empty due to a load failure.
+    if(searchData.length === 0){
+      resultsBox.innerHTML = "<div style='padding:12px 16px;color:#c0392b;'>Search data could not be loaded. Please refresh the page.</div>";
+      resultsBox.style.display = "block";
+      return;
+    }
+
+    // FIX 4: Use optional chaining so missing fields don't throw errors.
+    //         Also search author and dept if present in the JSON.
     const matches = searchData.filter(item =>
-      item.title.toLowerCase().includes(query) ||
-      item.course.toLowerCase().includes(query)
+      (item.title  && item.title.toLowerCase().includes(query))  ||
+      (item.course && item.course.toLowerCase().includes(query)) ||
+      (item.author && item.author.toLowerCase().includes(query)) ||
+      (item.dept   && item.dept.toLowerCase().includes(query))
     );
 
     if(matches.length === 0){
-      resultsBox.innerHTML = "<div style='padding:12px;color:#555;'>No records found</div>";
+      resultsBox.innerHTML = "<div style='padding:12px 16px;color:#555;'>No records found</div>";
     } else {
       matches.forEach(item => {
         const div = document.createElement("div");
@@ -1186,5 +1207,14 @@ document.addEventListener("DOMContentLoaded", function(){
   searchInput.addEventListener("input", performSearch);
   searchBtn.addEventListener("click", performSearch);
 
+  // FIX 5: Restore the truncated click-outside handler that was cut off.
   document.addEventListener("click", function(e){
-    if(!document.querySelector(".search-wrap").contains(e.targ
+    if(!document.querySelector(".search-wrap").contains(e.target)){
+      resultsBox.style.display = "none";
+    }
+  });
+
+});
+</script>
+</body>
+</html>
