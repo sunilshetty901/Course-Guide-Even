@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Introduction to Economics | IIT Jammu Library</title>
+<title>Linear Algebra | IIT Jammu Library</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 <style>
@@ -39,7 +39,7 @@ header{background:var(--dark-blue-2);border-bottom:3px solid var(--cyan);box-sha
 .page-body{padding:0 clamp(1.5rem,5vw,4rem) clamp(3rem,6vw,5rem)}
 .books-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,480px),1fr));gap:1.2rem}
 .book-card{background:var(--white);border:1px solid var(--light-line);border-radius:16px;overflow:hidden;box-shadow:var(--card-shadow);display:flex;transition:box-shadow .28s,transform .28s;opacity:0;animation:fadeUp .5s ease forwards}
-.book-card:nth-child(1){animation-delay:.05s}.book-card:nth-child(2){animation-delay:.12s}
+.book-card:nth-child(1){animation-delay:.05s}.book-card:nth-child(2){animation-delay:.12s}.book-card:nth-child(3){animation-delay:.18s}.book-card:nth-child(4){animation-delay:.24s}
 .book-card:hover{box-shadow:0 12px 36px rgba(0,100,180,.14);transform:translateY(-3px)}
 .book-cover-wrap{flex-shrink:0;width:95px;background:linear-gradient(160deg,var(--dark-blue-2),#112040);display:flex;align-items:center;justify-content:center;padding:.8rem;border-right:2px solid var(--cyan)}
 .book-cover{width:75px;height:100px;object-fit:cover;border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,.35)}
@@ -100,10 +100,10 @@ footer{background:var(--dark-blue);color:rgba(255,255,255,.4);border-top:2px sol
 <section class="hero">
   <div class="hero-grid"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">B.Tech / Humanities Elective · Course Materials</div>
-    <h1>Introduction to<br/><em>Economics</em></h1>
+    <div class="hero-eyebrow">B.Tech Core Mathematics · Course Materials</div>
+    <h1>Linear<br/><em>Algebra</em></h1>
     <div class="hero-meta">
-      <span class="hero-chip"><i class="fa-solid fa-chart-line"></i> Micro &amp; Macroeconomics</span>
+      <span class="hero-chip"><i class="fa-solid fa-table-cells"></i> Vector Spaces &amp; Matrices</span>
       <span class="hero-chip"><i class="fa-solid fa-book-open"></i> Textbooks &amp; References</span>
       <span class="hero-chip"><i class="fa-solid fa-database"></i> E-Resources</span>
     </div>
@@ -113,10 +113,17 @@ footer{background:var(--dark-blue);color:rgba(255,255,255,.4);border-top:2px sol
 <div class="section-label"><span>Textbooks</span></div>
 <div class="page-body"><div class="books-grid">
 <div class="book-card">
-  <div class="book-cover-wrap"><div class="book-cover-placeholder"><i class="fa-solid fa-book"></i></div></div>
+  <div class="book-cover-wrap"><img class="book-cover" src="Linear Algebra and its Applications 4th Ed. by G. Strang.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="book-cover-placeholder" style="display:none"><i class="fa-solid fa-book"></i></div></div>
   <div class="book-body">
-    <div><div class="book-type-tag">Textbook</div><div class="book-title-text">Economics, 4th Ed.</div><div class="book-author">Krugman, P. and Wells, R.</div></div>
-    <div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-search.pl?q=Economics+Krugman+Wells" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><button class="book-btn outline"><i class="fa-solid fa-bookmark"></i> Reserve</button></div>
+    <div><div class="book-type-tag">Textbook</div><div class="book-title-text">Linear Algebra and Its Applications, 4th Ed.</div><div class="book-author">G. Strang</div></div>
+    <div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=77" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><a class="book-btn outline" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-reserve.pl?biblionumber=77" target="_blank"><i class="fa-solid fa-bookmark"></i> Reserve</a></div>
+  </div>
+</div>
+<div class="book-card">
+  <div class="book-cover-wrap"><img class="book-cover" src="Linear Algebra and its Applications, 6th Ed. by D.C. Lay, S.R. Lay, J.J. McDonald.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="book-cover-placeholder" style="display:none"><i class="fa-solid fa-book"></i></div></div>
+  <div class="book-body">
+    <div><div class="book-type-tag">Textbook</div><div class="book-title-text">Linear Algebra and Its Applications, 6th Ed.</div><div class="book-author">D. C. Lay, S. R. Lay and J. J. McDonald</div></div>
+    <div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=142" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><a class="book-btn outline" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-reserve.pl?biblionumber=142" target="_blank"><i class="fa-solid fa-bookmark"></i> Reserve</a></div>
   </div>
 </div>
 </div></div>
@@ -124,10 +131,24 @@ footer{background:var(--dark-blue);color:rgba(255,255,255,.4);border-top:2px sol
 <div class="section-label"><span>Reference Books</span></div>
 <div class="page-body"><div class="books-grid">
 <div class="book-card">
-  <div class="book-cover-wrap"><div class="book-cover-placeholder"><i class="fa-solid fa-book"></i></div></div>
+  <div class="book-cover-wrap"><img class="book-cover" src="Linear Algebra Done Right, 4th Ed. by Sheldon Axler.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="book-cover-placeholder" style="display:none"><i class="fa-solid fa-book"></i></div></div>
   <div class="book-body">
-    <div><div class="book-type-tag">Reference Book</div><div class="book-title-text">Economics, 4th Ed.</div><div class="book-author">Krugman, P. and Wells, R.</div></div>
-    <div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-search.pl?q=Economics+Krugman+Wells" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><button class="book-btn outline"><i class="fa-solid fa-bookmark"></i> Reserve</button></div>
+    <div><div class="book-type-tag">Reference Book</div><div class="book-title-text">Linear Algebra Done Right, 4th Ed.</div><div class="book-author">Sheldon Axler</div></div>
+    <div class="book-actions"><button class="book-btn outline" style="opacity:.5;cursor:default">Not in OPAC</button></div>
+  </div>
+</div>
+<div class="book-card">
+  <div class="book-cover-wrap"><img class="book-cover" src="Linear Algebra by K. Hoffman and R. Kunze.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="book-cover-placeholder" style="display:none"><i class="fa-solid fa-book"></i></div></div>
+  <div class="book-body">
+    <div><div class="book-type-tag">Reference Book</div><div class="book-title-text">Linear Algebra</div><div class="book-author">K. Hoffman and R. Kunze</div></div>
+    <div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=78" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><a class="book-btn outline" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-reserve.pl?biblionumber=78" target="_blank"><i class="fa-solid fa-bookmark"></i> Reserve</a></div>
+  </div>
+</div>
+<div class="book-card">
+  <div class="book-cover-wrap"><img class="book-cover" src="Algebra by M. Artin.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="book-cover-placeholder" style="display:none"><i class="fa-solid fa-book"></i></div></div>
+  <div class="book-body">
+    <div><div class="book-type-tag">Reference Book</div><div class="book-title-text">Algebra</div><div class="book-author">M. Artin</div></div>
+    <div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-detail.pl?biblionumber=167" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><a class="book-btn outline" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-reserve.pl?biblionumber=167" target="_blank"><i class="fa-solid fa-bookmark"></i> Reserve</a></div>
   </div>
 </div>
 </div></div>
@@ -141,70 +162,60 @@ footer{background:var(--dark-blue);color:rgba(255,255,255,.4);border-top:2px sol
 </div>
 <div class="eresource-section active" id="db">
 <div class="eresource-grid">
-<a class="eresource-card" href="http://www.sciencedirect.com/" target="_blank">
+<a class="eresource-card" href="https://mathscinet.ams.org/mathscinet/publications-search" target="_blank">
   <div class="bg" style="background-color:#0A1628;"></div><div class="overlay"></div>
+  <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+  <div class="card-content"><div class="card-title">MathSciNet</div><div class="card-tag">Math Reviews · ONOS</div></div>
+</a>
+<a class="eresource-card" href="https://projecteuclid.org/" target="_blank">
+  <div class="bg" style="background-color:#0D2550;"></div><div class="overlay"></div>
+  <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+  <div class="card-content"><div class="card-title">Project Euclid</div><div class="card-tag">Mathematics &amp; Statistics</div></div>
+</a>
+<a class="eresource-card" href="https://www.sciencedirect.com/" target="_blank">
+  <div class="bg" style="background-color:#1A4B8C;"></div><div class="overlay"></div>
   <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
   <div class="card-content"><div class="card-title">Elsevier ScienceDirect</div><div class="card-tag">2389 Journals · ONOS</div></div>
 </a>
-<a class="eresource-card" href="https://www.tandfonline.com/" target="_blank">
-  <div class="bg" style="background-color:#0D2550;"></div><div class="overlay"></div>
-  <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">Taylor &amp; Francis Online</div><div class="card-tag">2548 Journals · ONOS</div></div>
-</a>
-<a class="eresource-card" href="https://link.springer.com/" target="_blank">
-  <div class="bg" style="background-color:#1A4B8C;"></div><div class="overlay"></div>
-  <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">Springer Nature</div><div class="card-tag">2403 Journals · ONOS</div></div>
-</a>
-<a class="eresource-card" href="https://www.annualreviews.org/" target="_blank">
+<a class="eresource-card" href="https://arxiv.org/" target="_blank">
   <div class="bg" style="background-color:#0D1F3C;"></div><div class="overlay"></div>
   <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">Annual Reviews</div><div class="card-tag">Survey Journals · ONOS</div></div>
+  <div class="card-content"><div class="card-title">arXiv</div><div class="card-tag">Open Preprints</div></div>
 </a>
 </div></div>
 <div class="eresource-section" id="jnl">
 <div class="eresource-grid">
-<a class="eresource-card" href="https://www.aeaweb.org/journals/aer" target="_blank">
+<a class="eresource-card" href="https://www.sciencedirect.com/journal/linear-algebra-and-its-applications" target="_blank">
   <div class="bg" style="background-color:#0A1628;"></div><div class="overlay"></div>
   <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">American Economic Review</div><div class="card-tag">AEA Journals</div></div>
+  <div class="card-content"><div class="card-title">Linear Algebra and Its Applications</div><div class="card-tag">Elsevier · ScienceDirect</div></div>
 </a>
-<a class="eresource-card" href="https://www.sciencedirect.com/journal/journal-of-economic-behavior-and-organization" target="_blank">
+<a class="eresource-card" href="https://projecteuclid.org/journals/duke-mathematical-journal" target="_blank">
   <div class="bg" style="background-color:#0D2550;"></div><div class="overlay"></div>
   <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">J. of Economic Behavior &amp; Organization</div><div class="card-tag">Elsevier · ScienceDirect</div></div>
+  <div class="card-content"><div class="card-title">Duke Mathematical Journal</div><div class="card-tag">Project Euclid</div></div>
 </a>
-<a class="eresource-card" href="https://www.tandfonline.com/toc/raec20/current" target="_blank">
+<a class="eresource-card" href="https://epubs.siam.org/journal/sjmael" target="_blank">
   <div class="bg" style="background-color:#1A4B8C;"></div><div class="overlay"></div>
   <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">Applied Economics</div><div class="card-tag">Taylor &amp; Francis</div></div>
-</a>
-<a class="eresource-card" href="https://www.annualreviews.org/journal/economics" target="_blank">
-  <div class="bg" style="background-color:#0D1F3C;"></div><div class="overlay"></div>
-  <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">Annual Review of Economics</div><div class="card-tag">Annual Reviews</div></div>
+  <div class="card-content"><div class="card-title">SIAM J. on Matrix Analysis &amp; Applications</div><div class="card-tag">SIAM</div></div>
 </a>
 </div></div>
 <div class="eresource-section" id="oa"><div class="opensource-grid">
-<a class="os-card" href="https://nptel.ac.in/courses/110108036" target="_blank">
-  <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-play-circle"></i></div><div class="os-name">NPTEL – Introduction to Economics</div></div>
-  <div class="os-desc">IIT/IISc video lectures on micro and macroeconomic principles, markets, and policy fundamentals.</div>
+<a class="os-card" href="https://nptel.ac.in/courses/111108081" target="_blank">
+  <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-play-circle"></i></div><div class="os-name">NPTEL – Linear Algebra</div></div>
+  <div class="os-desc">IIT video lectures covering vector spaces, matrix theory, eigenvalues, and linear transformations.</div>
   <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · NPTEL IIT</div>
 </a>
-<a class="os-card" href="https://www.rbi.org.in/" target="_blank">
-  <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-landmark"></i></div><div class="os-name">Reserve Bank of India (RBI)</div></div>
-  <div class="os-desc">Official data, reports, and publications on India's monetary policy, banking, and macroeconomic indicators.</div>
-  <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · RBI</div>
+<a class="os-card" href="https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/" target="_blank">
+  <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-graduation-cap"></i></div><div class="os-name">MIT OCW – Linear Algebra (18.06)</div></div>
+  <div class="os-desc">Gilbert Strang's classic MIT OpenCourseWare lectures, notes, and problem sets on linear algebra.</div>
+  <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · MIT OCW</div>
 </a>
-<a class="os-card" href="https://data.worldbank.org/" target="_blank">
-  <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-globe"></i></div><div class="os-name">World Bank Open Data</div></div>
-  <div class="os-desc">Free access to global development data, economic indicators, and country-level statistics.</div>
-  <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · World Bank</div>
-</a>
-<a class="os-card" href="https://www.imf.org/en/Data" target="_blank">
-  <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-coins"></i></div><div class="os-name">IMF Data</div></div>
-  <div class="os-desc">International Monetary Fund datasets on global economic outlook, trade, and financial statistics.</div>
-  <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · IMF</div>
+<a class="os-card" href="https://arxiv.org/list/math.RA/recent" target="_blank">
+  <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-file-alt"></i></div><div class="os-name">arXiv – Rings &amp; Algebras (math.RA)</div></div>
+  <div class="os-desc">Open access preprints in linear and abstract algebra, matrix theory, and related mathematics.</div>
+  <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · arXiv Cornell</div>
 </a>
 </div></div>
 </div>

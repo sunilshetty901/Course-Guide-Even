@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Introduction to Economics | IIT Jammu Library</title>
+<title>Machine Design | IIT Jammu Library</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 <style>
@@ -39,7 +39,7 @@ header{background:var(--dark-blue-2);border-bottom:3px solid var(--cyan);box-sha
 .page-body{padding:0 clamp(1.5rem,5vw,4rem) clamp(3rem,6vw,5rem)}
 .books-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,480px),1fr));gap:1.2rem}
 .book-card{background:var(--white);border:1px solid var(--light-line);border-radius:16px;overflow:hidden;box-shadow:var(--card-shadow);display:flex;transition:box-shadow .28s,transform .28s;opacity:0;animation:fadeUp .5s ease forwards}
-.book-card:nth-child(1){animation-delay:.05s}.book-card:nth-child(2){animation-delay:.12s}
+.book-card:nth-child(1){animation-delay:.05s}.book-card:nth-child(2){animation-delay:.12s}.book-card:nth-child(3){animation-delay:.18s}.book-card:nth-child(4){animation-delay:.24s}.book-card:nth-child(5){animation-delay:.30s}
 .book-card:hover{box-shadow:0 12px 36px rgba(0,100,180,.14);transform:translateY(-3px)}
 .book-cover-wrap{flex-shrink:0;width:95px;background:linear-gradient(160deg,var(--dark-blue-2),#112040);display:flex;align-items:center;justify-content:center;padding:.8rem;border-right:2px solid var(--cyan)}
 .book-cover{width:75px;height:100px;object-fit:cover;border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,.35)}
@@ -100,10 +100,10 @@ footer{background:var(--dark-blue);color:rgba(255,255,255,.4);border-top:2px sol
 <section class="hero">
   <div class="hero-grid"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">B.Tech / Humanities Elective · Course Materials</div>
-    <h1>Introduction to<br/><em>Economics</em></h1>
+    <div class="hero-eyebrow">B.Tech Mechanical Engineering · Course Materials</div>
+    <h1>Machine<br/><em>Design</em></h1>
     <div class="hero-meta">
-      <span class="hero-chip"><i class="fa-solid fa-chart-line"></i> Micro &amp; Macroeconomics</span>
+      <span class="hero-chip"><i class="fa-solid fa-cogs"></i> Machine Design Elements</span>
       <span class="hero-chip"><i class="fa-solid fa-book-open"></i> Textbooks &amp; References</span>
       <span class="hero-chip"><i class="fa-solid fa-database"></i> E-Resources</span>
     </div>
@@ -113,10 +113,38 @@ footer{background:var(--dark-blue);color:rgba(255,255,255,.4);border-top:2px sol
 <div class="section-label"><span>Textbooks</span></div>
 <div class="page-body"><div class="books-grid">
 <div class="book-card">
-  <div class="book-cover-wrap"><div class="book-cover-placeholder"><i class="fa-solid fa-book"></i></div></div>
+  <div class="book-cover-wrap"><img class="book-cover" src="Machine Design An integrated approach by Norton R.L.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="book-cover-placeholder" style="display:none"><i class="fa-solid fa-book"></i></div></div>
   <div class="book-body">
-    <div><div class="book-type-tag">Textbook</div><div class="book-title-text">Economics, 4th Ed.</div><div class="book-author">Krugman, P. and Wells, R.</div></div>
-    <div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-search.pl?q=Economics+Krugman+Wells" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><button class="book-btn outline"><i class="fa-solid fa-bookmark"></i> Reserve</button></div>
+    <div><div class="book-type-tag">Textbook</div><div class="book-title-text">Machine Design: An Integrated Approach</div><div class="book-author">Norton, R. L.</div></div>
+    <div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-search.pl?q=Machine+Design+Integrated+Approach+Norton" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><button class="book-btn outline"><i class="fa-solid fa-bookmark"></i> Reserve</button></div>
+  </div>
+</div>
+<div class="book-card">
+  <div class="book-cover-wrap"><img class="book-cover" src="Design of Machine Elements by V. B. Bhandari.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="book-cover-placeholder" style="display:none"><i class="fa-solid fa-book"></i></div></div>
+  <div class="book-body">
+    <div><div class="book-type-tag">Textbook</div><div class="book-title-text">Design of Machine Elements</div><div class="book-author">V. B. Bhandari</div></div>
+    <div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-search.pl?q=Design+Machine+Elements+Bhandari" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><button class="book-btn outline"><i class="fa-solid fa-bookmark"></i> Reserve</button></div>
+  </div>
+</div>
+<div class="book-card">
+  <div class="book-cover-wrap"><img class="book-cover" src="Mechanical Engineering Design by Shigley J.E., Mischke C.R., and Budynas R.G..png" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="book-cover-placeholder" style="display:none"><i class="fa-solid fa-book"></i></div></div>
+  <div class="book-body">
+    <div><div class="book-type-tag">Textbook</div><div class="book-title-text">Mechanical Engineering Design</div><div class="book-author">Shigley, J. E., Mischke, C. R. and Budynas, R. G.</div></div>
+    <div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-search.pl?q=Mechanical+Engineering+Design+Shigley" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><button class="book-btn outline"><i class="fa-solid fa-bookmark"></i> Reserve</button></div>
+  </div>
+</div>
+<div class="book-card">
+  <div class="book-cover-wrap"><img class="book-cover" src="Machine Design Data Book by VB Bhandari.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="book-cover-placeholder" style="display:none"><i class="fa-solid fa-book"></i></div></div>
+  <div class="book-body">
+    <div><div class="book-type-tag">Textbook</div><div class="book-title-text">Machine Design Data Book</div><div class="book-author">V. B. Bhandari</div></div>
+    <div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-search.pl?q=Machine+Design+Data+Book+Bhandari" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><button class="book-btn outline"><i class="fa-solid fa-bookmark"></i> Reserve</button></div>
+  </div>
+</div>
+<div class="book-card">
+  <div class="book-cover-wrap"><img class="book-cover" src="Machine Design by P. C .Sharma and DK Agrawal.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="book-cover-placeholder" style="display:none"><i class="fa-solid fa-book"></i></div></div>
+  <div class="book-body">
+    <div><div class="book-type-tag">Textbook</div><div class="book-title-text">Machine Design</div><div class="book-author">P. C. Sharma and D. K. Agrawal</div></div>
+    <div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-search.pl?q=Machine+Design+Sharma+Agrawal" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><button class="book-btn outline"><i class="fa-solid fa-bookmark"></i> Reserve</button></div>
   </div>
 </div>
 </div></div>
@@ -124,10 +152,17 @@ footer{background:var(--dark-blue);color:rgba(255,255,255,.4);border-top:2px sol
 <div class="section-label"><span>Reference Books</span></div>
 <div class="page-body"><div class="books-grid">
 <div class="book-card">
-  <div class="book-cover-wrap"><div class="book-cover-placeholder"><i class="fa-solid fa-book"></i></div></div>
+  <div class="book-cover-wrap"><img class="book-cover" src="Engineering Design by Dieter G. E., and Schmidt L.jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="book-cover-placeholder" style="display:none"><i class="fa-solid fa-book"></i></div></div>
   <div class="book-body">
-    <div><div class="book-type-tag">Reference Book</div><div class="book-title-text">Economics, 4th Ed.</div><div class="book-author">Krugman, P. and Wells, R.</div></div>
-    <div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-search.pl?q=Economics+Krugman+Wells" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><button class="book-btn outline"><i class="fa-solid fa-bookmark"></i> Reserve</button></div>
+    <div><div class="book-type-tag">Reference Book</div><div class="book-title-text">Engineering Design</div><div class="book-author">Dieter, G. E. and Schmidt, L.</div></div>
+    <div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-search.pl?q=Engineering+Design+Dieter+Schmidt" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><button class="book-btn outline"><i class="fa-solid fa-bookmark"></i> Reserve</button></div>
+  </div>
+</div>
+<div class="book-card">
+  <div class="book-cover-wrap"><img class="book-cover" src="Maleev and Hartmans Machine Design by Groover O.P..jpg" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="book-cover-placeholder" style="display:none"><i class="fa-solid fa-book"></i></div></div>
+  <div class="book-body">
+    <div><div class="book-type-tag">Reference Book</div><div class="book-title-text">Maleev and Hartman's Machine Design</div><div class="book-author">Groover, O. P.</div></div>
+    <div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-search.pl?q=Maleev+Hartman+Machine+Design" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><button class="book-btn outline"><i class="fa-solid fa-bookmark"></i> Reserve</button></div>
   </div>
 </div>
 </div></div>
@@ -141,70 +176,60 @@ footer{background:var(--dark-blue);color:rgba(255,255,255,.4);border-top:2px sol
 </div>
 <div class="eresource-section active" id="db">
 <div class="eresource-grid">
-<a class="eresource-card" href="http://www.sciencedirect.com/" target="_blank">
+<a class="eresource-card" href="http://asmedigitalcollection.asme.org/" target="_blank">
   <div class="bg" style="background-color:#0A1628;"></div><div class="overlay"></div>
   <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">Elsevier ScienceDirect</div><div class="card-tag">2389 Journals · ONOS</div></div>
+  <div class="card-content"><div class="card-title">ASME Digital Collection</div><div class="card-tag">38 Journals · ONOS</div></div>
 </a>
-<a class="eresource-card" href="https://www.tandfonline.com/" target="_blank">
+<a class="eresource-card" href="http://www.sciencedirect.com/" target="_blank">
   <div class="bg" style="background-color:#0D2550;"></div><div class="overlay"></div>
   <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">Taylor &amp; Francis Online</div><div class="card-tag">2548 Journals · ONOS</div></div>
+  <div class="card-content"><div class="card-title">Elsevier ScienceDirect</div><div class="card-tag">2389 Journals · ONOS</div></div>
 </a>
 <a class="eresource-card" href="https://link.springer.com/" target="_blank">
   <div class="bg" style="background-color:#1A4B8C;"></div><div class="overlay"></div>
   <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
   <div class="card-content"><div class="card-title">Springer Nature</div><div class="card-tag">2403 Journals · ONOS</div></div>
 </a>
-<a class="eresource-card" href="https://www.annualreviews.org/" target="_blank">
-  <div class="bg" style="background-color:#0D1F3C;"></div><div class="overlay"></div>
-  <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">Annual Reviews</div><div class="card-tag">Survey Journals · ONOS</div></div>
-</a>
 </div></div>
 <div class="eresource-section" id="jnl">
 <div class="eresource-grid">
-<a class="eresource-card" href="https://www.aeaweb.org/journals/aer" target="_blank">
+<a class="eresource-card" href="https://asmedigitalcollection.asme.org/mechanicaldesign" target="_blank">
   <div class="bg" style="background-color:#0A1628;"></div><div class="overlay"></div>
   <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">American Economic Review</div><div class="card-tag">AEA Journals</div></div>
+  <div class="card-content"><div class="card-title">J. of Mechanical Design (ASME)</div><div class="card-tag">ASME Digital Collection</div></div>
 </a>
-<a class="eresource-card" href="https://www.sciencedirect.com/journal/journal-of-economic-behavior-and-organization" target="_blank">
+<a class="eresource-card" href="https://www.sciencedirect.com/journal/mechanism-and-machine-theory" target="_blank">
   <div class="bg" style="background-color:#0D2550;"></div><div class="overlay"></div>
   <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">J. of Economic Behavior &amp; Organization</div><div class="card-tag">Elsevier · ScienceDirect</div></div>
+  <div class="card-content"><div class="card-title">Mechanism and Machine Theory</div><div class="card-tag">Elsevier · ScienceDirect</div></div>
 </a>
-<a class="eresource-card" href="https://www.tandfonline.com/toc/raec20/current" target="_blank">
+<a class="eresource-card" href="https://www.sciencedirect.com/journal/cirp-journal-of-manufacturing-science-and-technology" target="_blank">
   <div class="bg" style="background-color:#1A4B8C;"></div><div class="overlay"></div>
   <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">Applied Economics</div><div class="card-tag">Taylor &amp; Francis</div></div>
+  <div class="card-content"><div class="card-title">CIRP J. of Manufacturing Science &amp; Tech.</div><div class="card-tag">Elsevier · ScienceDirect</div></div>
 </a>
-<a class="eresource-card" href="https://www.annualreviews.org/journal/economics" target="_blank">
+<a class="eresource-card" href="https://link.springer.com/journal/170" target="_blank">
   <div class="bg" style="background-color:#0D1F3C;"></div><div class="overlay"></div>
   <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">Annual Review of Economics</div><div class="card-tag">Annual Reviews</div></div>
+  <div class="card-content"><div class="card-title">Int. J. of Advanced Manufacturing Technology</div><div class="card-tag">Springer Nature</div></div>
 </a>
 </div></div>
 <div class="eresource-section" id="oa"><div class="opensource-grid">
-<a class="os-card" href="https://nptel.ac.in/courses/110108036" target="_blank">
-  <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-play-circle"></i></div><div class="os-name">NPTEL – Introduction to Economics</div></div>
-  <div class="os-desc">IIT/IISc video lectures on micro and macroeconomic principles, markets, and policy fundamentals.</div>
+<a class="os-card" href="https://nptel.ac.in/courses/112106137" target="_blank">
+  <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-play-circle"></i></div><div class="os-name">NPTEL – Machine Design / Manufacturing Systems</div></div>
+  <div class="os-desc">IIT video lectures on machine elements, design methodology, and manufacturing system layout.</div>
   <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · NPTEL IIT</div>
 </a>
-<a class="os-card" href="https://www.rbi.org.in/" target="_blank">
-  <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-landmark"></i></div><div class="os-name">Reserve Bank of India (RBI)</div></div>
-  <div class="os-desc">Official data, reports, and publications on India's monetary policy, banking, and macroeconomic indicators.</div>
-  <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · RBI</div>
+<a class="os-card" href="https://ocw.mit.edu/courses/2-008-design-and-manufacturing-ii-spring-2004/" target="_blank">
+  <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-graduation-cap"></i></div><div class="os-name">MIT OCW – Design and Manufacturing</div></div>
+  <div class="os-desc">MIT OpenCourseWare materials on manufacturing system design, process selection, and machine elements.</div>
+  <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · MIT OCW</div>
 </a>
-<a class="os-card" href="https://data.worldbank.org/" target="_blank">
-  <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-globe"></i></div><div class="os-name">World Bank Open Data</div></div>
-  <div class="os-desc">Free access to global development data, economic indicators, and country-level statistics.</div>
-  <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · World Bank</div>
-</a>
-<a class="os-card" href="https://www.imf.org/en/Data" target="_blank">
-  <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-coins"></i></div><div class="os-name">IMF Data</div></div>
-  <div class="os-desc">International Monetary Fund datasets on global economic outlook, trade, and financial statistics.</div>
-  <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · IMF</div>
+<a class="os-card" href="https://www.sme.org/" target="_blank">
+  <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-industry"></i></div><div class="os-name">SME – Society of Manufacturing Engineers</div></div>
+  <div class="os-desc">Open technical resources and industry insights on manufacturing systems, automation, and design.</div>
+  <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · SME</div>
 </a>
 </div></div>
 </div>

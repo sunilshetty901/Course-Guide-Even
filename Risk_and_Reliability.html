@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Introduction to Economics | IIT Jammu Library</title>
+<title>Risk and Reliability | IIT Jammu Library</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--dark-blue:#0A1628;--dark-blue-2:#0D1F3C;--medium-blue:#1A4B8C;--cyan:#00B4D8;--cyan-light:#48CAE4;--white:#FFFFFF;--off-white:#F0F6FF;--muted:#6B8CAE;--light-line:#D0E4F5;--text-body:#1C2E45;--card-shadow:0 4px 24px rgba(0,100,180,0.09)}
+:root{--dark-blue:#0A1628;--dark-blue-2:#0D1F3C;--medium-blue:#1A4B8C;--cyan:#00B4D8;--cyan-light:#48CAE4;--cyan-glow:rgba(0,180,216,0.18);--white:#FFFFFF;--off-white:#F0F6FF;--muted:#6B8CAE;--light-line:#D0E4F5;--text-body:#1C2E45;--card-shadow:0 4px 24px rgba(0,100,180,0.09)}
 html{scroll-behavior:smooth}body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--text-body);overflow-x:hidden}
 .top-strip{background:var(--dark-blue);color:rgba(255,255,255,0.65);font-size:.7rem;letter-spacing:.1em;text-align:center;padding:.36rem 1rem;border-bottom:1px solid rgba(0,180,216,0.2)}
 .top-strip a{color:var(--cyan-light);text-decoration:none}
@@ -39,7 +39,7 @@ header{background:var(--dark-blue-2);border-bottom:3px solid var(--cyan);box-sha
 .page-body{padding:0 clamp(1.5rem,5vw,4rem) clamp(3rem,6vw,5rem)}
 .books-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,480px),1fr));gap:1.2rem}
 .book-card{background:var(--white);border:1px solid var(--light-line);border-radius:16px;overflow:hidden;box-shadow:var(--card-shadow);display:flex;transition:box-shadow .28s,transform .28s;opacity:0;animation:fadeUp .5s ease forwards}
-.book-card:nth-child(1){animation-delay:.05s}.book-card:nth-child(2){animation-delay:.12s}
+.book-card:nth-child(1){animation-delay:.05s}.book-card:nth-child(2){animation-delay:.12s}.book-card:nth-child(3){animation-delay:.18s}
 .book-card:hover{box-shadow:0 12px 36px rgba(0,100,180,.14);transform:translateY(-3px)}
 .book-cover-wrap{flex-shrink:0;width:95px;background:linear-gradient(160deg,var(--dark-blue-2),#112040);display:flex;align-items:center;justify-content:center;padding:.8rem;border-right:2px solid var(--cyan)}
 .book-cover{width:75px;height:100px;object-fit:cover;border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,.35)}
@@ -100,11 +100,11 @@ footer{background:var(--dark-blue);color:rgba(255,255,255,.4);border-top:2px sol
 <section class="hero">
   <div class="hero-grid"></div>
   <div class="hero-content">
-    <div class="hero-eyebrow">B.Tech / Humanities Elective · Course Materials</div>
-    <h1>Introduction to<br/><em>Economics</em></h1>
+    <div class="hero-eyebrow">M.Tech Civil Engineering · Course Materials</div>
+    <h1>Risk and <em>Reliability</em></h1>
     <div class="hero-meta">
-      <span class="hero-chip"><i class="fa-solid fa-chart-line"></i> Micro &amp; Macroeconomics</span>
-      <span class="hero-chip"><i class="fa-solid fa-book-open"></i> Textbooks &amp; References</span>
+      <span class="hero-chip"><i class="fa-solid fa-shield-halved"></i> Structural Safety</span>
+      <span class="hero-chip"><i class="fa-solid fa-book-open"></i> Textbooks & References</span>
       <span class="hero-chip"><i class="fa-solid fa-database"></i> E-Resources</span>
     </div>
   </div>
@@ -113,10 +113,10 @@ footer{background:var(--dark-blue);color:rgba(255,255,255,.4);border-top:2px sol
 <div class="section-label"><span>Textbooks</span></div>
 <div class="page-body"><div class="books-grid">
 <div class="book-card">
-  <div class="book-cover-wrap"><div class="book-cover-placeholder"><i class="fa-solid fa-book"></i></div></div>
+  <div class="book-cover-wrap"><img class="book-cover" src="Probability, reliability and statistical method in engineering design by  Haldar, Achintya and Mahadevan, Sankaran.jpg" alt="Probability, Reliability and Statistical Methods" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="book-cover-placeholder" style="display:none"><i class="fa-solid fa-book"></i></div></div>
   <div class="book-body">
-    <div><div class="book-type-tag">Textbook</div><div class="book-title-text">Economics, 4th Ed.</div><div class="book-author">Krugman, P. and Wells, R.</div></div>
-    <div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-search.pl?q=Economics+Krugman+Wells" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><button class="book-btn outline"><i class="fa-solid fa-bookmark"></i> Reserve</button></div>
+    <div><div class="book-type-tag">Textbook</div><div class="book-title-text">Probability, Reliability and Statistical Methods in Engineering Design</div><div class="book-author">Haldar, Achintya &amp; Mahadevan, Sankaran</div></div>
+    <div class="book-actions"><button class="book-btn outline" style="opacity:.5;cursor:default">Not in OPAC</button></div>
   </div>
 </div>
 </div></div>
@@ -124,89 +124,108 @@ footer{background:var(--dark-blue);color:rgba(255,255,255,.4);border-top:2px sol
 <div class="section-label"><span>Reference Books</span></div>
 <div class="page-body"><div class="books-grid">
 <div class="book-card">
-  <div class="book-cover-wrap"><div class="book-cover-placeholder"><i class="fa-solid fa-book"></i></div></div>
+  <div class="book-cover-wrap"><img class="book-cover" src="Reliability of structures by Nowak, Andrzej S. and Collins, Kevin R..jpg" alt="Reliability of Structures" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="book-cover-placeholder" style="display:none"><i class="fa-solid fa-book"></i></div></div>
   <div class="book-body">
-    <div><div class="book-type-tag">Reference Book</div><div class="book-title-text">Economics, 4th Ed.</div><div class="book-author">Krugman, P. and Wells, R.</div></div>
-    <div class="book-actions"><a class="book-btn primary" href="https://libopac.iitjammu.ac.in/cgi-bin/koha/opac-search.pl?q=Economics+Krugman+Wells" target="_blank"><i class="fa-solid fa-magnifying-glass"></i> Check Availability</a><button class="book-btn outline"><i class="fa-solid fa-bookmark"></i> Reserve</button></div>
+    <div><div class="book-type-tag">Reference Book</div><div class="book-title-text">Reliability of Structures</div><div class="book-author">Nowak, Andrzej S. &amp; Collins, Kevin R.</div></div>
+    <div class="book-actions"><button class="book-btn outline" style="opacity:.5;cursor:default">Not in OPAC</button></div>
+  </div>
+</div>
+<div class="book-card">
+  <div class="book-cover-wrap"><img class="book-cover" src="Probability concepts in engineering - emphasis on applications to civil and environmental engineering by Ang, Alfredo H-S. and Tang, Wilson H.jpg" alt="Probability Concepts in Engineering" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/><div class="book-cover-placeholder" style="display:none"><i class="fa-solid fa-book"></i></div></div>
+  <div class="book-body">
+    <div><div class="book-type-tag">Reference Book</div><div class="book-title-text">Probability Concepts in Engineering</div><div class="book-author">Ang, Alfredo H-S. &amp; Tang, Wilson H.</div></div>
+    <div class="book-actions"><button class="book-btn outline" style="opacity:.5;cursor:default">Not in OPAC</button></div>
   </div>
 </div>
 </div></div>
 
 <div class="section-label"><span>E-Resources · ONOS Subscribed Databases</span></div>
 <div class="page-body">
-<div class="tab-nav">
-  <button class="tab-btn active" onclick="showTab('db',this)">ONOS Databases</button>
-  <button class="tab-btn" onclick="showTab('jnl',this)">Key Journals</button>
-  <button class="tab-btn" onclick="showTab('oa',this)">Open Access</button>
-</div>
-<div class="eresource-section active" id="db">
-<div class="eresource-grid">
-<a class="eresource-card" href="http://www.sciencedirect.com/" target="_blank">
-  <div class="bg" style="background-color:#0A1628;"></div><div class="overlay"></div>
-  <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">Elsevier ScienceDirect</div><div class="card-tag">2389 Journals · ONOS</div></div>
-</a>
-<a class="eresource-card" href="https://www.tandfonline.com/" target="_blank">
-  <div class="bg" style="background-color:#0D2550;"></div><div class="overlay"></div>
-  <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">Taylor &amp; Francis Online</div><div class="card-tag">2548 Journals · ONOS</div></div>
-</a>
-<a class="eresource-card" href="https://link.springer.com/" target="_blank">
-  <div class="bg" style="background-color:#1A4B8C;"></div><div class="overlay"></div>
-  <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">Springer Nature</div><div class="card-tag">2403 Journals · ONOS</div></div>
-</a>
-<a class="eresource-card" href="https://www.annualreviews.org/" target="_blank">
-  <div class="bg" style="background-color:#0D1F3C;"></div><div class="overlay"></div>
-  <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">Annual Reviews</div><div class="card-tag">Survey Journals · ONOS</div></div>
-</a>
-</div></div>
-<div class="eresource-section" id="jnl">
-<div class="eresource-grid">
-<a class="eresource-card" href="https://www.aeaweb.org/journals/aer" target="_blank">
-  <div class="bg" style="background-color:#0A1628;"></div><div class="overlay"></div>
-  <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">American Economic Review</div><div class="card-tag">AEA Journals</div></div>
-</a>
-<a class="eresource-card" href="https://www.sciencedirect.com/journal/journal-of-economic-behavior-and-organization" target="_blank">
-  <div class="bg" style="background-color:#0D2550;"></div><div class="overlay"></div>
-  <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">J. of Economic Behavior &amp; Organization</div><div class="card-tag">Elsevier · ScienceDirect</div></div>
-</a>
-<a class="eresource-card" href="https://www.tandfonline.com/toc/raec20/current" target="_blank">
-  <div class="bg" style="background-color:#1A4B8C;"></div><div class="overlay"></div>
-  <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">Applied Economics</div><div class="card-tag">Taylor &amp; Francis</div></div>
-</a>
-<a class="eresource-card" href="https://www.annualreviews.org/journal/economics" target="_blank">
-  <div class="bg" style="background-color:#0D1F3C;"></div><div class="overlay"></div>
-  <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-  <div class="card-content"><div class="card-title">Annual Review of Economics</div><div class="card-tag">Annual Reviews</div></div>
-</a>
-</div></div>
-<div class="eresource-section" id="oa"><div class="opensource-grid">
-<a class="os-card" href="https://nptel.ac.in/courses/110108036" target="_blank">
-  <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-play-circle"></i></div><div class="os-name">NPTEL – Introduction to Economics</div></div>
-  <div class="os-desc">IIT/IISc video lectures on micro and macroeconomic principles, markets, and policy fundamentals.</div>
-  <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · NPTEL IIT</div>
-</a>
-<a class="os-card" href="https://www.rbi.org.in/" target="_blank">
-  <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-landmark"></i></div><div class="os-name">Reserve Bank of India (RBI)</div></div>
-  <div class="os-desc">Official data, reports, and publications on India's monetary policy, banking, and macroeconomic indicators.</div>
-  <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · RBI</div>
-</a>
-<a class="os-card" href="https://data.worldbank.org/" target="_blank">
-  <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-globe"></i></div><div class="os-name">World Bank Open Data</div></div>
-  <div class="os-desc">Free access to global development data, economic indicators, and country-level statistics.</div>
-  <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · World Bank</div>
-</a>
-<a class="os-card" href="https://www.imf.org/en/Data" target="_blank">
-  <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-coins"></i></div><div class="os-name">IMF Data</div></div>
-  <div class="os-desc">International Monetary Fund datasets on global economic outlook, trade, and financial statistics.</div>
-  <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · IMF</div>
-</a>
-</div></div>
+  <div class="tab-nav">
+    <button class="tab-btn active" onclick="showTab('db',this)">ONOS Databases</button>
+    <button class="tab-btn" onclick="showTab('jnl',this)">Key Journals</button>
+    <button class="tab-btn" onclick="showTab('oa',this)">Open Access</button>
+  </div>
+  <div class="eresource-section active" id="db">
+    <div class="eresource-grid">
+      <a class="eresource-card" href="http://ascelibrary.org/" target="_blank">
+        <div class="bg" style="background-color:#0A1628;"></div><div class="overlay"></div>
+        <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        <div class="card-content"><div class="card-title">ASCE Library</div><div class="card-tag">36 Civil Engg Journals · ONOS</div></div>
+      </a>
+      <a class="eresource-card" href="http://www.sciencedirect.com/" target="_blank">
+        <div class="bg" style="background-color:#0D2550;"></div><div class="overlay"></div>
+        <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        <div class="card-content"><div class="card-title">Elsevier ScienceDirect</div><div class="card-tag">2389 Journals · ONOS</div></div>
+      </a>
+      <a class="eresource-card" href="https://link.springer.com/" target="_blank">
+        <div class="bg" style="background-color:#1A4B8C;"></div><div class="overlay"></div>
+        <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        <div class="card-content"><div class="card-title">Springer Nature</div><div class="card-tag">2403 Journals · ONOS</div></div>
+      </a>
+      <a class="eresource-card" href="https://www.tandfonline.com/" target="_blank">
+        <div class="bg" style="background-color:#0f3470;"></div><div class="overlay"></div>
+        <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        <div class="card-content"><div class="card-title">Taylor &amp; Francis Online</div><div class="card-tag">2548 Journals · ONOS</div></div>
+      </a>
+      <a class="eresource-card" href="http://www.icevirtuallibrary.com" target="_blank">
+        <div class="bg" style="background-color:#112040;"></div><div class="overlay"></div>
+        <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        <div class="card-content"><div class="card-title">ICE Virtual Library</div><div class="card-tag">34 Civil Journals · ONOS</div></div>
+      </a>
+    </div>
+  </div>
+  <div class="eresource-section" id="jnl">
+    <div class="eresource-grid">
+      <a class="eresource-card" href="https://www.sciencedirect.com/journal/reliability-engineering-and-system-safety" target="_blank">
+        <div class="bg" style="background-color:#0A1628;"></div><div class="overlay"></div>
+        <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        <div class="card-content"><div class="card-title">Reliability Engineering & System Safety</div><div class="card-tag">Elsevier · ScienceDirect</div></div>
+      </a>
+      <a class="eresource-card" href="https://www.sciencedirect.com/journal/structural-safety" target="_blank">
+        <div class="bg" style="background-color:#0D2550;"></div><div class="overlay"></div>
+        <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        <div class="card-content"><div class="card-title">Structural Safety</div><div class="card-tag">Elsevier · ScienceDirect</div></div>
+      </a>
+      <a class="eresource-card" href="https://ascelibrary.org/journal/jbenf2" target="_blank">
+        <div class="bg" style="background-color:#1A4B8C;"></div><div class="overlay"></div>
+        <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        <div class="card-content"><div class="card-title">ASCE J. of Engineering Mechanics</div><div class="card-tag">ASCE · Civil</div></div>
+      </a>
+      <a class="eresource-card" href="https://www.tandfonline.com/journals/tstr20" target="_blank">
+        <div class="bg" style="background-color:#0f3470;"></div><div class="overlay"></div>
+        <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        <div class="card-content"><div class="card-title">Structure and Infrastructure Engineering</div><div class="card-tag">Taylor &amp; Francis</div></div>
+      </a>
+      <a class="eresource-card" href="https://www.sciencedirect.com/journal/probabilistic-engineering-mechanics" target="_blank">
+        <div class="bg" style="background-color:#0D1F3C;"></div><div class="overlay"></div>
+        <div class="card-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+        <div class="card-content"><div class="card-title">Probabilistic Engineering Mechanics</div><div class="card-tag">Elsevier · ScienceDirect</div></div>
+      </a>
+    </div>
+  </div>
+  <div class="eresource-section" id="oa"><div class="opensource-grid">
+    <a class="os-card" href="https://nptel.ac.in/courses/105105162" target="_blank">
+      <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-play-circle"></i></div><div class="os-name">NPTEL – Reliability Engineering</div></div>
+      <div class="os-desc">IIT video lectures on probability theory, failure analysis, and structural reliability methods.</div>
+      <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · NPTEL IIT</div>
+    </a>
+    <a class="os-card" href="https://ocw.mit.edu/courses/1-151-probability-and-statistics-in-engineering-spring-2005/" target="_blank">
+      <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-graduation-cap"></i></div><div class="os-name">MIT OCW – Probability & Statistics in Engg.</div></div>
+      <div class="os-desc">MIT course covering probability distributions and statistical methods applied to engineering reliability.</div>
+      <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · MIT OCW</div>
+    </a>
+    <a class="os-card" href="https://bis.gov.in/" target="_blank">
+      <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-file-contract"></i></div><div class="os-name">BIS – Indian Standards Portal</div></div>
+      <div class="os-desc">Bureau of Indian Standards for structural safety codes and reliability-based design standards.</div>
+      <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · BIS India</div>
+    </a>
+    <a class="os-card" href="https://arxiv.org/list/stat.AP/recent" target="_blank">
+      <div class="os-card-top"><div class="os-icon"><i class="fa-solid fa-file-alt"></i></div><div class="os-name">arXiv – Applied Statistics</div></div>
+      <div class="os-desc">Open-access preprints on probabilistic methods, statistical models, and reliability analysis.</div>
+      <div class="os-badge"><i class="fa-solid fa-lock-open"></i> Free · arXiv.org</div>
+    </a>
+  </div></div>
 </div>
 
 <footer>© 2024–25 All Rights Reserved · Central Library, IIT Jammu &nbsp;·&nbsp; Powered by Course Guide Mini OPAC</footer>
