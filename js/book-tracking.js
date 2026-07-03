@@ -56,7 +56,9 @@
     return window.db;
   }
 
-  async function trackView(bookId) {
+  // Kept separate: raw page-view count, useful for staff analytics later,
+  // but no longer what's shown on the card.
+  async function trackPageView(bookId) {
     const key = `viewed_${bookId}_${new Date().toDateString()}`;
     if (localStorage.getItem(key)) return;
     localStorage.setItem(key, "1");
@@ -66,18 +68,27 @@
     const { doc, setDoc, increment, serverTimestamp } = window.fbHelpers;
     try {
       await setDoc(doc(db, "bookStats", bookId), {
-        views: increment(1),
+        pageViews: increment(1),
         lastViewed: serverTimestamp()
       }, { merge: true });
     } catch (e) {
-      console.error("Failed to track view:", e);
+      console.error("Failed to track page view:", e);
     }
   }
 
-  async function trackAvailabilityClick(bookId) {
+  async function trackAvailabilityClick(bookId, card) {
     const db = await waitForDb();
     if (!db) return;
     const { doc, setDoc, increment } = window.fbHelpers;
+
+    // Optimistic UI update — bump the number immediately, don't wait on network
+    const badge = card.querySelector('.view-count-badge span');
+    if (badge) {
+      const current = parseInt(badge.textContent, 10) || 0;
+      badge.textContent = current + 1;
+      checkPopularBadge(current + 1, card);
+    }
+
     try {
       await setDoc(doc(db, "bookStats", bookId), {
         availabilityClicks: increment(1)
@@ -87,27 +98,29 @@
     }
   }
 
+  function checkPopularBadge(count, card) {
+    if (count >= 100 && !card.querySelector('.popular-badge')) {
+      const badge = document.createElement('div');
+      badge.className = 'popular-badge';
+      badge.innerHTML = '⭐ Student Choice';
+      card.appendChild(badge);
+    }
+  }
+
   async function renderStats(bookId, card) {
     const db = await waitForDb();
     if (!db) return;
     const { doc, getDoc } = window.fbHelpers;
     try {
       const snap = await getDoc(doc(db, "bookStats", bookId));
-      const views = snap.exists() ? (snap.data().views || 0) : 0;
+      const clicks = snap.exists() ? (snap.data().availabilityClicks || 0) : 0;
 
-      // Popular badge, top-right, only if 100+ views
-      if (views >= 100 && !card.querySelector('.popular-badge')) {
-        const badge = document.createElement('div');
-        badge.className = 'popular-badge';
-        badge.innerHTML = '⭐ Student Choice';
-        card.appendChild(badge);
-      }
+      checkPopularBadge(clicks, card);
 
-     // View count, bottom-right, always shown
       if (!card.querySelector('.view-count-badge')) {
         const viewBadge = document.createElement('div');
         viewBadge.className = 'view-count-badge';
-        viewBadge.innerHTML = `<i class="fa-regular fa-eye"></i> ${views}`;
+        viewBadge.innerHTML = `<i class="fa-regular fa-eye"></i> <span>${clicks}</span>`;
         card.appendChild(viewBadge);
       }
     } catch (e) {
@@ -123,11 +136,12 @@
       const bookId = slugify(titleEl.textContent);
       card.dataset.bookId = bookId;
 
-      trackView(bookId).then(() => renderStats(bookId, card));
+      trackPageView(bookId);
+      renderStats(bookId, card);
 
       const availBtn = card.querySelector('.book-btn.primary');
       if (availBtn) {
-        availBtn.addEventListener('click', () => trackAvailabilityClick(bookId));
+        availBtn.addEventListener('click', () => trackAvailabilityClick(bookId, card));
       }
     });
   }
