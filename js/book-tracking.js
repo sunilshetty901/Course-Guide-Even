@@ -1,4 +1,43 @@
 (function() {
+  function injectStyles() {
+    if (document.getElementById('book-tracking-styles')) return;
+    const style = document.createElement('style');
+    style.id = 'book-tracking-styles';
+    style.textContent = `
+      .book-card { position: relative; }
+      .popular-badge {
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        background: var(--dark-blue, #0A1628);
+        color: #FFD166;
+        font-size: .62rem;
+        font-weight: 700;
+        letter-spacing: .04em;
+        padding: .3rem .65rem;
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        gap: .3rem;
+        box-shadow: 0 3px 10px rgba(0,0,0,.2);
+        z-index: 3;
+      }
+      .view-count-badge {
+        position: absolute;
+        bottom: 10px;
+        right: 14px;
+        font-size: .7rem;
+        color: var(--muted, #6B8CAE);
+        display: flex;
+        align-items: center;
+        gap: .3rem;
+        font-weight: 600;
+        z-index: 3;
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
   function slugify(text) {
     return text.toLowerCase().trim()
       .replace(/[^a-z0-9]+/g, '-')
@@ -45,22 +84,28 @@
     }
   }
 
-  async function renderBadge(bookId, card) {
+  async function renderStats(bookId, card) {
     const db = await waitForDb();
     if (!db) return;
     const { doc, getDoc } = window.fbHelpers;
     try {
       const snap = await getDoc(doc(db, "bookStats", bookId));
       const views = snap.exists() ? (snap.data().views || 0) : 0;
-      if (views >= 100) {
-        const tag = card.querySelector('.book-type-tag');
-        if (tag && !tag.querySelector('.popular-badge')) {
-          const badge = document.createElement('span');
-          badge.className = 'popular-badge';
-          badge.textContent = ' 🔥 Student Choice';
-          badge.style.cssText = 'color:#00c2cb;font-weight:600;margin-left:6px;';
-          tag.appendChild(badge);
-        }
+
+      // Popular badge, top-right, only if 100+ views
+      if (views >= 100 && !card.querySelector('.popular-badge')) {
+        const badge = document.createElement('div');
+        badge.className = 'popular-badge';
+        badge.innerHTML = '⭐ Student Choice';
+        card.appendChild(badge);
+      }
+
+      // View count, bottom-right, always shown
+      if (!card.querySelector('.view-count-badge')) {
+        const viewBadge = document.createElement('div');
+        viewBadge.className = 'view-count-badge';
+        viewBadge.innerHTML = `👁️ ${views}`;
+        card.appendChild(viewBadge);
       }
     } catch (e) {
       console.error("Failed to fetch stats:", e);
@@ -68,14 +113,14 @@
   }
 
   function init() {
+    injectStyles();
     document.querySelectorAll('.book-card').forEach(card => {
       const titleEl = card.querySelector('.book-title-text');
       if (!titleEl) return;
       const bookId = slugify(titleEl.textContent);
       card.dataset.bookId = bookId;
 
-      trackView(bookId);
-      renderBadge(bookId, card);
+      trackView(bookId).then(() => renderStats(bookId, card));
 
       const availBtn = card.querySelector('.book-btn.primary');
       if (availBtn) {
