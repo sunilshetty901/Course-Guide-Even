@@ -30,9 +30,12 @@
         color: var(--muted, #6B8CAE);
         display: flex;
         align-items: center;
-        gap: .3rem;
+        gap: .35rem;
         font-weight: 600;
         z-index: 3;
+      }
+      .view-count-badge i {
+        font-size: .85rem;
       }
     `;
     document.head.appendChild(style);
