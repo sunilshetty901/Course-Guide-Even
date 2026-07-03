@@ -100,11 +100,11 @@
         card.appendChild(badge);
       }
 
-      // View count, bottom-right, always shown
+     // View count, bottom-right, always shown
       if (!card.querySelector('.view-count-badge')) {
         const viewBadge = document.createElement('div');
         viewBadge.className = 'view-count-badge';
-        viewBadge.innerHTML = `👁️ ${views}`;
+        viewBadge.innerHTML = `<i class="fa-regular fa-eye"></i> ${views}`;
         card.appendChild(viewBadge);
       }
     } catch (e) {
